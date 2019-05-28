@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ramotion.paperonboarding:paper-onboarding:1.1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/paper-onboarding-1.1.1.aar/b8b79c97330f27953fa39c06b8b593c9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/paper-onboarding-1.1.1.aar/b8b79c97330f27953fa39c06b8b593c9/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

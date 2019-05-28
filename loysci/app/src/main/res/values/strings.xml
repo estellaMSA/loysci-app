@@ -1,0 +1,319 @@
+<resources>
+    <string name="app_name">LoySci</string>
+    <string name="title_my_address">Meu endereço</string>
+    <string name="personal_info">Dados\npessoais</string>
+    <string name="take_your_prize">Resgate seus\nprêmios</string>
+    <string name="home_regulamento">Regulamento</string>
+    <string name="home_cartaovirtual">Cartão Digital</string>
+    <string name="sales">Promoções\n </string>
+    <string name="user_address">Meu endereço\n </string>
+    <string name="change_password">Alterar minha\nsenha</string>
+    <string name="drivers_license">Carteira de\nhabilitação</string>
+    <string name="participate_and_win">Participe e Ganhe</string>
+    <string name="my_badges">Minhas Medalhas</string>
+
+    <string name="valor">%d Pontos</string>
+    <string name="points">%d Pontos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="failed_load_profile">Não foi possível carregar seu perfil!</string>
+    <string name="success_change_pass">A senha foi alterada com sucesso</string>
+    <string name="success_subir_conteudo">Sua imagem foi enviada com sucesso!</string>
+    <string name="failed_change_pass">Não foi possível alterar sua senha!</string>
+    <string name="wrong_pass">Senha atual incorreta!</string>
+    <string name="failed_load_promotions">Não foi possível carregar suas promoções!</string>
+    <string name="failed_load_extract">Não foi possível carregar o extrato!</string>
+    <string name="failed_load_vouchers">Não foi possível carregar os vouchers!</string>
+    <string name="failed_load_missions">Não foi possível carregar as missões! Tentando novamente…</string>
+    <string name="failed_load">Falha ao carregar!</string>
+    <string name="points_count">Pontos</string>
+    <string name="level_number">Nível %d</string>
+    <string name="points_to_expire">%s pontos a expirar!</string>
+
+
+    <string name="login_CPF">CPF</string>
+    <string name="login_password">Senha</string>
+    <string name="button_enter">Entrar</string>
+    <string name="forgot_my_password">Esqueci minha senha</string>
+    <string name="retrieve_password">Recuperar senha de acesso</string>
+    <string name="retrieve_password_instructions">Se você esqueceu sua senha, não se preocupe. Basta preencher o campo abaixo e sua nova senha será enviada para o e-mail cadastrado.</string>
+    <string name="registered_email">E-mail cadastrado</string>
+    <string name="request_new_password">Solicitar nova senha</string>
+    <string name="come_back">Voltar</string>
+    <string name="password_recovered_title">Sua nova senha foi enviada</string>
+    <string name="password_recovered_description">Verifique o e-mail cadastrado e siga as instruções para utilizar sua nova senha de acesso.</string>
+    <string name="retrieve_password_error">Falha ao recuperar senha</string>
+
+    <string name="email_error">Por favor, insira o e-mail</string>
+    <string name="login_errorlogin">Login ou senha inválidos</string>
+    <string name="login_error">Erro ao realizar login</string>
+    <string name="cpf_error">Por favor, insira um CPF válido</string>
+    <string name="password_error">Por favor, insira a senha</string>
+    <string name="latest_notifications">Últimas notificações</string>
+    <string name="my_cart">Meu carrinho</string>
+    <string name="sales_title">Promoções</string>
+    <string name="current_pass">Senha atual</string>
+    <string name="new_pass">Nova senha</string>
+    <string name="empty_field_error">Campo obrigatório</string>
+    <string name="repeat_new_pass">Repita a nova senha</string>
+    <string name="pass_doesnt_match">As senhas não combinam</string>
+    <string name="pass_too_small">A senha deve conter 6 dígitos</string>
+    <string name="fill_current_pass">Preencha a senha atual</string>
+    <string name="changing_pass">Alterando a senha!</string>
+    <string name="update_password">Alterar senha</string>
+    <string name="updating_data">Atualizando dados!</string>
+    <string name="update_drivers_license">Carteira de habilitação</string>
+    <string name="expiration_date">Data de validade</string>
+    <string name="license_successfully_updated">Sua CNH foi alterada com sucesso</string>
+    <string name="failed_update_license">Não foi possível atualizar sua CNH</string>
+    <string name="token_expired">Seu login expirou</string>
+
+    <string name="name">Nome *</string>
+    <string name="last_name">Sobrenome *</string>
+    <string name="e_mail">E-mail *</string>
+    <string name="phone">Celular *</string>
+    <string name="gender_required">Sexo *</string>
+    <string name="gender">Sexo</string>
+    <string name="birthday_date">Data de nascimento *</string>
+
+    <string name="cancel">CANCELAR</string>
+    <string name="save">SALVAR</string>
+
+    <string name="press_to_exit">Pressione novamente para sair</string>
+
+    <string-array name="gender_arrays">
+        <item>Sexo</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+
+
+    <string name="zipcode">CEP</string>
+    <string name="thoroughfare">Endereço</string>
+    <string name="number">Número</string>
+    <string name="complement">Complemento</string>
+    <string name="neighborhood">Bairro</string>
+    <string name="city">Cidade</string>
+    <string name="see_more">SAIBA MAIS</string>
+    <string name="Failed_load_promotion">Não foi possível exibir esta promoção</string>
+    <string name="filter_results">Filtrar resultados</string>
+    <string name="add">Adicionar</string>
+    <string name="change_points">Troque seus pontos</string>
+    <string name="confirm">CONFIRMAR</string>
+    <string name="select_quantity">Selecione a quantidade</string>
+    <string name="quantity">Quantidade</string>
+    <string name="leave">Sair</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="remove">REMOVER</string>
+    <string name="empty_challenges">Não há desafios</string>
+    <string name="empty_promotions">Não há promoções</string>
+    <string name="regulation">REGULAMENTO</string>
+    <string name="the_program">O PROGRAMA</string>
+    <string name="program_regulation">Programa e Regulamento</string>
+
+    <!--States-->
+
+    <string-array name="states">
+        <item>Estados</item>
+        <item>Acre</item>
+        <item>Alagoas</item>
+        <item>Amapá</item>
+        <item>Amazonas</item>
+        <item>Bahia</item>
+        <item>Ceará</item>
+        <item>Distrito Federal</item>
+        <item>Espírito Santo</item>
+        <item>Goiás</item>
+        <item>Maranhão</item>
+        <item>Mato Grosso</item>
+        <item>Mato Grosso do Sul</item>
+        <item>Minas Gerais</item>
+        <item>Pará</item>
+        <item>Paraíba</item>
+        <item>Parana</item>
+        <item>Pernambuco</item>
+        <item>Piauí</item>
+        <item>Rio de Janeiro</item>
+        <item>Rio Grande do Norte</item>
+        <item>Rio Grande do Sul</item>
+        <item>Rondônia</item>
+        <item>Roraima</item>
+        <item>Santa Catarina</item>
+        <item>São Paulo</item>
+        <item>Sergipe</item>
+        <item>Tocantins</item>
+    </string-array>
+
+    <string-array name="ufs">
+        <item>Ufs</item>
+        <item>AC</item>
+        <item>AL</item>
+        <item>AP</item>
+        <item>AM</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PR</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SP</item>
+        <item>SE</item>
+        <item>TO</item>
+    </string-array>
+
+    <string name="extract">Extrato</string>
+    <string name="expired">Expirados</string>
+    <string name="filter_by_date">Filtrar por data</string>
+
+    <string name="seven_days">7 dias</string>
+    <string name="thirty_days">30 dias</string>
+    <string name="sixty_days">60 dias</string>
+    <string name="all_period">Todo período</string>
+    <string name="filter">Filtrar</string>
+
+    <string name="available_from">Disponível de</string>
+    <string name="available_since">Disponível a partir de </string>
+    <string name="to">a</string>
+    <string name="expired_on">Expirado em</string>
+    <string name="no_vouchers">Não há vouchers</string>
+    <string name="no_vouchers_in_cart">Não há vouchers no carrinho</string>
+    <string name="confirm_text_voucher">Você está a um passo de obter benefícios. Clique em confirmar para efetuar o resgate.</string>
+    <string name="quantity_add_voucher_plural">%d unidades adicionadas</string>
+    <string name="quantity_add_voucher">%d unidade adicionada</string>
+    <string name="item_added">Item adicionado</string>
+    <string name="item_added_plural">Itens adicionados</string>
+    <string name="see_cart">VER CARRINHO</string>
+    <string name="remove_item_confirmation">Deseja remover o item?</string>
+    <string name="voucher_remove_confirmation">Você tem certeza que deseja remover esse benefício do seu carrinho?</string>
+    <string name="purchase_and_end">ADQUIRIR E FINALIZAR</string>
+    <string name="added_benefits">Benefícios adicionados.</string>
+    <string name="benefit_added">Benefício adicionado.</string>
+    <string name="group">Grupo</string>
+    <string name="item_per_contract">Contrato.png</string>
+    <string name="item_per_daily">Diaria.png</string>
+    <string name="alert_only_one_daily">Você adicionou uma diária ao carrinho e, portanto não poderá adicionar outras diárias.</string>
+    <string name="alert_only_one_contract">Você adicionou uma contrato semelhante ao carrinho e, portanto não poderá adicionar o mesmo contrato novamente.</string>
+    <string name="attention">Atenção</string>
+
+    <string name="give_up">DESISTIR</string>
+    <string name="exit_activity">SAIR</string>
+    <string name="loading_extract">Carregando extrato&#8230;</string>
+    <string name="continue_quiz">CONTINUAR</string>
+    <string name="answer_quiz">Responder quiz</string>
+    <string name="unable_to_load_quiz">Não foi possível iniciar seu quiz</string>
+    <string name="unable_to_send_answer">Um erro ocorreu. Por favor, tente novamente</string>
+    <string name="questions_progress">Pergunta %d de %d</string>
+    <string name="choose_option">Selecione uma das opções!</string>
+    <string name="quiz">Quiz</string>
+    <string name="congratulations">Parabéns!</string>
+    <string name="rewards">Recompensas</string>
+    <string name="back">VOLTAR</string>
+    <string name="unable_to_start_quiz">Não foi possível exibir o quiz!</string>
+    <string name="complete_to_win">Complete todas as missões e ganhe</string>
+    <string name="mission_points">PONTOS</string>
+    <string name="topics_points">PONTOS</string>
+    <string name="super_prize">SUPER-PRÊMIO</string>
+    <string name="missions_done">Missões concluídas!</string>
+    <string name="missions_done_must">Em breve mais um desafio para você ganhar pontos!</string>
+    <string name="request_points">Resgatar +</string>
+    <string name="prize_requested">Super-prêmio resgatado</string>
+    <string name="finished_topic">Você concluiu todas as atividades da missão e resgatou seu super-prêmio!</string>
+    <string name="rewarded_points">+%d Pontos</string>
+    <string name="topic_points">+%d PONTOS</string>
+    <string name="finish_dialog">CONCLUIR</string>
+    <string name="mission_activities">Atividades da missão</string>
+    <string name="mission_index">Missão %d</string>
+    <string name="activitie_done">Você concluiu a atividade</string>
+    <string name="activitiy_score">Você acertou %d de %d </string>
+    <string name="activities_remaining">Faltam apenas %d atividades para concluir a missão!</string>
+    <string name="mission_finished">Missão concluída</string>
+    <string name="mission_activities_finished">Você concluiu todas as atividades da missão!</string>
+    <string name="almost_there">Você está quase lá!</string>
+    <string name="can_continue">Você poderá continuar essa atividade posteriormente</string>
+    <string name="confirm_exit">Deseja mesmo desistir?</string>
+    <string name="activity_not_finished">Você não concluiu a atividade</string>
+    <string name="register">CADASTRAR</string>
+    <string name="copiartexto">COPIAR</string>
+    <string name="data">Dados</string>
+    <string name="password">Senha</string>
+    <string name="terms">Termos</string>
+    <string name="soon_to_register">Em breve você fará parte do nosso programa de fidelidade.</string>
+    <string name="personal_data">Dados Pessoais</string>
+    <string name="register_cpf">CPF *</string>
+    <string name="register_name">Nome *</string>
+    <string name="register_lastname">Sobrenome *</string>
+    <string name="register_cellphone">Celular *</string>
+    <string name="continue_button">CONTINUAR</string>
+    <string name="invalid_doc">CPF inválido!</string>
+    <string name="invalid_name">Preencha o nome</string>
+    <string name="invalid_lastname">Preencha o sobrenome</string>
+    <string name="invalid_email">E-mail inválido</string>
+    <string name="invalid_phone">Preencha o telefone</string>
+    <string name="register_new_account">Criar minha conta</string>
+    <string name="welcome_frase">Olá, seja bem-vindo!</string>
+    <string name="create_password">Agora, vamos criar uma senha de acesso e escolher seu tipo de cartão fidelidade</string>
+    <string name="password_card">Senha e Cartão</string>
+    <string name="register_password">Senha *</string>
+    <string name="register_repeat_pass">Repita a senha *</string>
+    <string name="card_question">Como você deseja obter seu cartão fidelidade?</string>
+    <string name="digital">Digital</string>
+    <string name="fisical">Físico</string>
+    <string name="choose_digital">Opte pelo cartão digital e ganhe 100 Pontos!</string>
+    <string name="cancel_button">CANCELAR</string>
+    <string name="fill_pass">Preencha a senha</string>
+    <string name="repeat_pass">Repita a senha</string>
+    <string name="pass_dont_match">As senhas não combinam</string>
+    <string name="email_comunication">Aceito receber comunicação, por e-mail, SMS e notificações.</string>
+    <string name="terms_needed">É necessário aceitar os termos de contrato e de privacidade!</string>
+    <string name="terms_conditions">Termos e Condições</string>
+    <string name="cartaofidelidade">Cartão Digital</string>
+    <string name="badges">Quadro de Medalhas</string>
+    <string name="min_digits">A senha deverá conter 6 dígitos numéricos</string>
+    <string name="profile_exist">Não foi possível concluir, o usuário já existe!</string>
+    <string name="register_error">Erro ao concluir seu cadastro!</string>
+    <string name="auto_login_failed">Erro ao fazer login automático</string>
+    <string name="registration_finished">Cadastro concluído</string>
+    <string name="welcome_message">Agora você faz parte do nosso programa de fidelidade.</string>
+    <string name="app_description">Em nosso aplicativo você poderá realizar missões para obter pontos e joias que poderão ser trocadas por benefícios.</string>
+    <string name="cancel_registration">Deseja realmente cancelar?</string>
+    <string name="terms_and_conditions">1. O Programa está disponível para Clientes brasileiros e estrangeiros. O Programa é válido para todo o território brasileiro.\n\n2. O Cliente estará efetivamente participando do Programa após efetuar cadastro na página do Programa, www.loysci.com.br. Contratos anteriores à data de cadastro não serão pontuados.\n\n3. O Participante deverá manter permanentemente atualizado seu cadastro no Programa para viabilizar o recebimento de produtos/recompensas por ele resgatados, bem como outras comunicações relacionadas ao Programa. Quando considerar necessário, a Movida poderá solicitar o envio da documentação comprobatória da alteração dos referidos dados cadastrais. O Participante reconhece que o cadastro no site é a fonte que possibilita a comunicação entre ele e Movida, motivo pelo qual a Movida não se responsabilizará pela eventual perda ou mitigação de direitos do Participante caso não seja possível a comunicação em decorrência da desatualização ou incorreção dos dados cadastrais fornecidos.</string>
+    <string name="add_daily">ADICIONAR DIÁRIAS</string>
+    <string name="purchase_voucher_alert_missing_car">Os benefícios abaixo exigem que você adicione ao menos uma diária de veículos ao carrinho</string>
+    <string name="purchase_voucher_alert_not_enough_points">Saldo insuficiente</string>
+    <string name="processing">Processando</string>
+    <string name="voucher_expiration_info">Os seus benefícios irão expirar em %s. Informações disponíveis no extrato.</string>
+    <string name="done">Concluir</string>
+    <string name="erro_process_conclusion">Ocorreu um erro durante a finalização do precesso. Por favor verifique seu extrato</string>
+    <string name="error_request_not_complete">Ocorreu um erro, sua requisição não foi completada.</string>
+
+    <string name="male">Masculino</string>
+    <string name="female">Feminino</string>
+    <string name="skin_avatar">Cor da pele</string>
+    <string name="use_avatar">UTILIZAR AVATAR</string>
+    <string name="accessories">Acessórios</string>
+    <string name="hair">Cabelos</string>
+    <string name="face">Face</string>
+    <string name="clothing">Roupas</string>
+    <string name="create_my_avatar">Criar meu avatar</string>
+    <string name="congratulations_avatar_done">Parabéns!\n Seu avatar está pronto!</string>
+    <string name="complete">CONCLUIR</string>
+    <string name="sending_answer">Enviando resposta!</string>
+    <string name="right_answer">Resposta: %s</string>
+    <string name="answered_right">Você acertou!</string>
+    <string name="answered_wrong">Você errou!</string>
+    <string name="terms_and_conditions_about">Termos e condições / Sobre o programa</string>
+</resources>

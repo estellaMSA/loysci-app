@@ -1,0 +1,1867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9bb45719-7950-4c47-8747-51dffd71ee29" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_common_1_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_extensions_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_databinding_adapters_3_3_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_databinding_baseLibrary_3_3_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_databinding_library_3_3_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_27_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_27_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_27_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_27_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v13_27_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_27_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_volley_volley_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_crashlytics_sdk_android_answers_1_4_3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_crashlytics_sdk_android_beta_1_2_10_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_crashlytics_sdk_android_crashlytics_2_9_5_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_crashlytics_sdk_android_crashlytics_core_2_6_4_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_3_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_hotchemi_permissionsdispatcher_3_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_jkwiecien_EasyImage_2_0_4_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_rtoshiro_fullscreenvideoview_fullscreenvideoview_1_1_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_15_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_15_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_15_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_15_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_16_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_17_0_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_16_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_16_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_17_3_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_zxing_android_core_3_3_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_zxing_core_3_3_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_ogaclejapan_smarttablayout_library_1_6_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_ramotion_paperonboarding_paper_onboarding_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_logging_interceptor_3_12_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_12_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_15_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_5_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_simplexml_2_4_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_5_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_xw_repo_bubbleseekbar_3_16_lite_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_fabric_sdk_android_fabric_1_4_4_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_simpleframework_simple_xml_2_7_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__stax_stax_1_2_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__stax_stax_api_1_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__xpp3_xpp3_1_1_3_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loysci.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.gradle/4.10.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.gradle/4.10.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.gradle/4.10.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/caches/build_file_checksums.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/caches/gradle_models.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__android_arch_core_common_1_1_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__android_arch_lifecycle_extensions_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_databinding_adapters_3_3_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_databinding_baseLibrary_3_3_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_databinding_library_3_3_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_cardview_v7_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_design_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_support_annotations_27_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_support_media_compat_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_support_v13_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_support_transition_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_android_volley_volley_1_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_crashlytics_sdk_android_answers_1_4_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_crashlytics_sdk_android_beta_1_2_10_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_crashlytics_sdk_android_crashlytics_2_9_5_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_crashlytics_sdk_android_crashlytics_core_2_6_4_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_github_bumptech_glide_glide_3_7_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_github_hotchemi_permissionsdispatcher_3_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_github_jkwiecien_EasyImage_2_0_4_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_google_android_gms_play_services_base_15_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_15_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_15_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_15_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_google_firebase_firebase_common_16_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_google_firebase_firebase_iid_17_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_16_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_16_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_17_3_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_google_zxing_android_core_3_3_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_google_zxing_core_3_3_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_ogaclejapan_smarttablayout_library_1_6_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_ramotion_paperonboarding_paper_onboarding_1_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_squareup_okhttp3_logging_interceptor_3_12_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_12_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_squareup_okio_okio_1_15_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_5_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_squareup_retrofit2_converter_simplexml_2_4_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_5_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__com_xw_repo_bubbleseekbar_3_16_lite_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__io_fabric_sdk_android_fabric_1_4_4_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__org_simpleframework_simple_xml_2_7_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__stax_stax_1_2_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__stax_stax_api_1_0_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/libraries/Gradle__xpp3_xpp3_1_1_3_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/fabric.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/release/app-release.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/release/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/release/release/app.aab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/androidTest/java/br/com/monitoratec/loysci_android/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/body/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/body/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/body/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/body/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/body/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/body/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/body/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/body/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/body/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/body/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/body/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/body/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hair/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hair/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hair/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hair/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hair/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hair/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hair/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hair/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hair/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hair/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hair/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hair/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hair/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hair/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hair/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hat/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hat/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hat/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hat/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hat/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hat/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hat/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hat/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/hat/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/head/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/head/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/head/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/skin/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/skin/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/skin/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/female/skin/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/body/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/body/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/body/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/body/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/body/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/body/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/body/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/body/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/body/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/body/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/body/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/body/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hair/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hair/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hair/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hair/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hair/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hair/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hair/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hair/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hair/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hair/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hair/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hair/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hair/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hair/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hair/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hat/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hat/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hat/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hat/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hat/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hat/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hat/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/hat/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/head/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/head/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/head/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/head/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/skin/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/skin/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/skin/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/avatar/male/skin/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/assets/termos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/body/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/body/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/body/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/body/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/body/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/body/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/body/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/body/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/body/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/body/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/body/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/body/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hair/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hair/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hair/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hair/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hair/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hair/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hair/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hair/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hair/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hair/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hair/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hair/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hair/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hair/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hair/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hat/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hat/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hat/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hat/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hat/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hat/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hat/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hat/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/hat/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/head/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/head/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/head/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/skin/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/skin/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/skin/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/female/skin/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/body/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/body/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/body/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/body/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/body/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/body/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/body/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/body/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/body/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/body/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/body/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/body/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hair/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hair/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hair/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hair/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hair/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hair/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hair/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hair/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hair/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hair/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hair/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hair/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hair/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hair/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hair/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hat/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hat/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hat/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hat/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hat/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hat/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hat/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/hat/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/head/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/head/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/head/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/head/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/skin/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/skin/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/skin/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/avatar/male/skin/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/body/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/body/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/body/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/body/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/body/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/body/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/body/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/body/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/body/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/body/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/body/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/body/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hair/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hair/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hair/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hair/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hair/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hair/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hair/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hair/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hair/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hair/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hair/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hair/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hair/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hair/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hair/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hat/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hat/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hat/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hat/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hat/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hat/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hat/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hat/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/hat/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/head/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/head/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/head/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/skin/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/skin/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/skin/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/female/skin/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/DoneAvatarActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/MyApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/AccessToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Badge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/BadgeLevel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/CepModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Certificate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Challenge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeAnswerUpdateValidate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeGameAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengePreferencesAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeProfileAttribute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeQuestion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeScratchAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeSeeContent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeSeeContentAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeSocialNetwork.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeSocialNetworkAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeSubmitAnswers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeSubmitResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeSurveyAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeUpdateProfileAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeUploadAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeUploadContent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Comments.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Feed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/GameLeague.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/GameLeagueDos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/GameLeagueTres.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/GameLeagueUno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/GameMission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/GeneralChallenges.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Group.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/History.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/HistoryNegative.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Image.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Items.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Leaderboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/League.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Level.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/LoadState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Metric.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/MetricEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Mission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/MissionsActivityResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Notification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Points.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/PreferenceUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ProductCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ProductSubCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Profile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ProfileDynamicAttribute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ProfileIdentificationIndicator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ProfileMemberType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Progress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Promotion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Register.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/ResponseError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Reward.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/RewardRedeem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Secuency.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/SecuencyClose.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/SendMondoviAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Store.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/SubmitAnswerChallenge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Team.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/TimeGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Top.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Topic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/TopicsMissionsResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/TopicsResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Tournament.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendRequest/CouponCore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendRequest/CouponData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendRequest/CouponItems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendRequest/CouponsCPF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendRequest/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendRequest/RequestorID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendRequest/Source.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendRequest/VoucherBackend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendResponse/Body.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendResponse/CouponData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendResponse/CouponItems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendResponse/CouponRSCore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendResponse/CouponsCPF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendResponse/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendResponse/VoucherBackendResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherBackendResponse/VoucherRequestEnvelope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherTransaction/VoucherTransactionRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/VoucherTransaction/VoucherTransactionResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/model/Zone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/CloudStorageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltyApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltyCarregaCep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltyExternal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltyMissions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltyRedeemVouchers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltySignInService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltySubmit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/EditAddressPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/HomeFragmentPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/MainActivityImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/RegisterMemberPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/VoucherActivityPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/VoucherFragmentPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ActivitiesActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/AvatarActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/AvatarPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/BadgesActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/CartActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/CartaoActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/CartaoTabsPagerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChangePasswordActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/EditAddressActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/LoginActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/MissionActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/NotificationsActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/PromotionDetailActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/QuizActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/RegisterConditionsActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/RegisterPasswordActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/RegisterProfileActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/RegulationsActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/SliderHome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/SliderTabsPagerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/SplashActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/UpdateDriversLicenseActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/VoucherActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/AvatarAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/BadgesAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/CategoriesFilterAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/ChallengesAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/ExpiredVouchersAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/ExtractAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/GameCatergoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/MissionActivitiesAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/MissionAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/NotificationsAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/PointsFilterAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/PromotionsAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/QuizOptionsAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/ReceiptsPagerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/SectionsPagerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/TopicsAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/VoucherReceiptAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/VouchersAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/VouchersCartAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/CartaoFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/CartaoFragmentVerso.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/ExpiredFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/ExtractFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/GamesFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/HomeFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/ProgramFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/ReceiptsFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/RegulationFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/SalesFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/SliderFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/SliderHomeFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/SliderHomeFragment02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/SliderHomeFragment03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/SliderHomeFragment04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/SliderHomeFragment05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/VouchersFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/listeners/ExtractLoadListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/listeners/QuizListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/listeners/SimpleCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/listeners/SimpleItemClickListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/listeners/TopicMissionCickListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/listeners/ViewModelSimpleCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/presenters/CartPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/presenters/ChangePasswordPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/presenters/ExtractPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/presenters/MainActivityPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/presenters/SalesFragmentPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/presenters/UpdateDriversLicensePresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/viewModels/MainViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/viewModels/QuizViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/viewModels/ReceiptViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/ActivityExitDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/AddVoucherDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/AddressUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/BadgeDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/ConfirmationDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/Cpf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/CustomDateFilterDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/CustomPhotoPickerDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/CustomRetrievePasswordDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/DateUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/DoneOnEditorActionListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/ErrorDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/LoadStateViewsHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/MaskWatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/MissionEndDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/NonSwipeableViewPager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/PhoneNumberFormatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/Prefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/PromotionDetailsDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/PurchaseVoucherMissingCarAlertDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/QuizEndDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/ReceiptDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/ReceiptVoucher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/RemoveVoucherDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/RequestPrizeDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/VoucherAlertDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/java/br/com/monitoratec/loysci_android/util/WelcomeMessageDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/body/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/body/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/body/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/body/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/body/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/body/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/body/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/body/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/body/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/body/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/body/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/body/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hair/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hair/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hair/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hair/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hair/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hair/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hair/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hair/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hair/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hair/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hair/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hair/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hair/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hair/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hair/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hat/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hat/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hat/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hat/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hat/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hat/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hat/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/hat/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/head/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/head/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/head/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/head/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/skin/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/skin/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/skin/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/male/skin/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/assets/fonts/montserrat.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/address.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/bg_avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/change_pass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/cnh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/file_document.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/group_15552.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/ic_arrow_forward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/ic_exit_run_black_18dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/ic_logout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/ic_notifications.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/ic_notifications_read.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/login_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/movida_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/movida_move_voce.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/movida_move_voce_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-hdpi/toolbar_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-mdpi/address.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-mdpi/bg_avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-mdpi/change_pass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-mdpi/cnh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-mdpi/group_15552.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-mdpi/ic_arrow_forward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-mdpi/ic_exit_run_black_18dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-mdpi/ic_logout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-mdpi/ic_notifications.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-mdpi/ic_notifications_read.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-mdpi/login_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-mdpi/movida_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-mdpi/movida_move_voce.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-mdpi/movida_move_voce_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-mdpi/toolbar_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xhdpi/address.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xhdpi/bg_avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xhdpi/change_pass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xhdpi/cnh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xhdpi/group_15552.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xhdpi/ic_arrow_forward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xhdpi/ic_exit_run_black_18dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xhdpi/ic_logout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xhdpi/ic_notifications.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xhdpi/ic_notifications_read.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xhdpi/login_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xhdpi/movida_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xhdpi/movida_move_voce.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xhdpi/movida_move_voce_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xhdpi/toolbar_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/address.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/bg_avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/change_pass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/cnh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/filter_outline.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/group_15552.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/ic_arrow_forward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/ic_exit_run_black_18dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/ic_logout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/ic_notifications.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/ic_notifications_read.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/login_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/movida_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/movida_move_voce.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/movida_move_voce_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxhdpi/toolbar_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxxhdpi/address.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxxhdpi/bg_avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxxhdpi/change_pass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxxhdpi/cnh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxxhdpi/group_15552.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxxhdpi/ic_arrow_forward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxxhdpi/ic_exit_run_black_18dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxxhdpi/ic_logout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxxhdpi/ic_notifications.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxxhdpi/ic_notifications_read.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxxhdpi/login_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxxhdpi/movida_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxxhdpi/movida_move_voce.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxxhdpi/movida_move_voce_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable-xxxhdpi/toolbar_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_button_voucher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_buttons_voucher_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_circle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_circle_primary.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_circle_red.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_circle_selected.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_circle_white.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_filter_button.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_filter_button_clicked.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_filter_button_clicked_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_filter_button_clicked_completed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_filter_button_clicked_initied.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_finished_registration.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_gender_avatar_button.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_login_gradient.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_points.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_promotion.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_register_step_off.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_register_step_on.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_regulation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/background_round_button.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/bottom_shaddow.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/cartaocitricofrente.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/cartaocitricoverso.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/cartaocitrino.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/cartaodiamante.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/cartaodiamantefrente.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/cartaodiamanteverso.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/cartaoonix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/cartaoonixfrente.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/cartaoonixverso.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/checkednaovisualizar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/home_buttons_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_account_card.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_add.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_arrow_down.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_arrow_up.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_calendar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_camera.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_cart.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_check.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_check_circle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_close.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_done.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_done_black.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_done_primary.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_done_red.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_done_white.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_filter_ball.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_game.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_gift.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_image.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_lock_open.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_notification_ball.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_notifications_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_person.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_receipt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_remove.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_shopping_cart.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_store.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_store_bottom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_trofeu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_trophy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/ic_voucher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/map_marker.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/mini_logo_movida.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/mini_logo_netshoes.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/mini_logo_zattini.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/mock_person.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/movida_move_voce.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/outline_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/quiz_option_selected.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/regulamento.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/rotate.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/rounded_button.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/slider01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/slider02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/slider03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/slider04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/slider05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/trofeu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/tutorial01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/tutorial02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/tutorial03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/tutorial04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/tutorial05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/drawable/tutorialbotao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/font/montserrat.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_activities.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_avatar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_badges.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_cart.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_cartao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_change_password.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_done_avatar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_edit_address.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_login.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_mision.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_notifications.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_promotion_detail.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_quiz.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_register_conditions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_register_password.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_register_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_regulations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_slider.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_splash.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_update_drivers_license.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/activity_voucher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_badge.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_confirmation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_date_filter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_exit_quiz.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_finished_mission.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_finished_quiz.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_photo_picker.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_promotion_details.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_purchase_voucher_alert.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_purchase_voucher_not_enough_points_alert.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_receipt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_remove_voucher_confirmation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_request_prize.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_retrieve_password.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_select_quantity_voucher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_voucher_alert.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/dialog_welcome_message.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/end_buttons_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/fragment_cartao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/fragment_expired.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/fragment_extract.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/fragment_games.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/fragment_program.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/fragment_receipts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/fragment_regulation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/fragment_sales.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/fragment_slider.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/fragment_sliderhome.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/fragment_vouchers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/item_avatar_options.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/item_badge.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/item_challenge.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/item_extract.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/item_filter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/item_mission.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/item_mission_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/item_notification.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/item_promotion.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/item_quiz_option.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/item_topic_completed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/item_topics.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/item_voucher_card.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/item_voucher_cart.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/item_voucher_receipt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/loading_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/loading_layout_modal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/layout/plain_toolbar_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/app/src/test/java/br/com/monitoratec/loysci_android/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/local.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/movida-android-release-10-f592bdb5bfee7021de058043d0d0413da3f2acc7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/movida.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/my-key.keystore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/my-key.keystore.old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movida/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="loysci" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltyApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="692" column="23" selection-start-line="692" selection-start-column="23" selection-end-line="692" selection-end-column="23" />
+              <folding>
+                <element signature="initializer##0;class#LoyaltyApi#0" />
+                <element signature="e#7855#8636#0" />
+                <element signature="e#8034#8579#1" />
+                <element signature="class#8069:8567" />
+                <element signature="method#onResponse#0;class#8069:8567" />
+                <element signature="e#8642#9399#0" />
+                <element signature="e#8805#9342#1" />
+                <element signature="class#8840:9330" />
+                <element signature="method#onResponse#0;class#8840:9330" />
+                <element signature="e#9405#9601#0" />
+                <element signature="e#9607#10256#0" />
+                <element signature="e#10262#10714#0" />
+                <element signature="method#onError#0;class#10816:11365" />
+                <element signature="e#11379#12022#0" />
+                <element signature="class#11471:12014" />
+                <element signature="method#onResponse#0;class#11471:12014" />
+                <element signature="method#onError#0;class#11471:12014" />
+                <element signature="e#12028#12681#0" />
+                <element signature="class#12125:12673" />
+                <element signature="method#onResponse#0;class#12125:12673" />
+                <element signature="method#onError#0;class#12125:12673" />
+                <element signature="e#12687#13360#0" />
+                <element signature="class#12792:13352" />
+                <element signature="method#onResponse#0;class#12792:13352" />
+                <element signature="method#onError#0;class#12792:13352" />
+                <element signature="e#13366#14014#0" />
+                <element signature="class#13460:14006" />
+                <element signature="method#onResponse#0;class#13460:14006" />
+                <element signature="method#onError#0;class#13460:14006" />
+                <element signature="e#14020#14673#0" />
+                <element signature="class#14117:14665" />
+                <element signature="method#onResponse#0;class#14117:14665" />
+                <element signature="method#onError#0;class#14117:14665" />
+                <element signature="method#onError#0;class#14784:15344" />
+                <element signature="e#15358#16046#0" />
+                <element signature="class#15468:16038" />
+                <element signature="method#onResponse#0;class#15468:16038" />
+                <element signature="method#onError#0;class#15468:16038" />
+                <element signature="e#16054#16471#0" />
+                <element signature="e#16477#17205#0" />
+                <element signature="e#16840#16902#0" />
+                <element signature="e#17211#17908#0" />
+                <element signature="e#17553#17615#0" />
+                <element signature="e#17914#18653#0" />
+                <element signature="class#18059:18645" />
+                <element signature="method#onResponse#0;class#18059:18645" />
+                <element signature="method#onError#0;class#18059:18645" />
+                <element signature="e#18659#19396#0" />
+                <element signature="class#18802:19388" />
+                <element signature="method#onResponse#0;class#18802:19388" />
+                <element signature="method#onError#0;class#18802:19388" />
+                <element signature="e#19402#20122#0" />
+                <element signature="class#19524:20114" />
+                <element signature="method#onResponse#0;class#19524:20114" />
+                <element signature="method#onError#0;class#19524:20114" />
+                <element signature="e#20128#20835#0" />
+                <element signature="class#20244:20827" />
+                <element signature="method#onResponse#0;class#20244:20827" />
+                <element signature="method#onError#0;class#20244:20827" />
+                <element signature="e#20842#21526#0" />
+                <element signature="class#20950:21518" />
+                <element signature="method#onResponse#0;class#20950:21518" />
+                <element signature="method#onError#0;class#20950:21518" />
+                <element signature="e#21532#22232#0" />
+                <element signature="class#21648:22224" />
+                <element signature="method#onResponse#0;class#21648:22224" />
+                <element signature="method#onError#0;class#21648:22224" />
+                <element signature="method#onError#0;class#23054:23627" />
+                <element signature="e#23641#24348#0" />
+                <element signature="class#23749:24340" />
+                <element signature="method#onResponse#0;class#23749:24340" />
+                <element signature="method#onError#0;class#23749:24340" />
+                <element signature="e#24354#25076#0" />
+                <element signature="class#24480:25068" />
+                <element signature="method#onResponse#0;class#24480:25068" />
+                <element signature="method#onError#0;class#24480:25068" />
+                <element signature="e#25082#25788#0" />
+                <element signature="class#25200:25780" />
+                <element signature="method#onResponse#0;class#25200:25780" />
+                <element signature="method#onError#0;class#25200:25780" />
+                <element signature="e#25794#26457#0" />
+                <element signature="class#25895:26449" />
+                <element signature="method#onResponse#0;class#25895:26449" />
+                <element signature="method#onError#0;class#25895:26449" />
+                <element signature="e#26463#27224#0" />
+                <element signature="class#26596:27216" />
+                <element signature="method#onResponse#0;class#26596:27216" />
+                <element signature="method#onError#0;class#26596:27216" />
+                <element signature="e#27230#27586#0" />
+                <element signature="e#27592#27936#0" />
+                <element signature="e#27942#28628#0" />
+                <element signature="class#28053:28620" />
+                <element signature="method#onResponse#0;class#28053:28620" />
+                <element signature="method#onError#0;class#28053:28620" />
+                <element signature="method#onError#0;class#28802:29442" />
+                <element signature="e#29456#30127#0" />
+                <element signature="class#29559:30119" />
+                <element signature="method#onResponse#0;class#29559:30119" />
+                <element signature="method#onError#0;class#29559:30119" />
+                <element signature="method#onError#0;class#30233:30785" />
+                <element signature="e#30799#31535#0" />
+                <element signature="class#30926:31527" />
+                <element signature="method#onResponse#0;class#30926:31527" />
+                <element signature="method#onError#0;class#30926:31527" />
+                <element signature="e#31541#32259#0" />
+                <element signature="class#31662:32251" />
+                <element signature="method#onResponse#0;class#31662:32251" />
+                <element signature="method#onError#0;class#31662:32251" />
+                <element signature="e#32265#33032#0" />
+                <element signature="class#32478:33024" />
+                <element signature="method#onResponse#0;class#32478:33024" />
+                <element signature="method#onError#0;class#32478:33024" />
+                <element signature="e#33038#33899#0" />
+                <element signature="class#33251:33891" />
+                <element signature="method#onResponse#0;class#33251:33891" />
+                <element signature="method#onError#0;class#33251:33891" />
+                <element signature="e#33905#34633#0" />
+                <element signature="class#34032:34625" />
+                <element signature="method#onResponse#0;class#34032:34625" />
+                <element signature="method#onError#0;class#34032:34625" />
+                <element signature="e#34639#35336#0" />
+                <element signature="class#34753:35328" />
+                <element signature="method#onResponse#0;class#34753:35328" />
+                <element signature="method#onError#0;class#34753:35328" />
+                <element signature="e#35342#36042#0" />
+                <element signature="class#35457:36034" />
+                <element signature="method#onResponse#0;class#35457:36034" />
+                <element signature="method#onError#0;class#35457:36034" />
+                <element signature="e#36048#36736#0" />
+                <element signature="class#36159:36728" />
+                <element signature="method#onResponse#0;class#36159:36728" />
+                <element signature="method#onError#0;class#36159:36728" />
+                <element signature="e#36742#36929#0" />
+                <element signature="e#36935#37654#0" />
+                <element signature="class#37056:37646" />
+                <element signature="method#onResponse#0;class#37056:37646" />
+                <element signature="method#onError#0;class#37056:37646" />
+                <element signature="e#37660#38339#0" />
+                <element signature="class#37772:38331" />
+                <element signature="method#onResponse#0;class#37772:38331" />
+                <element signature="method#onError#0;class#37772:38331" />
+                <element signature="e#38345#39030#0" />
+                <element signature="class#38450:39022" />
+                <element signature="method#onResponse#0;class#38450:39022" />
+                <element signature="method#onError#0;class#38450:39022" />
+                <element signature="e#39036#39761#0" />
+                <element signature="class#39164:39753" />
+                <element signature="method#onResponse#0;class#39164:39753" />
+                <element signature="method#onError#0;class#39164:39753" />
+                <element signature="e#39767#40506#0" />
+                <element signature="class#39885:40498" />
+                <element signature="method#onResponse#0;class#39885:40498" />
+                <element signature="method#onError#0;class#39885:40498" />
+                <element signature="e#40512#40914#0" />
+                <element signature="e#40920#41635#0" />
+                <element signature="class#41044:41627" />
+                <element signature="method#onResponse#0;class#41044:41627" />
+                <element signature="method#onError#0;class#41044:41627" />
+                <element signature="e#41641#42353#0" />
+                <element signature="class#41765:42345" />
+                <element signature="method#onResponse#0;class#41765:42345" />
+                <element signature="method#onError#0;class#41765:42345" />
+                <element signature="e#42359#43071#0" />
+                <element signature="class#42483:43063" />
+                <element signature="method#onResponse#0;class#42483:43063" />
+                <element signature="method#onError#0;class#42483:43063" />
+                <element signature="e#43077#43794#0" />
+                <element signature="class#43203:43786" />
+                <element signature="method#onResponse#0;class#43203:43786" />
+                <element signature="method#onError#0;class#43203:43786" />
+                <element signature="e#43800#44476#0" />
+                <element signature="class#43907:44468" />
+                <element signature="method#onResponse#0;class#43907:44468" />
+                <element signature="method#onError#0;class#43907:44468" />
+                <element signature="e#44482#45235#0" />
+                <element signature="class#44622:45227" />
+                <element signature="method#onResponse#0;class#44622:45227" />
+                <element signature="method#onError#0;class#44622:45227" />
+                <element signature="e#45241#45970#0" />
+                <element signature="class#45377:45962" />
+                <element signature="method#onResponse#0;class#45377:45962" />
+                <element signature="method#onError#0;class#45377:45962" />
+                <element signature="e#45977#46660#0" />
+                <element signature="class#46085:46652" />
+                <element signature="method#onResponse#0;class#46085:46652" />
+                <element signature="method#onError#0;class#46085:46652" />
+                <element signature="e#46666#46911#0" />
+                <element signature="e#46917#47675#0" />
+                <element signature="class#47090:47667" />
+                <element signature="method#onResponse#0;class#47090:47667" />
+                <element signature="method#onError#0;class#47090:47667" />
+                <element signature="method#onError#0;class#47814:48356" />
+                <element signature="e#48370#48695#0" />
+                <element signature="e#48451#48619#0" />
+                <element signature="e#48648#48689#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/SubirConteudoActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/model/Challenge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jkwiecien/EasyImage/2.0.4/c9e9d1916b6e7a8e249ca4ec80d790f80fa72fc8/EasyImage-2.0.4-sources.jar!/pl/aprilapps/easyphotopicker/EasyImage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="408" selection-start-line="408" selection-end-line="408" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltyService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="108" column="44" selection-start-line="108" selection-start-column="44" selection-end-line="108" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-440">
+              <caret line="521" column="21" selection-start-line="521" selection-start-column="21" selection-end-line="521" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="142" selection-start-line="142" selection-end-line="142" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1826#1827#0" expanded="true" />
+                <element signature="e#1870#1871#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>profileac</find>
+      <find>gamesfragm</find>
+      <find>Challenge</find>
+      <find>QUIZ_COMPLETED_WRONG</find>
+      <find>CAMERA_PERMISSION_REQUEST_CODE</find>
+      <find>MY_PERMISSIONS_REQUEST_CAMERA</find>
+      <find>profileBitmap</find>
+      <find>extract</find>
+      <find>TRANSACCION</find>
+      <find>getMemberHistory</find>
+      <find>redimi</find>
+      <find>extract</find>
+      <find>extractfragm</find>
+      <find>extract_type</find>
+      <find>subir</find>
+      <find>model</find>
+      <find>F</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/MissionActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/Realm.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/model/History.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/ExtractAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/presenters/ExtractPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="device.picker.selection" value="8XV7N16602001882" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../demos-android" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1558984252206" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.monitoratec.loysci_android.presentation.ui.activities" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9bb45719-7950-4c47-8747-51dffd71ee29" name="Default Changelist" comment="" />
+      <created>1558984244780</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558984244780</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" weight="0.21633889" />
+      <window_info id="Structure" side_tool="true" weight="0.32967034" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Run" />
+      <window_info anchor="bottom" id="Logcat" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Android Profiler" />
+      <window_info anchor="bottom" id="Find" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Build" weight="0.33388704" />
+      <window_info anchor="bottom" id="Debug" weight="0.47135842" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" weight="0.32980332" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Preview" weight="0.32980332" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java</url>
+          <line>142</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java</url>
+          <line>474</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java</url>
+          <line>488</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="163" selection-start-line="163" selection-end-line="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="64" column="48" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/MissionActivitiesAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/GamesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="337" column="62" selection-start-line="337" selection-start-column="62" selection-end-line="337" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeSubmitResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/MissionActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/Realm.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/24a0b0e63af9530bcedd06ed1983a4f2f02155a3/glide-3.7.0-sources.jar!/com/bumptech/glide/BitmapRequestBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="276" column="58" selection-start-line="276" selection-start-column="58" selection-end-line="276" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jkwiecien/EasyImage/2.0.4/c9e9d1916b6e7a8e249ca4ec80d790f80fa72fc8/EasyImage-2.0.4-sources.jar!/pl/aprilapps/easyphotopicker/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltyExternal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/model/History.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/model/HistoryNegative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/VoucherActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/VoucherFragmentPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-723">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/presenters/ExtractPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="56" column="70" selection-start-line="56" selection-start-column="70" selection-end-line="56" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_extract.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="52" column="45" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="45" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/ExtractAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1328">
+          <caret line="92" column="90" selection-start-line="92" selection-start-column="90" selection-end-line="92" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4278#4320#0" expanded="true" />
+            <element signature="e#4367#4397#0" expanded="true" />
+            <element signature="e#4637#4680#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/SubirConteudoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/model/Mission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/model/Challenge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="108" column="44" selection-start-line="108" selection-start-column="44" selection-end-line="108" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/viewModels/QuizViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/app/ActivityThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4265" selection-start-line="4265" selection-end-line="4265" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/ExtractFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-49">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltyApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="692" column="23" selection-start-line="692" selection-start-column="23" selection-end-line="692" selection-end-column="23" />
+          <folding>
+            <element signature="initializer##0;class#LoyaltyApi#0" />
+            <element signature="e#7855#8636#0" />
+            <element signature="e#8034#8579#1" />
+            <element signature="class#8069:8567" />
+            <element signature="method#onResponse#0;class#8069:8567" />
+            <element signature="e#8642#9399#0" />
+            <element signature="e#8805#9342#1" />
+            <element signature="class#8840:9330" />
+            <element signature="method#onResponse#0;class#8840:9330" />
+            <element signature="e#9405#9601#0" />
+            <element signature="e#9607#10256#0" />
+            <element signature="e#10262#10714#0" />
+            <element signature="method#onError#0;class#10816:11365" />
+            <element signature="e#11379#12022#0" />
+            <element signature="class#11471:12014" />
+            <element signature="method#onResponse#0;class#11471:12014" />
+            <element signature="method#onError#0;class#11471:12014" />
+            <element signature="e#12028#12681#0" />
+            <element signature="class#12125:12673" />
+            <element signature="method#onResponse#0;class#12125:12673" />
+            <element signature="method#onError#0;class#12125:12673" />
+            <element signature="e#12687#13360#0" />
+            <element signature="class#12792:13352" />
+            <element signature="method#onResponse#0;class#12792:13352" />
+            <element signature="method#onError#0;class#12792:13352" />
+            <element signature="e#13366#14014#0" />
+            <element signature="class#13460:14006" />
+            <element signature="method#onResponse#0;class#13460:14006" />
+            <element signature="method#onError#0;class#13460:14006" />
+            <element signature="e#14020#14673#0" />
+            <element signature="class#14117:14665" />
+            <element signature="method#onResponse#0;class#14117:14665" />
+            <element signature="method#onError#0;class#14117:14665" />
+            <element signature="method#onError#0;class#14784:15344" />
+            <element signature="e#15358#16046#0" />
+            <element signature="class#15468:16038" />
+            <element signature="method#onResponse#0;class#15468:16038" />
+            <element signature="method#onError#0;class#15468:16038" />
+            <element signature="e#16054#16471#0" />
+            <element signature="e#16477#17205#0" />
+            <element signature="e#16840#16902#0" />
+            <element signature="e#17211#17908#0" />
+            <element signature="e#17553#17615#0" />
+            <element signature="e#17914#18653#0" />
+            <element signature="class#18059:18645" />
+            <element signature="method#onResponse#0;class#18059:18645" />
+            <element signature="method#onError#0;class#18059:18645" />
+            <element signature="e#18659#19396#0" />
+            <element signature="class#18802:19388" />
+            <element signature="method#onResponse#0;class#18802:19388" />
+            <element signature="method#onError#0;class#18802:19388" />
+            <element signature="e#19402#20122#0" />
+            <element signature="class#19524:20114" />
+            <element signature="method#onResponse#0;class#19524:20114" />
+            <element signature="method#onError#0;class#19524:20114" />
+            <element signature="e#20128#20835#0" />
+            <element signature="class#20244:20827" />
+            <element signature="method#onResponse#0;class#20244:20827" />
+            <element signature="method#onError#0;class#20244:20827" />
+            <element signature="e#20842#21526#0" />
+            <element signature="class#20950:21518" />
+            <element signature="method#onResponse#0;class#20950:21518" />
+            <element signature="method#onError#0;class#20950:21518" />
+            <element signature="e#21532#22232#0" />
+            <element signature="class#21648:22224" />
+            <element signature="method#onResponse#0;class#21648:22224" />
+            <element signature="method#onError#0;class#21648:22224" />
+            <element signature="method#onError#0;class#23054:23627" />
+            <element signature="e#23641#24348#0" />
+            <element signature="class#23749:24340" />
+            <element signature="method#onResponse#0;class#23749:24340" />
+            <element signature="method#onError#0;class#23749:24340" />
+            <element signature="e#24354#25076#0" />
+            <element signature="class#24480:25068" />
+            <element signature="method#onResponse#0;class#24480:25068" />
+            <element signature="method#onError#0;class#24480:25068" />
+            <element signature="e#25082#25788#0" />
+            <element signature="class#25200:25780" />
+            <element signature="method#onResponse#0;class#25200:25780" />
+            <element signature="method#onError#0;class#25200:25780" />
+            <element signature="e#25794#26457#0" />
+            <element signature="class#25895:26449" />
+            <element signature="method#onResponse#0;class#25895:26449" />
+            <element signature="method#onError#0;class#25895:26449" />
+            <element signature="e#26463#27224#0" />
+            <element signature="class#26596:27216" />
+            <element signature="method#onResponse#0;class#26596:27216" />
+            <element signature="method#onError#0;class#26596:27216" />
+            <element signature="e#27230#27586#0" />
+            <element signature="e#27592#27936#0" />
+            <element signature="e#27942#28628#0" />
+            <element signature="class#28053:28620" />
+            <element signature="method#onResponse#0;class#28053:28620" />
+            <element signature="method#onError#0;class#28053:28620" />
+            <element signature="method#onError#0;class#28802:29442" />
+            <element signature="e#29456#30127#0" />
+            <element signature="class#29559:30119" />
+            <element signature="method#onResponse#0;class#29559:30119" />
+            <element signature="method#onError#0;class#29559:30119" />
+            <element signature="method#onError#0;class#30233:30785" />
+            <element signature="e#30799#31535#0" />
+            <element signature="class#30926:31527" />
+            <element signature="method#onResponse#0;class#30926:31527" />
+            <element signature="method#onError#0;class#30926:31527" />
+            <element signature="e#31541#32259#0" />
+            <element signature="class#31662:32251" />
+            <element signature="method#onResponse#0;class#31662:32251" />
+            <element signature="method#onError#0;class#31662:32251" />
+            <element signature="e#32265#33032#0" />
+            <element signature="class#32478:33024" />
+            <element signature="method#onResponse#0;class#32478:33024" />
+            <element signature="method#onError#0;class#32478:33024" />
+            <element signature="e#33038#33899#0" />
+            <element signature="class#33251:33891" />
+            <element signature="method#onResponse#0;class#33251:33891" />
+            <element signature="method#onError#0;class#33251:33891" />
+            <element signature="e#33905#34633#0" />
+            <element signature="class#34032:34625" />
+            <element signature="method#onResponse#0;class#34032:34625" />
+            <element signature="method#onError#0;class#34032:34625" />
+            <element signature="e#34639#35336#0" />
+            <element signature="class#34753:35328" />
+            <element signature="method#onResponse#0;class#34753:35328" />
+            <element signature="method#onError#0;class#34753:35328" />
+            <element signature="e#35342#36042#0" />
+            <element signature="class#35457:36034" />
+            <element signature="method#onResponse#0;class#35457:36034" />
+            <element signature="method#onError#0;class#35457:36034" />
+            <element signature="e#36048#36736#0" />
+            <element signature="class#36159:36728" />
+            <element signature="method#onResponse#0;class#36159:36728" />
+            <element signature="method#onError#0;class#36159:36728" />
+            <element signature="e#36742#36929#0" />
+            <element signature="e#36935#37654#0" />
+            <element signature="class#37056:37646" />
+            <element signature="method#onResponse#0;class#37056:37646" />
+            <element signature="method#onError#0;class#37056:37646" />
+            <element signature="e#37660#38339#0" />
+            <element signature="class#37772:38331" />
+            <element signature="method#onResponse#0;class#37772:38331" />
+            <element signature="method#onError#0;class#37772:38331" />
+            <element signature="e#38345#39030#0" />
+            <element signature="class#38450:39022" />
+            <element signature="method#onResponse#0;class#38450:39022" />
+            <element signature="method#onError#0;class#38450:39022" />
+            <element signature="e#39036#39761#0" />
+            <element signature="class#39164:39753" />
+            <element signature="method#onResponse#0;class#39164:39753" />
+            <element signature="method#onError#0;class#39164:39753" />
+            <element signature="e#39767#40506#0" />
+            <element signature="class#39885:40498" />
+            <element signature="method#onResponse#0;class#39885:40498" />
+            <element signature="method#onError#0;class#39885:40498" />
+            <element signature="e#40512#40914#0" />
+            <element signature="e#40920#41635#0" />
+            <element signature="class#41044:41627" />
+            <element signature="method#onResponse#0;class#41044:41627" />
+            <element signature="method#onError#0;class#41044:41627" />
+            <element signature="e#41641#42353#0" />
+            <element signature="class#41765:42345" />
+            <element signature="method#onResponse#0;class#41765:42345" />
+            <element signature="method#onError#0;class#41765:42345" />
+            <element signature="e#42359#43071#0" />
+            <element signature="class#42483:43063" />
+            <element signature="method#onResponse#0;class#42483:43063" />
+            <element signature="method#onError#0;class#42483:43063" />
+            <element signature="e#43077#43794#0" />
+            <element signature="class#43203:43786" />
+            <element signature="method#onResponse#0;class#43203:43786" />
+            <element signature="method#onError#0;class#43203:43786" />
+            <element signature="e#43800#44476#0" />
+            <element signature="class#43907:44468" />
+            <element signature="method#onResponse#0;class#43907:44468" />
+            <element signature="method#onError#0;class#43907:44468" />
+            <element signature="e#44482#45235#0" />
+            <element signature="class#44622:45227" />
+            <element signature="method#onResponse#0;class#44622:45227" />
+            <element signature="method#onError#0;class#44622:45227" />
+            <element signature="e#45241#45970#0" />
+            <element signature="class#45377:45962" />
+            <element signature="method#onResponse#0;class#45377:45962" />
+            <element signature="method#onError#0;class#45377:45962" />
+            <element signature="e#45977#46660#0" />
+            <element signature="class#46085:46652" />
+            <element signature="method#onResponse#0;class#46085:46652" />
+            <element signature="method#onError#0;class#46085:46652" />
+            <element signature="e#46666#46911#0" />
+            <element signature="e#46917#47675#0" />
+            <element signature="class#47090:47667" />
+            <element signature="method#onResponse#0;class#47090:47667" />
+            <element signature="method#onError#0;class#47090:47667" />
+            <element signature="method#onError#0;class#47814:48356" />
+            <element signature="e#48370#48695#0" />
+            <element signature="e#48451#48619#0" />
+            <element signature="e#48648#48689#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
+            <element signature="e#1870#1871#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jkwiecien/EasyImage/2.0.4/c9e9d1916b6e7a8e249ca4ec80d790f80fa72fc8/EasyImage-2.0.4-sources.jar!/pl/aprilapps/easyphotopicker/EasyImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="408" selection-start-line="408" selection-end-line="408" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-440">
+          <caret line="521" column="21" selection-start-line="521" selection-start-column="21" selection-end-line="521" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

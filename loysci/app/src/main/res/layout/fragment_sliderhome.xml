@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentation.ui.fragments.HomeFragment">
+        <LinearLayout
+            android:id="@+id/linerslider"
+            android:layout_width="match_parent"
+            android:background="@drawable/slider01"
+            android:gravity="left"
+            android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/naovisualizarfechar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="top"
+                    android:src="@drawable/ic_close"/>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                                <CheckedTextView
+                                    android:id="@+id/naovisualizarslider"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:checkMark="@drawable/ic_done"
+                                    android:checked="false"
+                                    android:text="Não visualizar mais"
+                                    />
+                        </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+</layout>

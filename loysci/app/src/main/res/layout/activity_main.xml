@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/loading_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/layout_profile"
+            app:layout_constraintLeft_toLeftOf="@id/layout_profile"
+            app:layout_constraintRight_toRightOf="@id/layout_profile"
+            app:layout_constraintTop_toTopOf="@id/layout_profile" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:paddingBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <TextView
+                android:id="@+id/nome_sobrenome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="50"
+                android:textColor="@color/white"
+                android:elevation="150dp"
+                android:textSize="18sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/img_bg"
+                app:layout_constraintBottom_toTopOf="@id/layout_profile_details"
+                app:layout_constraintStart_toEndOf="@id/img_profile" />
+
+            <ImageView
+                android:id="@+id/img_bg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/movida_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/loysci_logo_branco"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/logoutLayout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_logout"
+                    android:backgroundTint="@color/white" />
+            </FrameLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/notificationLayout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="36dp"
+                app:layout_constraintEnd_toStartOf="@id/cartLayout"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgNotificationBall"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/ic_notification_ball"
+                    android:backgroundTint="@color/colorNotificationBall"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/imgNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_notifications"
+                    android:backgroundTint="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            </android.support.constraint.ConstraintLayout>
+
+            <FrameLayout
+                android:id="@+id/cartLayout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="36dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_cart"
+                    android:backgroundTint="@color/white" />
+            </FrameLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/movida_bg"
+                app:layout_constraintBottom_toBottomOf="@id/img_bg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_bg" />
+
+            <TextView
+                android:id="@+id/txtLevelCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/primary_text"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@id/img_profile"
+                app:layout_constraintStart_toStartOf="@id/img_profile"
+                app:layout_constraintTop_toBottomOf="@id/img_profile"
+                tools:text="Nível 2" />
+
+            <TextView
+                android:id="@+id/txtLevelName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:singleLine="true"
+                android:textColor="@color/primary_text"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@id/img_profile"
+                app:layout_constraintStart_toStartOf="@id/img_profile"
+                app:layout_constraintTop_toBottomOf="@id/txtLevelCount"
+                tools:text="Prata" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/layout_profile_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_bg">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/layout_level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/txtPoints"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:text="Pontos " />
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/layout_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/background_points"
+                        app:layout_constraintBottom_toBottomOf="@+id/txtPoints"
+                        app:layout_constraintStart_toEndOf="@id/txtPoints"
+                        app:layout_constraintTop_toTopOf="@id/txtPoints">
+
+                        <TextView
+                            android:id="@+id/txtPointsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:paddingStart="6dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="6dp"
+                            android:paddingBottom="2dp"
+                            android:text="80"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/txtExpire"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif"
+                        android:gravity="end"
+                        android:lineSpacingExtra="3sp"
+                        android:maxLines="1"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/layout_points"
+                        tools:text="15 expiram em 10/11" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <ProgressBar
+                    android:id="@+id/seekBar_level"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:progress="30"
+                    android:progressBackgroundTint="@color/colorPrimaryLight"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/layout_level"
+                    app:layout_constraintTop_toBottomOf="@id/layout_level" />
+
+                <TextView
+                    android:id="@+id/txtNextLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:gravity="end"
+                    android:lineSpacingExtra="3sp"
+                    android:text="Próximo nível"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toStartOf="@id/txtLevel"
+                    app:layout_constraintTop_toBottomOf="@id/seekBar_level" />
+
+                <TextView
+                    android:id="@+id/txtLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:gravity="end"
+                    android:lineSpacingExtra="3sp"
+                    android:textColor="@color/primary_text"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/seekBar_level"
+                    tools:text="OURO" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+        <br.com.monitoratec.loysci_android.util.NonSwipeableViewPager
+            android:id="@+id/mainViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toTopOf="@+id/mainTab"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_profile" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/mainTab"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:elevation="5dp"
+            android:foregroundGravity="left"
+            android:theme="@style/Base.Widget.Design.TabLayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:tabMode="fixed" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

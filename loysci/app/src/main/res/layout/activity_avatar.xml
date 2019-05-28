@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".presentation.ui.activities.AvatarActivity">
+
+        <include
+            android:id="@+id/include_toolbar"
+            layout="@layout/plain_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/avatar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:elevation="2dp"
+            app:layout_constraintDimensionRatio="H, 16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/include_toolbar">
+
+            <ImageView
+                android:id="@+id/iv_avatar_background"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_avatar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_avatar_skin"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_avatar_body"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_avatar_hair"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_avatar_head"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_avatar_hat"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toTopOf="@id/button_save_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/avatar_layout">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/avatar_options_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+                <!--Gender-->
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/gender_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_gender_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:text="@string/gender"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/female_option_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:clipToPadding="false"
+                        android:padding="2dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_gender_label">
+
+                        <TextView
+                            android:id="@+id/tv_item_female_gender"
+                            style="@style/filter_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/background_filter_button_clicked"
+                            android:text="@string/female"
+                            android:textColor="@color/white" />
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_option_female"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_check"
+                            android:visibility="visible"
+                            app:backgroundTint="@color/white"
+                            app:borderWidth="0dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv_item_female_gender"
+                            app:layout_constraintEnd_toEndOf="@+id/tv_item_female_gender"
+                            app:layout_constraintStart_toEndOf="@+id/tv_item_female_gender"
+                            app:layout_constraintTop_toTopOf="@+id/tv_item_female_gender"
+                            app:rippleColor="#ffffffff"
+                            tools:visibility="visible" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/male_option_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="12dp"
+                        android:clipToPadding="false"
+                        android:padding="2dp"
+                        app:layout_constraintStart_toEndOf="@id/female_option_layout"
+                        app:layout_constraintTop_toBottomOf="@id/tv_gender_label">
+
+                        <TextView
+                            android:id="@+id/tv_item_male_gender"
+                            style="@style/filter_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/background_gender_avatar_button"
+                            android:text="@string/male"
+                            android:textColor="@color/inactive_text_color_primary" />
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_option_male"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_check"
+                            android:visibility="gone"
+                            app:backgroundTint="@color/white"
+                            app:borderWidth="0dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv_item_male_gender"
+                            app:layout_constraintEnd_toEndOf="@+id/tv_item_male_gender"
+                            app:layout_constraintStart_toEndOf="@+id/tv_item_male_gender"
+                            app:layout_constraintTop_toTopOf="@+id/tv_item_male_gender"
+                            app:rippleColor="#ffffffff"
+                            tools:visibility="visible" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <!--Skin-->
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/skin_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:paddingStart="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/gender_layout">
+
+                    <TextView
+                        android:id="@+id/tv_skin_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:text="@string/skin_avatar"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_skin_label">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/color_a_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/iv_color_a"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:src="@color/color_a" />
+
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/fab_color_a"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:scaleType="center"
+                                android:src="@drawable/ic_check"
+                                android:visibility="gone"
+                                app:backgroundTint="@color/white"
+                                app:borderWidth="0dp"
+                                app:layout_constraintBottom_toBottomOf="@+id/iv_color_a"
+                                app:layout_constraintEnd_toEndOf="@+id/iv_color_a"
+                                app:layout_constraintStart_toStartOf="@+id/iv_color_a"
+                                app:layout_constraintTop_toTopOf="@+id/iv_color_a"
+                                app:rippleColor="#ffffffff"
+                                tools:visibility="visible" />
+                        </android.support.constraint.ConstraintLayout>
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/color_b_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/iv_color_b"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:src="@color/color_b" />
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/fab_color_b"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:scaleType="center"
+                                android:src="@drawable/ic_check"
+                                android:visibility="gone"
+                                app:backgroundTint="@color/white"
+                                app:borderWidth="0dp"
+                                app:layout_constraintBottom_toBottomOf="@+id/iv_color_b"
+                                app:layout_constraintEnd_toEndOf="@+id/iv_color_b"
+                                app:layout_constraintStart_toStartOf="@+id/iv_color_b"
+                                app:layout_constraintTop_toTopOf="@+id/iv_color_b"
+                                app:rippleColor="#ffffffff"
+                                tools:visibility="visible" />
+                        </android.support.constraint.ConstraintLayout>
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/color_c_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/iv_color_c"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:src="@color/color_c" />
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/fab_color_c"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:scaleType="center"
+                                android:src="@drawable/ic_check"
+                                android:visibility="gone"
+                                app:backgroundTint="@color/white"
+                                app:borderWidth="0dp"
+                                app:layout_constraintBottom_toBottomOf="@+id/iv_color_c"
+                                app:layout_constraintEnd_toEndOf="@+id/iv_color_c"
+                                app:layout_constraintStart_toStartOf="@+id/iv_color_c"
+                                app:layout_constraintTop_toTopOf="@+id/iv_color_c"
+                                app:rippleColor="#ffffffff"
+                                tools:visibility="visible" />
+                        </android.support.constraint.ConstraintLayout>
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/color_d_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/iv_color_d"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:src="@color/color_d" />
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/fab_color_d"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:scaleType="center"
+                                android:src="@drawable/ic_check"
+                                android:visibility="gone"
+                                app:backgroundTint="@color/white"
+                                app:borderWidth="0dp"
+                                app:layout_constraintBottom_toBottomOf="@+id/iv_color_d"
+                                app:layout_constraintEnd_toEndOf="@+id/iv_color_d"
+                                app:layout_constraintStart_toStartOf="@+id/iv_color_d"
+                                app:layout_constraintTop_toTopOf="@+id/iv_color_d"
+                                app:rippleColor="#ffffffff"
+                                tools:visibility="visible" />
+                        </android.support.constraint.ConstraintLayout>
+                    </LinearLayout>
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <!--Accessories-->
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/accessories_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/skin_layout">
+
+                    <TextView
+                        android:id="@+id/tv_accessories_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:text="@string/accessories"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_accessories"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_accessories_label" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <!--FACE-->
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/face_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/accessories_layout">
+
+                    <TextView
+                        android:id="@+id/tv_face_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:text="@string/face"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_face"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_face_label" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <!--HAIR-->
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/hair_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/face_layout">
+
+                    <TextView
+                        android:id="@+id/tv_hair_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:text="@string/hair"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_hair"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_hair_label" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <!--Body-->
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/body_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/hair_layout">
+
+                    <TextView
+                        android:id="@+id/tv_body_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:text="@string/clothing"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_body"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_body_label" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </ScrollView>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/button_save_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/use_avatar"
+                    android:textColor="@color/white" />
+
+            </android.support.v7.widget.CardView>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
