@@ -20,7 +20,6 @@ import br.com.monitoratec.loysci_android.databinding.ItemExtractBinding;
 import br.com.monitoratec.loysci_android.model.History;
 import br.com.monitoratec.loysci_android.util.Constants;
 
-import static br.com.monitoratec.loysci_android.model.History.MISION;
 import static br.com.monitoratec.loysci_android.model.History.TRANSACCION;
 
 /**
@@ -84,17 +83,6 @@ public class ExtractAdapter extends RecyclerView.Adapter<ExtractAdapter.ViewHold
         }
 
         if (extract.getIdTransaction().contains(TRANSACCION)) {
-            String availableDate = String.format("%s %s %s %s",
-                    context.getString(R.string.available_from), dateFormat.format(date),
-                    context.getString(R.string.to), dateFormat.format(new Date(extract.getDate()+ Constants.SIX_MONTHS)));
-            holder.binding.extractAvailableDate.setText(availableDate);
-        } else {
-            String availableDate = String.format("%s %s",
-                    context.getString(R.string.available_since), dateFormat.format(date));
-            holder.binding.extractAvailableDate.setText(availableDate);
-        }
-
-        if (extract.getIdTransaction().contains(MISION)) {
             String availableDate = String.format("%s %s %s %s",
                     context.getString(R.string.available_from), dateFormat.format(date),
                     context.getString(R.string.to), dateFormat.format(new Date(extract.getDate()+ Constants.SIX_MONTHS)));

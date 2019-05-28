@@ -5,7 +5,6 @@ public class History {
 
     public static final String TRANSACCION = "T"; //positivo
     public static final String REVERSION = "V"; //positivo
-    public static final String MISION = "M";
 
     private String idInternalTransaction;
     private String idTransaction;
