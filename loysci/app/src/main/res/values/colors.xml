@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009fde</color>
+    <color name="colorPrimaryDark">#009fde</color>
+    <color name="colorPrimaryLight">#009fde</color>
+    <color name="provincialPink">#fefaf7</color>
+    <color name="colorAccent">#009fde</color>
+    <color name="light_grey">#7C8387</color>
+    <color name="message_secondary">#61000000</color>
+    <color name="light_grey3">#e3e3e3</color>
+    <color name="light_grey2">#96263238</color>
+    <color name="grey">#EDEDED</color>
+    <color name="colorNotificationBall">#01ff89</color>
+    <color name="colorBackgroundPoints">#faece3</color>
+    <color name="divider">#e4e6e7</color>
+    <!--TEXT-->
+    <color name="primary_text">#DE263238</color>
+    <color name="primary_text_light">#FFFFFF</color>
+    <color name="secondary_text">#8A263238</color>
+    <color name="inactive_text">#61263238</color>
+    <color name="inactive_text_color_primary">#61d2552a</color>
+    <color name="secondary_text_light">#99FFFFFF</color>
+
+    <!--SeekBar profile-->
+    <color name="inactive">#612a4454</color>
+    <color name="white">#FFFFFF</color>
+    <!--GRAY-->
+    <color name="md_grey_100">#ACB1B3</color>
+
+    <!--WHITE-->
+    <color name="receipts_calendar_background">#08000000</color>
+
+    <color name="black">#000000</color>
+
+
+    <color name="dialog_title">#de000000</color>
+    <color name="challenge_done">#98000000</color>
+    <color name="dialog_labels">#99000000</color>
+
+    <!--RED-->
+    <color name="md_red_600">#e6007e</color>
+    <color name="md_red_900">#e6007e</color>
+
+    <!--GREEN-->
+    <color name="positive_points">#c7d301</color>
+    <color name="confirm_color">#c7d301</color>
+    <color name="red_button">#d2552a</color>
+    <color name="gold_yellow">#f09604</color>
+    <color name="light_text">#ffc29b</color>
+    <color name="fixed_field_background">#f5f1ed</color>
+    <color name="fixed_field_text_color">#61263238</color>
+
+    <color name="item_avatar_color">#fef9f8</color>
+
+    <!--Avatar skins-->
+    <color name="color_a">#FDAF81</color>
+    <color name="color_b">#E9AF6F</color>
+    <color name="color_c">#BE6053</color>
+    <color name="color_d">#986F4D</color>
+</resources>

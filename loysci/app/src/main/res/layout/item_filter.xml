@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" >
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp">
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            style="@style/filter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Locação" />
+    </android.support.constraint.ConstraintLayout>
+</layout>

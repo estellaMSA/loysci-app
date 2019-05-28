@@ -1,0 +1,104 @@
+    buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'https://jitpack.io' }
+    mavenCentral()
+
+}
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "br.com.monitoratec.loysci_android"
+        minSdkVersion 25
+        targetSdkVersion 27
+        versionCode 13
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    sourceSets {
+        main {
+            assets.srcDirs += ['src/main/assets']
+            res.srcDirs += ['src/main/res']
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '28.0.3'
+}
+
+ext {
+    retrofit = '2.5.0'
+    okHttp = '3.12.0'
+    playServices = '17.3.2'
+    lifecycle_version = "2.0.0"
+}
+
+
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:support-v13:27.1.1'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.xw.repo:bubbleseekbar:3.16-lite'
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit"
+    implementation "com.squareup.retrofit2:converter-simplexml:2.4.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttp"
+    implementation "com.google.firebase:firebase-messaging:$playServices"
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.github.hotchemi:permissionsdispatcher:3.1.0'
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:3.1.0"
+    implementation 'android.arch.lifecycle:extensions:1.1.0'
+    implementation 'android.arch.lifecycle:viewmodel:1.1.0'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.5@aar') {
+        transitive = true
+    }
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.google.zxing:android-core:3.3.0'
+    implementation "com.github.jkwiecien:EasyImage:2.0.4"
+
+    implementation 'com.android.volley:volley:1.1.1'
+    //Slider Home
+    implementation 'com.ramotion.paperonboarding:paper-onboarding:1.1.1'
+    implementation 'com.github.rtoshiro.fullscreenvideoview:fullscreenvideoview:1.1.2'
+
+}
