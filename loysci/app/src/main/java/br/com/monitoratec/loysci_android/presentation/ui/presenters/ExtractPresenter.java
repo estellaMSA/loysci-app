@@ -5,8 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.monitoratec.loysci_android.model.AccessToken;
+import br.com.monitoratec.loysci_android.model.Historial;
 import br.com.monitoratec.loysci_android.model.History;
+import br.com.monitoratec.loysci_android.model.MetricEntry;
+import br.com.monitoratec.loysci_android.model.RewardRedeem;
 import br.com.monitoratec.loysci_android.networkUtils.LoyaltyApi;
+import br.com.monitoratec.loysci_android.networkUtils.LoyaltyService;
 import br.com.monitoratec.loysci_android.presentation.ui.listeners.ExtractLoadListener;
 import br.com.monitoratec.loysci_android.util.Prefs;
 import retrofit2.Call;
@@ -69,7 +73,75 @@ public class ExtractPresenter {
                             }
                         }
                     }
-                    loadListener.onExtractLoaded(extracts);
+
+                    LoyaltyApi.getRedeemedRewards(new Callback<List<RewardRedeem>>() {
+                        @Override
+                        public void onResponse(Call<List<RewardRedeem>> call, Response<List<RewardRedeem>> response) {
+
+                            for (RewardRedeem r : response.body()){
+
+                                History h = new History();
+                                h.setIdTransaction("Resgate");
+                                h.setDate(Long.parseLong(r.getFechaRedencion()));
+                                h.setTransactionDesc(r.getCodigoCertificado());
+                                MetricEntry metricEntry = new MetricEntry();
+                                metricEntry.setAmount(Math.toIntExact((r.getValorMoneda()  * -1)));
+                                h.setMetricEntry(metricEntry);
+
+
+                                extracts.add(h);
+                            }
+
+
+                            LoyaltyApi.getHistory(new Callback<List<Historial>>() {
+                                @Override
+                                public void onResponse(Call<List<Historial>> call, Response<List<Historial>> response) {
+
+
+                                    for (Historial h : response.body()){
+
+                                        if(h.getIdInternalTransaction().equals("M")){
+
+
+                                            History nH = new History();
+                                            nH.setIdTransaction(h.getIdTransaction());
+                                            nH.setDate(h.getDate());
+                                            nH.setTransactionDesc(h.getIdTransaction());
+                                            MetricEntry metricEntry = new MetricEntry();
+                                            metricEntry.setAmount(h.getCantidadGanada());
+                                            nH.setMetricEntry(metricEntry);
+
+                                            extracts.add(nH);
+                                        }
+                                    }
+
+                                    loadListener.onExtractLoaded(extracts);
+
+                                }
+
+                                @Override
+                                public void onFailure(Call<List<Historial>> call, Throwable t) {
+
+                                    loadListener.onLoadExtractFailed();
+                                }
+                            });
+
+
+
+
+
+
+                        }
+
+                        @Override
+                        public void onFailure(Call<List<RewardRedeem>> call, Throwable t) {
+
+                            loadListener.onLoadExtractFailed();
+                        }
+                    });
+
+
+
                 } else {
                     loadListener.onLoadExtractFailed();
                 }
