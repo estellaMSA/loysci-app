@@ -95,7 +95,6 @@ public class MissionActivity extends AppCompatActivity implements SimpleItemClic
         if(mission.getChallenges().size() > 0)
             Glide.with(this).load(mission.getChallenges().get(0).getImagen()).diskCacheStrategy(DiskCacheStrategy.NONE).into(binding.imgMission);
 
-
         Glide.with(this).load(mission.getImagem()).diskCacheStrategy(DiskCacheStrategy.NONE).into(binding.imgTopic);
 
         updateMissionPoints();

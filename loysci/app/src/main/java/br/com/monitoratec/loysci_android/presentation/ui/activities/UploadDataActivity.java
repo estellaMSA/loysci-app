@@ -21,10 +21,18 @@ import br.com.monitoratec.loysci_android.model.ChallengeSubmitAnswers;
 import br.com.monitoratec.loysci_android.model.ChallengeSubmitResponse;
 import br.com.monitoratec.loysci_android.model.ChallengeUploadAnswer;
 import br.com.monitoratec.loysci_android.networkUtils.LoyaltyApi;
+import br.com.monitoratec.loysci_android.presentation.ui.listeners.ViewModelSimpleCallback;
+import br.com.monitoratec.loysci_android.presentation.ui.viewModels.QuizViewModel;
 import br.com.monitoratec.loysci_android.util.ApiUtils;
+import br.com.monitoratec.loysci_android.util.MissionEndDialog;
+import br.com.monitoratec.loysci_android.util.QuizEndDialog;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+
+import static br.com.monitoratec.loysci_android.util.Constants.MISSION_FINISHED;
+import static br.com.monitoratec.loysci_android.util.Constants.QUIZ_COMPLETED_RIGHT;
+import static br.com.monitoratec.loysci_android.util.Constants.QUIZ_COMPLETED_WRONG;
 
 public class UploadDataActivity extends AppCompatActivity {
     public static Challenge challenge;
@@ -32,6 +40,8 @@ public class UploadDataActivity extends AppCompatActivity {
     private UploadDataActivityBinding binding;
     private static final int CAMERA_PERMISSION_REQUEST_CODE = 1;
     private String image = "";
+    int rewardTotal;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +61,8 @@ public class UploadDataActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
+
+        rewardTotal = challenge.getValor();
 
         binding.includeToolbar.toolbarTitle.setText(challenge.getEncabezadoArte());
 
@@ -83,8 +95,6 @@ public class UploadDataActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-
     private void sendWinner(){
         final ProgressDialog dialog = ProgressDialog.show(UploadDataActivity.this, "",
                 "Por favor, aguarde", true);
@@ -98,7 +108,7 @@ public class UploadDataActivity extends AppCompatActivity {
             public void onResponse(Call<ChallengeSubmitResponse> call, Response<ChallengeSubmitResponse> response) {
                 dialog.dismiss();
 
-                if (response.isSuccessful()) {
+                if (response.isSuccessful() && response.body().getIndEstado().equals("G")) {
                     finish();
 
                     Toast.makeText(UploadDataActivity.this, R.string.success_subir_conteudo, Toast.LENGTH_SHORT).show();
