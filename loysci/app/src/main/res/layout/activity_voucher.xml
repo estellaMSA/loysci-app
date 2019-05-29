@@ -48,7 +48,7 @@
                         app:layout_constraintDimensionRatio="W, 16:10"
                         app:layout_constraintEnd_toStartOf="@id/tv_title_voucher"
                         app:layout_constraintStart_toStartOf="parent"
-                        tools:src="@drawable/mock_person" />
+                        tools:src="@drawable/ic_cart" />
 
                     <ProgressBar
                         android:id="@+id/iv_image_voucher_loading"

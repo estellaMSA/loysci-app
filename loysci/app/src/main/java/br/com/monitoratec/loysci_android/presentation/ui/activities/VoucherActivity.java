@@ -7,6 +7,7 @@ import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebResourceError;
@@ -22,18 +23,24 @@ import com.bumptech.glide.request.target.Target;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.ActivityVoucherBinding;
 import br.com.monitoratec.loysci_android.model.Badge;
 import br.com.monitoratec.loysci_android.model.Reward;
+import br.com.monitoratec.loysci_android.model.VoucherBackendResponse.CouponRSCore;
 import br.com.monitoratec.loysci_android.presentation.presenter.VoucherActivityPresenter;
 import br.com.monitoratec.loysci_android.presentation.ui.listeners.SimpleCallback;
 import br.com.monitoratec.loysci_android.util.AddVoucherDialog;
 import br.com.monitoratec.loysci_android.util.ConfirmationDialog;
+import br.com.monitoratec.loysci_android.util.MissionEndDialog;
 import br.com.monitoratec.loysci_android.util.Prefs;
+import br.com.monitoratec.loysci_android.util.ReceiptDialog;
 import br.com.monitoratec.loysci_android.util.VoucherAlertDialog;
 
 import static br.com.monitoratec.loysci_android.util.Constants.REWARD_PARCELABLE;
@@ -48,6 +55,7 @@ public class VoucherActivity extends AppCompatActivity {
     private Reward voucher;
     private Context context = this;
     private List<Badge> badges;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -149,6 +157,40 @@ public class VoucherActivity extends AppCompatActivity {
         binding.addButtonLayout.setOnClickListener(view -> {
 
 
+            List<Reward> cart = Prefs.getCart();
+            Boolean containsGroup = false;
+            Boolean containsDiary = false;
+            Boolean containsContract = false;
+
+            if (cart != null) {
+                for (Reward r : cart) {
+
+                    if(r.getEncabezadoArte().equals(voucher.getEncabezadoArte())) {
+
+                        if(r.getEncabezadoArte().contains(getString(R.string.group))){
+                            containsGroup = true;
+                        }
+
+                        if (r.getDetalleArte().contains(getString(R.string.item_per_contract))) {
+                            containsContract = true;
+                            break;
+                        }else if (r.getDetalleArte().contains(getString(R.string.item_per_daily))) {
+                            containsDiary = true;
+                            break;
+                        }
+                    } else {
+                        if(r.getEncabezadoArte().contains(getString(R.string.group))) {
+                            containsGroup = true;
+                        }
+                        if (r.getDetalleArte().contains(getString(R.string.item_per_contract))) {
+                            containsContract = true;
+                        }
+                    }
+                }
+            }
+
+
+/*
             confirmationDialog = new ConfirmationDialog(context, voucher, 1, new ConfirmationDialog.OnClickListener() {
                 @Override
                 public void onCancel() {
@@ -168,15 +210,13 @@ public class VoucherActivity extends AppCompatActivity {
                         public void onResponse(Boolean response) {
 
                             binding.webviewDetailsLoading.setVisibility(response? View.VISIBLE : View.INVISIBLE);
-                            showAlert(response);
-
-
+                            showAlertVoucher(response);
                         }
 
                         @Override
                         public void onError(Throwable t) {
 
-                            showAlert(false);
+                            showAlertVoucher(false);
                         }
                     });
 
@@ -184,9 +224,9 @@ public class VoucherActivity extends AppCompatActivity {
                 }
             });
 
+*/
 
-
-            confirmationDialog.show();
+            //confirmationDialog.show();
 
 
 
@@ -256,20 +296,45 @@ public class VoucherActivity extends AppCompatActivity {
 //            else{
 //                addVoucherDialog();
 //            }
+/*
+            if (voucher.getEncabezadoArte().contains(getString(R.string.group))) {
+                if (!containsGroup) {
+                    addVoucherDialog();
+                } else {
+                    alertDialog(VoucherAlertDialog.Type.DIARY);
+                }
+            } else if (voucher.getDetalleArte().contains(getString(R.string.item_per_contract))) {
+                if (!containsContract) {
+                    confirmationDialog();
+                } else {
+                    alertDialog(VoucherAlertDialog.Type.CONTRACT);
+                }
+            }else if (voucher.getDetalleArte().contains(getString(R.string.item_per_daily))) {
+                if(!containsDiary){
+                    addVoucherDialog();
+                }else
+                    alertDialog(VoucherAlertDialog.Type.DIARY);
+            }
+            //Alteracao Leandro Movida Connect
+            else{
+                addVoucherDialog();
+            }*/
         });
     }
 
-    private void showAlert(Boolean response) {
-
-
+    private void showAlertVoucher(Boolean response){
         android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(this);
         builder.setTitle(response? "Sucesso" : "Ocorreu um erro")
                 .setMessage(response? "Voucher resgatado com sucesso!" : "Ocorreu um erro ao resgatar o seu voucher!")
-                .setPositiveButton(R.string.yes, (dialog, which) -> {
+                .setPositiveButton(R.string.finish_dialog, (dialog, which) -> {
 
-                    VoucherActivity.this.finish();
+                    //VoucherActivity.this.finish();
+
+                    //showReceiptDialog(voucherList, code, expirationDate);
+
                 })
-                .setNegativeButton(R.string.no, (dialog, which) -> {
+
+                .setNegativeButton(R.string.cancel, (dialog, which) -> {
 
                     dialog.dismiss();
                 })
@@ -277,10 +342,8 @@ public class VoucherActivity extends AppCompatActivity {
         android.app.AlertDialog dialog = builder.create();
 
         dialog.show();
-
     }
-
-
+/*
     private void addVoucherDialog() {
         String jsonBadges = Prefs.getJewels();
 
@@ -341,6 +404,7 @@ public class VoucherActivity extends AppCompatActivity {
         });
         addVoucherDialog.show();
     }
+    */
 
     private void confirmationDialog() {
         List<Reward> rewardList = Prefs.getCart();

@@ -67,10 +67,10 @@ public class ReceiptDialog extends Dialog {
 
         });
 
-        binding.tvDone.setOnClickListener(v -> {
-            dismiss();
-            onDismiss.onDismiss();
-        });
+        //binding.tvDone.setOnClickListener(v -> {
+        //    dismiss();
+        //    onDismiss.onDismiss();
+        //});
     }
 
     public interface OnDismiss{
