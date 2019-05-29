@@ -93,10 +93,16 @@ public class ExtractAdapter extends RecyclerView.Adapter<ExtractAdapter.ViewHold
             holder.binding.extractAvailableDate.setText(availableDate);
         }
 
-        if (transactionId.contains("R1") || transactionId.contains("R2") || transactionId.contains("E1")) {
+        if (transactionId.contains("R1") || transactionId.contains("R2") || transactionId.contains("E1") ) {
             holder.binding.extractPoints.setTextColor(context.getResources().getColor(R.color.md_red_600));
             holder.binding.extractPoints.setText(String.format("-%s", String.valueOf(Math.round(extract.getMetricEntry().getAmount()))));
-        } else {
+        }
+        else if(extract.getMetricEntry().getAmount() < 0){
+            holder.binding.extractPoints.setTextColor(context.getResources().getColor(R.color.md_red_600));
+            holder.binding.extractPoints.setText(String.format("%s", String.valueOf(Math.round(extract.getMetricEntry().getAmount()))));
+        }
+
+        else {
             holder.binding.extractPoints.setTextColor(context.getResources().getColor(R.color.positive_points));
             holder.binding.extractPoints.setText(String.format("+%s", String.valueOf(Math.round(extract.getMetricEntry().getAmount()))));
         }

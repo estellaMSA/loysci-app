@@ -22,6 +22,7 @@ import br.com.monitoratec.loysci_android.model.GameLeague;
 import br.com.monitoratec.loysci_android.model.GameLeagueDos;
 import br.com.monitoratec.loysci_android.model.GameLeagueTres;
 import br.com.monitoratec.loysci_android.model.GameLeagueUno;
+import br.com.monitoratec.loysci_android.model.Historial;
 import br.com.monitoratec.loysci_android.model.History;
 import br.com.monitoratec.loysci_android.model.HistoryNegative;
 import br.com.monitoratec.loysci_android.model.Leaderboard;
@@ -726,14 +727,14 @@ public final class LoyaltyApi {
         });
     }
 
-    public static void getHistory(Callback<List<History>> callback) {
+    public static void getHistory(Callback<List<Historial>> callback) {
         getAuthorizationToken(new SimpleCallback<String>() {
             @Override
             public void onResponse(String token) {
                 Map<String, String> map = new HashMap<>();
                 map.put("Authorization", token);
                 map.put("User-Agent", "Android");
-                Call<List<History>> call = loyaltyService.getHistory(map);
+                Call<List<Historial>> call = loyaltyService.getHistory(map);
                 call.enqueue(callback);
             }
 

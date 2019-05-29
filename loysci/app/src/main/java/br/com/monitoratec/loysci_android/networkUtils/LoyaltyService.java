@@ -11,6 +11,7 @@ import br.com.monitoratec.loysci_android.model.GameLeague;
 import br.com.monitoratec.loysci_android.model.GameLeagueDos;
 import br.com.monitoratec.loysci_android.model.GameLeagueTres;
 import br.com.monitoratec.loysci_android.model.GameLeagueUno;
+import br.com.monitoratec.loysci_android.model.Historial;
 import br.com.monitoratec.loysci_android.model.History;
 import br.com.monitoratec.loysci_android.model.HistoryNegative;
 import br.com.monitoratec.loysci_android.model.Leaderboard;
@@ -112,7 +113,7 @@ public interface LoyaltyService {
     Call<Leaderboard> getLeaderboards(@HeaderMap Map<String, String> headers);
 
     @GET("v0/perfil/balance/historial")
-    Call<List<History>> getHistory(@HeaderMap Map<String, String> headers);
+    Call<List<Historial>> getHistory(@HeaderMap Map<String, String> headers);
 
     @POST("v0/promocion/{idPromocion}/registrar-vista")
     Call<Void> setRegistrarVistaPromocion(@HeaderMap Map<String, String> headers, @Path("idPromocion") String idPromocion);
