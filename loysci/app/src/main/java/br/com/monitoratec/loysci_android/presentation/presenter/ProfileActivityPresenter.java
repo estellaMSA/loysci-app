@@ -66,6 +66,7 @@ public class ProfileActivityPresenter {
         binding.profileLayout.setAlpha(0.2f);
         binding.loadingLayout.loadingText.setText(view.getString(R.string.updating_data));
         binding.loadingLayout.loadingLayout.setVisibility(View.VISIBLE);
+        profile.setAvatar(profileBase64);
 
         if(newImgFile!=null){
             updateProfile(); // UpdateProfile will be called when this is finished
@@ -146,11 +147,11 @@ public class ProfileActivityPresenter {
                     @Override
                     public void onResponse(Call<Void> call, Response<Void> response) {
                         if (response.code() == Constants.SUCCESSFUL) {
-
                             Intent intent = new Intent();
                             intent.putExtra(PROFILE_PARCELABLE, profile);
                             view.setResult(Activity.RESULT_OK, intent);
                             view.finish();
+                            profile.setAvatar(profileBase64);
 
                             Toast.makeText(view, "Perfil atualizado com sucesso!", Toast.LENGTH_LONG).show();
                         } else {

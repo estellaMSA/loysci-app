@@ -194,7 +194,7 @@
     <string name="confirm_text_voucher">Você está a um passo de obter benefícios. Clique em confirmar para efetuar o resgate.</string>
     <string name="quantity_add_voucher_plural">%d unidades adicionadas</string>
     <string name="quantity_add_voucher">%d unidade adicionada</string>
-    <string name="item_added">Item adicionado</string>
+    <string name="item_added">Item</string>
     <string name="item_added_plural">Itens adicionados</string>
     <string name="see_cart">VER CARRINHO</string>
     <string name="remove_item_confirmation">Deseja remover o item?</string>

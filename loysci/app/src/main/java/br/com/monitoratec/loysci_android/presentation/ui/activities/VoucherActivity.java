@@ -55,6 +55,7 @@ public class VoucherActivity extends AppCompatActivity {
     private Reward voucher;
     private Context context = this;
     private List<Badge> badges;
+    private ReceiptDialog receiptDialog;
 
 
     @Override
@@ -157,40 +158,6 @@ public class VoucherActivity extends AppCompatActivity {
         binding.addButtonLayout.setOnClickListener(view -> {
 
 
-            List<Reward> cart = Prefs.getCart();
-            Boolean containsGroup = false;
-            Boolean containsDiary = false;
-            Boolean containsContract = false;
-
-            if (cart != null) {
-                for (Reward r : cart) {
-
-                    if(r.getEncabezadoArte().equals(voucher.getEncabezadoArte())) {
-
-                        if(r.getEncabezadoArte().contains(getString(R.string.group))){
-                            containsGroup = true;
-                        }
-
-                        if (r.getDetalleArte().contains(getString(R.string.item_per_contract))) {
-                            containsContract = true;
-                            break;
-                        }else if (r.getDetalleArte().contains(getString(R.string.item_per_daily))) {
-                            containsDiary = true;
-                            break;
-                        }
-                    } else {
-                        if(r.getEncabezadoArte().contains(getString(R.string.group))) {
-                            containsGroup = true;
-                        }
-                        if (r.getDetalleArte().contains(getString(R.string.item_per_contract))) {
-                            containsContract = true;
-                        }
-                    }
-                }
-            }
-
-
-/*
             confirmationDialog = new ConfirmationDialog(context, voucher, 1, new ConfirmationDialog.OnClickListener() {
                 @Override
                 public void onCancel() {
@@ -224,9 +191,10 @@ public class VoucherActivity extends AppCompatActivity {
                 }
             });
 
-*/
 
-            //confirmationDialog.show();
+
+            confirmationDialog.show();
+            receiptDialog.show();
 
 
 
@@ -323,15 +291,16 @@ public class VoucherActivity extends AppCompatActivity {
     }
 
     private void showAlertVoucher(Boolean response){
+
         android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(this);
+        LayoutInflater inflater = this.getLayoutInflater();
+        builder.setView(inflater.inflate(R.layout.dialog_receipt, null));
+
         builder.setTitle(response? "Sucesso" : "Ocorreu um erro")
-                .setMessage(response? "Voucher resgatado com sucesso!" : "Ocorreu um erro ao resgatar o seu voucher!")
+                .setMessage(response? "Voucher resgatado com sucesso! \nVerifique seu voucher no extrato" : "Ocorreu um erro ao resgatar o seu voucher!")
                 .setPositiveButton(R.string.finish_dialog, (dialog, which) -> {
 
-                    //VoucherActivity.this.finish();
-
-                    //showReceiptDialog(voucherList, code, expirationDate);
-
+                    VoucherActivity.this.finish();
                 })
 
                 .setNegativeButton(R.string.cancel, (dialog, which) -> {
@@ -343,7 +312,7 @@ public class VoucherActivity extends AppCompatActivity {
 
         dialog.show();
     }
-/*
+
     private void addVoucherDialog() {
         String jsonBadges = Prefs.getJewels();
 
@@ -404,22 +373,9 @@ public class VoucherActivity extends AppCompatActivity {
         });
         addVoucherDialog.show();
     }
-    */
+
 
     private void confirmationDialog() {
-        List<Reward> rewardList = Prefs.getCart();
-
-        if (rewardList != null) {
-            voucher.setQuantity(1);
-            rewardList.add(voucher);
-            Prefs.saveCart(rewardList);
-        } else {
-            rewardList = new ArrayList<>();
-            voucher.setQuantity(1);
-            rewardList.add(voucher);
-            Prefs.saveCart(rewardList);
-        }
-
         confirmationDialog = new ConfirmationDialog(context, voucher, 1, new ConfirmationDialog.OnClickListener() {
             @Override
             public void onCancel() {
@@ -429,7 +385,7 @@ public class VoucherActivity extends AppCompatActivity {
             @Override
             public void onGoToCart() {
                 confirmationDialog.dismiss();
-                Intent intent = new Intent(VoucherActivity.this, CartActivity.class);
+                Intent intent = new Intent(VoucherActivity.this, ReceiptDialog.class);
                 startActivity(intent);
                 finish();
             }
@@ -446,7 +402,7 @@ public class VoucherActivity extends AppCompatActivity {
 
             @Override
             public void onConfirm() {
-                Intent intent = new Intent(VoucherActivity.this, CartActivity.class);
+                Intent intent = new Intent(VoucherActivity.this, ReceiptDialog.class);
                 startActivity(intent);
                 finish();
             }

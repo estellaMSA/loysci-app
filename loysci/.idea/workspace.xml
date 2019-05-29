@@ -5,13 +5,18 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9bb45719-7950-4c47-8747-51dffd71ee29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/VoucherActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/VoucherActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/ReceiptDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/ReceiptDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_voucher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_voucher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_receipt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_receipt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/CustomPhotoPickerDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/CustomPhotoPickerDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_photo_picker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_photo_picker.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,236 +43,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltyApi.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/VoucherActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2295">
-              <caret line="896" column="29" selection-start-line="896" selection-start-column="29" selection-end-line="896" selection-end-column="29" />
+            <state relative-caret-position="376">
+              <caret line="196" column="25" selection-start-line="196" selection-start-column="25" selection-end-line="196" selection-end-column="25" />
               <folding>
-                <element signature="initializer##0;class#LoyaltyApi#0" />
-                <element signature="e#7855#8636#0" />
-                <element signature="e#8034#8579#1" />
-                <element signature="class#8069:8567" />
-                <element signature="method#onResponse#0;class#8069:8567" />
-                <element signature="e#8642#9399#0" />
-                <element signature="e#8805#9342#1" />
-                <element signature="class#8840:9330" />
-                <element signature="method#onResponse#0;class#8840:9330" />
-                <element signature="e#10262#10714#0" />
-                <element signature="e#10720#11373#0" />
-                <element signature="class#10816:11365" />
-                <element signature="method#onResponse#0;class#10816:11365" />
-                <element signature="method#onError#0;class#10816:11365" />
-                <element signature="e#11379#12022#0" />
-                <element signature="class#11471:12014" />
-                <element signature="method#onResponse#0;class#11471:12014" />
-                <element signature="method#onError#0;class#11471:12014" />
-                <element signature="e#12028#12681#0" />
-                <element signature="class#12125:12673" />
-                <element signature="method#onResponse#0;class#12125:12673" />
-                <element signature="method#onError#0;class#12125:12673" />
-                <element signature="e#12687#13360#0" />
-                <element signature="class#12792:13352" />
-                <element signature="method#onResponse#0;class#12792:13352" />
-                <element signature="method#onError#0;class#12792:13352" />
-                <element signature="e#13366#14014#0" />
-                <element signature="class#13460:14006" />
-                <element signature="method#onResponse#0;class#13460:14006" />
-                <element signature="method#onError#0;class#13460:14006" />
-                <element signature="e#14020#14673#0" />
-                <element signature="class#14117:14665" />
-                <element signature="method#onResponse#0;class#14117:14665" />
-                <element signature="method#onError#0;class#14117:14665" />
-                <element signature="e#14679#15352#0" />
-                <element signature="class#14784:15344" />
-                <element signature="method#onResponse#0;class#14784:15344" />
-                <element signature="method#onError#0;class#14784:15344" />
-                <element signature="e#15358#16046#0" />
-                <element signature="class#15468:16038" />
-                <element signature="method#onResponse#0;class#15468:16038" />
-                <element signature="method#onError#0;class#15468:16038" />
-                <element signature="e#16054#16471#0" />
-                <element signature="e#16477#17205#0" />
-                <element signature="e#16840#16902#0" />
-                <element signature="e#17211#17908#0" />
-                <element signature="e#17553#17615#0" />
-                <element signature="e#17914#18653#0" />
-                <element signature="class#18059:18645" />
-                <element signature="method#onResponse#0;class#18059:18645" />
-                <element signature="method#onError#0;class#18059:18645" />
-                <element signature="e#18659#19396#0" />
-                <element signature="class#18802:19388" />
-                <element signature="method#onResponse#0;class#18802:19388" />
-                <element signature="method#onError#0;class#18802:19388" />
-                <element signature="e#19402#20122#0" />
-                <element signature="class#19524:20114" />
-                <element signature="method#onResponse#0;class#19524:20114" />
-                <element signature="method#onError#0;class#19524:20114" />
-                <element signature="e#20128#20835#0" />
-                <element signature="class#20244:20827" />
-                <element signature="method#onResponse#0;class#20244:20827" />
-                <element signature="method#onError#0;class#20244:20827" />
-                <element signature="e#20842#21526#0" />
-                <element signature="class#20950:21518" />
-                <element signature="method#onResponse#0;class#20950:21518" />
-                <element signature="method#onError#0;class#20950:21518" />
-                <element signature="e#21532#22232#0" />
-                <element signature="class#21648:22224" />
-                <element signature="method#onResponse#0;class#21648:22224" />
-                <element signature="method#onError#0;class#21648:22224" />
-                <element signature="e#22238#22935#0" />
-                <element signature="class#22350:22927" />
-                <element signature="method#onResponse#0;class#22350:22927" />
-                <element signature="method#onError#0;class#22350:22927" />
-                <element signature="e#22941#23635#0" />
-                <element signature="class#23054:23627" />
-                <element signature="method#onResponse#0;class#23054:23627" />
-                <element signature="method#onError#0;class#23054:23627" />
-                <element signature="e#23641#24348#0" />
-                <element signature="class#23749:24340" />
-                <element signature="method#onResponse#0;class#23749:24340" />
-                <element signature="method#onError#0;class#23749:24340" />
-                <element signature="e#24354#25076#0" />
-                <element signature="class#24480:25068" />
-                <element signature="method#onResponse#0;class#24480:25068" />
-                <element signature="method#onError#0;class#24480:25068" />
-                <element signature="e#25082#25788#0" />
-                <element signature="class#25200:25780" />
-                <element signature="method#onResponse#0;class#25200:25780" />
-                <element signature="method#onError#0;class#25200:25780" />
-                <element signature="e#25794#26457#0" />
-                <element signature="class#25895:26449" />
-                <element signature="method#onResponse#0;class#25895:26449" />
-                <element signature="method#onError#0;class#25895:26449" />
-                <element signature="e#26463#27224#0" />
-                <element signature="class#26596:27216" />
-                <element signature="method#onResponse#0;class#26596:27216" />
-                <element signature="method#onError#0;class#26596:27216" />
-                <element signature="e#27230#27586#0" />
-                <element signature="e#27592#27936#0" />
-                <element signature="e#27942#28628#0" />
-                <element signature="class#28053:28620" />
-                <element signature="method#onResponse#0;class#28053:28620" />
-                <element signature="method#onError#0;class#28053:28620" />
-                <element signature="e#28634#29450#0" />
-                <element signature="class#28802:29442" />
-                <element signature="method#onResponse#0;class#28802:29442" />
-                <element signature="method#onError#0;class#28802:29442" />
-                <element signature="e#29456#30127#0" />
-                <element signature="class#29559:30119" />
-                <element signature="method#onResponse#0;class#29559:30119" />
-                <element signature="method#onError#0;class#29559:30119" />
-                <element signature="e#30133#30793#0" />
-                <element signature="class#30233:30785" />
-                <element signature="method#onResponse#0;class#30233:30785" />
-                <element signature="method#onError#0;class#30233:30785" />
-                <element signature="e#30799#31535#0" />
-                <element signature="class#30926:31527" />
-                <element signature="method#onResponse#0;class#30926:31527" />
-                <element signature="method#onError#0;class#30926:31527" />
-                <element signature="e#31541#32259#0" />
-                <element signature="class#31662:32251" />
-                <element signature="method#onResponse#0;class#31662:32251" />
-                <element signature="method#onError#0;class#31662:32251" />
-                <element signature="e#32265#33032#0" />
-                <element signature="class#32478:33024" />
-                <element signature="method#onResponse#0;class#32478:33024" />
-                <element signature="method#onError#0;class#32478:33024" />
-                <element signature="e#33038#33899#0" />
-                <element signature="class#33251:33891" />
-                <element signature="method#onResponse#0;class#33251:33891" />
-                <element signature="method#onError#0;class#33251:33891" />
-                <element signature="e#33905#34633#0" />
-                <element signature="class#34032:34625" />
-                <element signature="method#onResponse#0;class#34032:34625" />
-                <element signature="method#onError#0;class#34032:34625" />
-                <element signature="e#34639#35336#0" />
-                <element signature="class#34753:35328" />
-                <element signature="method#onResponse#0;class#34753:35328" />
-                <element signature="method#onError#0;class#34753:35328" />
-                <element signature="e#35342#36042#0" />
-                <element signature="class#35457:36034" />
-                <element signature="method#onResponse#0;class#35457:36034" />
-                <element signature="method#onError#0;class#35457:36034" />
-                <element signature="e#36048#36736#0" />
-                <element signature="class#36159:36728" />
-                <element signature="method#onResponse#0;class#36159:36728" />
-                <element signature="method#onError#0;class#36159:36728" />
-                <element signature="e#36935#37654#0" />
-                <element signature="class#37056:37646" />
-                <element signature="method#onResponse#0;class#37056:37646" />
-                <element signature="method#onError#0;class#37056:37646" />
-                <element signature="e#37660#38339#0" />
-                <element signature="class#37772:38331" />
-                <element signature="method#onResponse#0;class#37772:38331" />
-                <element signature="method#onError#0;class#37772:38331" />
-                <element signature="e#38345#39030#0" />
-                <element signature="class#38450:39022" />
-                <element signature="method#onResponse#0;class#38450:39022" />
-                <element signature="method#onError#0;class#38450:39022" />
-                <element signature="e#39036#39761#0" />
-                <element signature="class#39164:39753" />
-                <element signature="method#onResponse#0;class#39164:39753" />
-                <element signature="method#onError#0;class#39164:39753" />
-                <element signature="e#39767#40506#0" />
-                <element signature="class#39885:40498" />
-                <element signature="method#onResponse#0;class#39885:40498" />
-                <element signature="method#onError#0;class#39885:40498" />
-                <element signature="e#40512#40914#0" />
-                <element signature="e#40920#41635#0" />
-                <element signature="class#41044:41627" />
-                <element signature="method#onResponse#0;class#41044:41627" />
-                <element signature="method#onError#0;class#41044:41627" />
-                <element signature="e#41641#42353#0" />
-                <element signature="class#41765:42345" />
-                <element signature="method#onResponse#0;class#41765:42345" />
-                <element signature="method#onError#0;class#41765:42345" />
-                <element signature="e#42359#43071#0" />
-                <element signature="class#42483:43063" />
-                <element signature="method#onResponse#0;class#42483:43063" />
-                <element signature="method#onError#0;class#42483:43063" />
-                <element signature="e#43077#43794#0" />
-                <element signature="class#43203:43786" />
-                <element signature="method#onResponse#0;class#43203:43786" />
-                <element signature="method#onError#0;class#43203:43786" />
-                <element signature="e#43800#44476#0" />
-                <element signature="class#43907:44468" />
-                <element signature="method#onResponse#0;class#43907:44468" />
-                <element signature="method#onError#0;class#43907:44468" />
-                <element signature="e#44482#45235#0" />
-                <element signature="class#44622:45227" />
-                <element signature="method#onResponse#0;class#44622:45227" />
-                <element signature="method#onError#0;class#44622:45227" />
-                <element signature="e#45241#45970#0" />
-                <element signature="class#45377:45962" />
-                <element signature="method#onResponse#0;class#45377:45962" />
-                <element signature="method#onError#0;class#45377:45962" />
-                <element signature="e#45977#46660#0" />
-                <element signature="class#46085:46652" />
-                <element signature="method#onResponse#0;class#46085:46652" />
-                <element signature="method#onError#0;class#46085:46652" />
-                <element signature="e#46666#46911#0" />
-                <element signature="e#46917#47675#0" />
-                <element signature="class#47090:47667" />
-                <element signature="method#onResponse#0;class#47090:47667" />
-                <element signature="method#onError#0;class#47090:47667" />
-                <element signature="e#47681#48364#0" />
-                <element signature="class#47814:48356" />
-                <element signature="method#onResponse#0;class#47814:48356" />
-                <element signature="method#onError#0;class#47814:48356" />
-                <element signature="e#48370#48695#0" />
-                <element signature="e#48451#48619#0" />
-                <element signature="e#48648#48689#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#6867#6868#0" expanded="true" />
+                <element signature="e#6935#6936#0" expanded="true" />
+                <element signature="method#addVoucherDialog#0;class#VoucherActivity#0" />
+                <element signature="e#12535#12536#0" expanded="true" />
+                <element signature="e#12593#12594#0" expanded="true" />
+                <element signature="e#13402#13403#0" expanded="true" />
+                <element signature="e#13478#13479#0" expanded="true" />
+                <element signature="method#confirmationDialog#0;class#VoucherActivity#0" />
+                <element signature="e#14541#14542#0" expanded="true" />
+                <element signature="e#14601#14602#0" expanded="true" />
+                <element signature="method#alertDialog#0;class#VoucherActivity#0" />
+                <element signature="e#15167#15168#0" expanded="true" />
+                <element signature="e#15227#15228#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/VoucherActivity.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/ConfirmationDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="340" column="31" lean-forward="true" selection-start-line="340" selection-start-column="31" selection-end-line="340" selection-end-column="31" />
+            <state relative-caret-position="-15">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_receipt.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/CartActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="32" column="73" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/viewModels/QuizViewModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/ReceiptDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="50" column="110" lean-forward="true" selection-start-line="50" selection-start-column="110" selection-end-line="50" selection-end-column="110" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -275,10 +126,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+            <state relative-caret-position="69">
+              <caret line="399" selection-start-line="399" selection-end-line="399" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#19184#19185#0" expanded="true" />
+                <element signature="e#19327#19328#0" expanded="true" />
+                <element signature="e#19400#19401#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -287,37 +141,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="138" column="47" selection-start-line="138" selection-start-column="47" selection-end-line="138" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/VoucherActivityPresenter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="55" selection-start-column="55" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltyService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-714">
-              <caret line="73" column="38" lean-forward="true" selection-start-line="73" selection-end-line="74" />
+            <state relative-caret-position="631">
+              <caret line="153" column="61" lean-forward="true" selection-start-line="153" selection-start-column="61" selection-end-line="153" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1826#1827#0" expanded="true" />
+                <element signature="e#1870#1871#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/QuizActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="193" selection-start-line="193" selection-end-line="193" />
+              <folding>
+                <element signature="e#8024#8063#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -334,10 +175,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getValor</find>
-      <find>getStatus</find>
-      <find>client_se</find>
-      <find>mission</find>
       <find>uploadContentType</find>
       <find>status</find>
       <find>ChallengeSubmitAnswers</find>
@@ -364,6 +201,10 @@
       <find>alertDialog</find>
       <find>presenter</find>
       <find>mainac</find>
+      <find>camera</find>
+      <find>voucheractivity</find>
+      <find>item adi</find>
+      <find>dialogreceipt</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\LoySci TI\Documents\loysci-app\loysci\app</dir>
@@ -376,11 +217,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/Realm.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/presenters/ExtractPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/model/History.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/ExtractAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/MissionActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/SubirConteudoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/model/Challenge.java" />
@@ -388,7 +227,11 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_receipt.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/ReceiptDialog.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_voucher.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/CustomPhotoPickerDialog.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_photo_picker.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/VoucherActivity.java" />
       </list>
     </option>
@@ -404,55 +247,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="loysci" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="loysci" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="loysci" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="loysci_android" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="loysci" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="loysci_android" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="loysci" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="loysci_android" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="loysci" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="loysci_android" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="activities" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -558,7 +356,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21633889" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.21633889" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.32967034" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -574,8 +372,8 @@
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.33387887" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.18330605" />
-      <window_info anchor="bottom" id="Android Profiler" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.41080198" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.32980332" />
@@ -589,25 +387,25 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java</url>
-          <line>70</line>
+          <line>71</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java</url>
-          <line>142</line>
+          <line>143</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java</url>
-          <line>474</line>
+          <line>479</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java</url>
-          <line>488</line>
+          <line>493</line>
           <properties />
           <option name="timeStamp" value="38" />
         </line-breakpoint>
@@ -619,19 +417,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java</url>
-          <line>611</line>
+          <line>616</line>
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java</url>
-          <line>545</line>
+          <line>550</line>
           <properties />
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java</url>
-          <line>527</line>
+          <line>532</line>
           <properties />
           <option name="timeStamp" value="50" />
         </line-breakpoint>
@@ -655,40 +453,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/VoucherActivity.java</url>
-          <line>395</line>
+          <line>404</line>
           <properties />
-          <option name="timeStamp" value="72" />
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/VoucherActivity.java</url>
-          <line>448</line>
+          <line>387</line>
           <properties />
-          <option name="timeStamp" value="73" />
+          <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/VoucherActivity.java</url>
-          <line>431</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java</url>
+          <line>390</line>
           <properties />
-          <option name="timeStamp" value="74" />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java</url>
+          <line>399</line>
+          <properties />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="84" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/model/ChallengeUploadContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-117">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/GamesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="337" column="62" selection-start-line="337" selection-start-column="62" selection-end-line="337" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/app/ActivityThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -882,37 +678,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/UploadDataActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="98" column="29" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
+        <state relative-caret-position="462">
+          <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
           <folding>
             <element signature="e#4832#4863#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_receipt.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/os/Looper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="165" selection-start-line="165" selection-end-line="165" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/CartActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -921,34 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
           <caret line="257" column="27" selection-start-line="257" selection-start-column="27" selection-end-line="257" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/viewModels/QuizViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/QuizActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="193" selection-start-line="193" selection-end-line="193" />
-          <folding>
-            <element signature="e#8024#8063#0" expanded="true" />
-            <element signature="e#10572#10611#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/ReceiptDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="26" />
-          <folding>
-            <element signature="e#2214#2265#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1234,41 +976,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/VoucherActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="340" column="31" lean-forward="true" selection-start-line="340" selection-start-column="31" selection-end-line="340" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/VoucherActivityPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="55" selection-start-column="55" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="138" column="47" selection-start-line="138" selection-start-column="47" selection-end-line="138" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -1278,6 +989,129 @@
           <caret line="73" column="38" lean-forward="true" selection-start-line="73" selection-end-line="74" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/networkUtils/LoyaltyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="120" column="54" selection-start-line="120" selection-start-column="54" selection-end-line="120" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_photo_picker.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/CartActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="32" column="73" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/viewModels/QuizViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/QuizActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="193" selection-start-line="193" selection-end-line="193" />
+          <folding>
+            <element signature="e#8024#8063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="399" selection-start-line="399" selection-end-line="399" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#19184#19185#0" expanded="true" />
+            <element signature="e#19327#19328#0" expanded="true" />
+            <element signature="e#19400#19401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="153" column="61" lean-forward="true" selection-start-line="153" selection-start-column="61" selection-end-line="153" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
+            <element signature="e#1870#1871#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/ReceiptDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="50" column="110" lean-forward="true" selection-start-line="50" selection-start-column="110" selection-end-line="50" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_receipt.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/ConfirmationDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/VoucherActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="196" column="25" selection-start-line="196" selection-start-column="25" selection-end-line="196" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6867#6868#0" expanded="true" />
+            <element signature="e#6935#6936#0" expanded="true" />
+            <element signature="method#addVoucherDialog#0;class#VoucherActivity#0" />
+            <element signature="e#12535#12536#0" expanded="true" />
+            <element signature="e#12593#12594#0" expanded="true" />
+            <element signature="e#13402#13403#0" expanded="true" />
+            <element signature="e#13478#13479#0" expanded="true" />
+            <element signature="method#confirmationDialog#0;class#VoucherActivity#0" />
+            <element signature="e#14541#14542#0" expanded="true" />
+            <element signature="e#14601#14602#0" expanded="true" />
+            <element signature="method#alertDialog#0;class#VoucherActivity#0" />
+            <element signature="e#15167#15168#0" expanded="true" />
+            <element signature="e#15227#15228#0" expanded="true" />
           </folding>
         </state>
       </provider>

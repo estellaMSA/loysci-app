@@ -14,17 +14,17 @@
             android:id="@+id/relative_gallery"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:paddingEnd="16dp"
-            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="38dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/relative_camera"
+            app:layout_constraintEnd_toStartOf="@id/avatar_option_layout"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/image_view_gallery"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_centerHorizontal="true"
                 android:tint="@color/colorPrimary"
                 app:srcCompat="@drawable/ic_image"
@@ -49,7 +49,7 @@
                 app:layout_constraintEnd_toEndOf="parent"/>
 
         </android.support.constraint.ConstraintLayout>
-
+<!--
         <android.support.constraint.ConstraintLayout
             android:id="@+id/relative_camera"
             android:layout_width="0dp"
@@ -89,23 +89,23 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/image_view_camera" />
         </android.support.constraint.ConstraintLayout>
-
+-->
         <android.support.constraint.ConstraintLayout
             android:id="@+id/avatar_option_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
-            android:paddingEnd="16dp"
-            android:paddingStart="16dp"
+            android:paddingEnd="38dp"
+            android:paddingStart="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/relative_camera"
+            app:layout_constraintStart_toEndOf="@id/relative_gallery"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/iv_avatar"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_centerHorizontal="true"
                 android:tint="@color/colorPrimary"
                 app:layout_constraintEnd_toEndOf="parent"

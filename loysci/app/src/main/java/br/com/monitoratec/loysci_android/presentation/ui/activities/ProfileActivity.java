@@ -363,7 +363,6 @@ public class ProfileActivity extends AppCompatActivity {
         String state = AddressUtil.convertFullStateNameToInitials(binding.state.getSelectedItem().toString(), this);
         profile.setEstadoResidencia(state);*/
 
-        if (profileBase64 != null) profile.setAvatar(profileBase64);
 
         if (binding.spinnerGender.getSelectedItemPosition() == Constants.SPINNER_GENDER_MALE) {
             profile.setIndGenero("M");
@@ -388,6 +387,12 @@ public class ProfileActivity extends AppCompatActivity {
         birthdayCalendar.set(Calendar.MILLISECOND, birthdayCalendar.getMinimum(Calendar.MILLISECOND));
 
         profile.setFechaNacimiento(birthdayCalendar.getTimeInMillis());
+
+        if (profileBase64 != null) {
+
+            //profile.setAvatar(profileBase64);
+            getImageFromImageProfile();
+        }
     }
 
     public Bitmap getImageFromImageProfile() {
@@ -494,7 +499,7 @@ public class ProfileActivity extends AppCompatActivity {
                             profileBitmap = bitmap;
 
                             ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                            bitmap.compress(Bitmap.CompressFormat.JPEG, 50, baos);
+                            bitmap.compress(Bitmap.CompressFormat.JPEG, 30, baos);
 
 
                             byte[] imageBytes = baos.toByteArray();
@@ -530,7 +535,7 @@ public class ProfileActivity extends AppCompatActivity {
                 Bitmap bitmap = presenter.setCameraRequest(data);
 
                 ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.JPEG, 50, baos);
+                bitmap.compress(Bitmap.CompressFormat.JPEG, 30, baos);
 
 
                 byte[] imageBytes = baos.toByteArray();
@@ -547,7 +552,7 @@ public class ProfileActivity extends AppCompatActivity {
                 Bitmap bitmap = presenter.setAvatarRequest(data);
                 if (bitmap != null) {
                     ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
+                    bitmap.compress(Bitmap.CompressFormat.PNG, 80, baos);
 
                     byte[] imageBytes = baos.toByteArray();
                     presenter.setAvatar(Base64.encodeToString(imageBytes, Base64.NO_WRAP));
@@ -558,7 +563,7 @@ public class ProfileActivity extends AppCompatActivity {
                 }
 
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                bitmap.compress(Bitmap.CompressFormat.PNG, 80, stream);
                 try {
                     File path = new File(getFilesDir().toString() + "/avatar/");
 
@@ -575,7 +580,7 @@ public class ProfileActivity extends AppCompatActivity {
                     }
                     FileOutputStream fOut = new FileOutputStream(image);
 
-                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, fOut);
+                    bitmap.compress(Bitmap.CompressFormat.PNG, 80, fOut);
                     fOut.close();
 
                     presenter.setNewImgFile(image);
@@ -610,7 +615,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     private void uploadFileToServer(Intent data) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        profileBitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
+        profileBitmap.compress(Bitmap.CompressFormat.PNG, 50, baos);
         byte[] imageBytes = baos.toByteArray();
         profileBase64 = Base64.encodeToString(imageBytes, Base64.NO_WRAP);
         profileBase64 = profileBase64.replaceAll("\n","");
