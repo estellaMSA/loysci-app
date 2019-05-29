@@ -81,9 +81,9 @@ public class ExtractPresenter {
                             for (RewardRedeem r : response.body()){
 
                                 History h = new History();
-                                h.setIdTransaction(r.getIdPremio());
+                                h.setIdTransaction("Resgate");
                                 h.setDate(Long.parseLong(r.getFechaRedencion()));
-                                h.setTransactionDesc(r.getEncabezadoArte());
+                                h.setTransactionDesc(r.getCodigoCertificado());
                                 MetricEntry metricEntry = new MetricEntry();
                                 metricEntry.setAmount(Math.toIntExact((r.getValorMoneda()  * -1)));
                                 h.setMetricEntry(metricEntry);
