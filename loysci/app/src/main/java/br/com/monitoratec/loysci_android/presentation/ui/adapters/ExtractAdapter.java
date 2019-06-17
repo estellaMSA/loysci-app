@@ -20,7 +20,6 @@ import br.com.monitoratec.loysci_android.databinding.ItemExtractBinding;
 import br.com.monitoratec.loysci_android.model.History;
 import br.com.monitoratec.loysci_android.util.Constants;
 
-import static br.com.monitoratec.loysci_android.model.History.MISION;
 import static br.com.monitoratec.loysci_android.model.History.TRANSACCION;
 
 /**
@@ -94,21 +93,16 @@ public class ExtractAdapter extends RecyclerView.Adapter<ExtractAdapter.ViewHold
             holder.binding.extractAvailableDate.setText(availableDate);
         }
 
-        if (extract.getIdTransaction().contains(MISION)) {
-            String availableDate = String.format("%s %s %s %s",
-                    context.getString(R.string.available_from), dateFormat.format(date),
-                    context.getString(R.string.to), dateFormat.format(new Date(extract.getDate()+ Constants.SIX_MONTHS)));
-            holder.binding.extractAvailableDate.setText(availableDate);
-        } else {
-            String availableDate = String.format("%s %s",
-                    context.getString(R.string.available_since), dateFormat.format(date));
-            holder.binding.extractAvailableDate.setText(availableDate);
-        }
-
-        if (transactionId.contains("R1") || transactionId.contains("R2") || transactionId.contains("E1")) {
+        if (transactionId.contains("R1") || transactionId.contains("R2") || transactionId.contains("E1") ) {
             holder.binding.extractPoints.setTextColor(context.getResources().getColor(R.color.md_red_600));
             holder.binding.extractPoints.setText(String.format("-%s", String.valueOf(Math.round(extract.getMetricEntry().getAmount()))));
-        } else {
+        }
+        else if(extract.getMetricEntry().getAmount() < 0){
+            holder.binding.extractPoints.setTextColor(context.getResources().getColor(R.color.md_red_600));
+            holder.binding.extractPoints.setText(String.format("%s", String.valueOf(Math.round(extract.getMetricEntry().getAmount()))));
+        }
+
+        else {
             holder.binding.extractPoints.setTextColor(context.getResources().getColor(R.color.positive_points));
             holder.binding.extractPoints.setText(String.format("+%s", String.valueOf(Math.round(extract.getMetricEntry().getAmount()))));
         }

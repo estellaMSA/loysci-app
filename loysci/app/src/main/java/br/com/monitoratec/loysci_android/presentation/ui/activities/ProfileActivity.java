@@ -507,33 +507,41 @@ public class ProfileActivity extends AppCompatActivity {
                         } else {
                             Toast.makeText(ProfileActivity.this, "Por favor, tente outra imagem.", Toast.LENGTH_LONG).show();
                         }
-                        presenter.setNewImgFile(imagesFiles.get(0));
-
-                        Glide.with(getApplicationContext())
-                                .load(imagesFiles.get(0))
-                                .asBitmap()
-                                .fitCenter()
-                                .centerCrop()
-                                .diskCacheStrategy(DiskCacheStrategy.RESULT)
-                                .skipMemoryCache(true)
-                                .into(binding.imgProfile);
-                        presenter.setBitmapPhoto(presenter.setGalleryRequest(data));
-                        profileBase64 = profile.getAvatar();
                     }
+
+                    presenter.setNewImgFile(imagesFiles.get(0));
+
+                    Glide.with(getApplicationContext())
+                            .load(imagesFiles.get(0))
+                            .asBitmap()
+                            .fitCenter()
+                            .centerCrop()
+                            .diskCacheStrategy(DiskCacheStrategy.RESULT)
+                            .skipMemoryCache(true)
+                            .into(binding.imgProfile);
+                    presenter.setBitmapPhoto(presenter.setGalleryRequest(data));
+                    profileBase64 = profile.getAvatar();
                 }
             });
 
-             if (requestCode == CAMERA_REQUEST) {
 
-                 //onCaptureImageResult(data);
-                 //uploadFileToServer(data);
+            if (requestCode == CAMERA_REQUEST) {
 
-                 Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
-                 //binding.imgProfile.setVisibility(View.VISIBLE);
-                 profileBitmap = thumbnail;
-                 binding.imgProfile.setImageBitmap(thumbnail);
-                 uploadFileToServer(data);
-             }
+                Bitmap bitmap = presenter.setCameraRequest(data);
+
+                ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                bitmap.compress(Bitmap.CompressFormat.JPEG, 50, baos);
+
+
+                byte[] imageBytes = baos.toByteArray();
+                presenter.setAvatar(Base64.encodeToString(imageBytes, Base64.NO_WRAP));
+                Log.e("base64", profileBase64);
+
+
+                onCaptureImageResult(data);
+                //uploadFileToServer(data);
+            }
+
 
             if (requestCode == AVATAR_REQUEST) {
                 Bitmap bitmap = presenter.setAvatarRequest(data);
@@ -601,20 +609,11 @@ public class ProfileActivity extends AppCompatActivity {
 
 
     private void uploadFileToServer(Intent data) {
-        Bitmap bitmap = presenter.setCameraRequest(data);
-
-
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
-
-        byte[] imageBytes = baos.toByteArray();
-        presenter.setAvatar(Base64.encodeToString(imageBytes, Base64.NO_WRAP));
-        /*
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
+        profileBitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
         byte[] imageBytes = baos.toByteArray();
         profileBase64 = Base64.encodeToString(imageBytes, Base64.NO_WRAP);
-        profileBase64 = profileBase64.replaceAll("\n",""); */
+        profileBase64 = profileBase64.replaceAll("\n","");
         Log.e("base64", profileBase64);
     }
 

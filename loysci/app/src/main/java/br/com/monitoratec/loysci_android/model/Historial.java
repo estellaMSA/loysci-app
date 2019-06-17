@@ -1,32 +1,40 @@
 package br.com.monitoratec.loysci_android.model;
 
-public class History {
+public class Historial {
 
 
     public static final String TRANSACCION = "T"; //positivo
     public static final String REVERSION = "V"; //positivo
 
-    private String idInternalTransaction;
-    private String idTransaction;
+    private String indFormaGanada;
+    private String nombreMision;
     private String idLocation;
-    private long date;
+    private long fecha;
+    private int cantidadGanada;
+
+
+
+    public int getCantidadGanada() {
+        return cantidadGanada;
+    }
+
     private MetricEntry metricEntry;
     private String transactionDesc;
 
     public String getIdInternalTransaction() {
-        return idInternalTransaction;
+        return indFormaGanada;
     }
 
     public void setIdInternalTransaction(String idInternalTransaction) {
-        this.idInternalTransaction = idInternalTransaction;
+        this.indFormaGanada = idInternalTransaction;
     }
 
     public String getIdTransaction() {
-        return idTransaction;
+        return nombreMision;
     }
 
     public void setIdTransaction(String idTransaction) {
-        this.idTransaction = idTransaction;
+        this.nombreMision = idTransaction;
     }
 
     public String getIdLocation() {
@@ -38,11 +46,11 @@ public class History {
     }
 
     public long getDate() {
-        return date;
+        return fecha;
     }
 
     public void setDate(long date) {
-        this.date = date;
+        this.fecha = date;
     }
 
     public MetricEntry getMetricEntry() {
