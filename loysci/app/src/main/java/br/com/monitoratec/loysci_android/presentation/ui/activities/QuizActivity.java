@@ -136,8 +136,8 @@ public class QuizActivity extends AppCompatActivity implements SimpleItemClickLi
     private void populateQuestion() {
 
         if (model.challenge.getMisionEncuestaPreguntas() != null) {
-            binding.txtQuestion.setText(model.challenge.getDescripcion());
-            binding.txtTitle.setText(model.challenge.getNombre());
+            //binding.txtQuestion.setText(model.challenge.getDescripcion());
+            binding.txtTitle.setText(model.challenge.getMisionEncuestaPreguntas().get(0).getPregunta());
             String[] options = model.challenge.getMisionEncuestaPreguntas().get(0).getRespuestas().split("\n");
             int counter = 0;
             for (String option : options) {

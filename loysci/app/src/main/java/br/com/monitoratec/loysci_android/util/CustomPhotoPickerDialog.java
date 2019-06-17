@@ -40,7 +40,7 @@ public class CustomPhotoPickerDialog extends Dialog {
         binding = DataBindingUtil.inflate(LayoutInflater.from(getContext()), R.layout.dialog_photo_picker, null, false);
         setContentView(binding.getRoot());
 
-        //binding.imageViewCamera.setOnClickListener(v -> mOnOptionPhotoSelected.onCamera());
+        binding.imageViewCamera.setOnClickListener(v -> mOnOptionPhotoSelected.onCamera());
 
         binding.imageViewGallery.setOnClickListener(v -> mOnOptionPhotoSelected.onGallery());
 

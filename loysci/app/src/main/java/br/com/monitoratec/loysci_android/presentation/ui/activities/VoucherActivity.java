@@ -194,8 +194,6 @@ public class VoucherActivity extends AppCompatActivity {
 
 
             confirmationDialog.show();
-            receiptDialog.show();
-
 
 
 
@@ -294,8 +292,6 @@ public class VoucherActivity extends AppCompatActivity {
 
         android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(this);
         LayoutInflater inflater = this.getLayoutInflater();
-        builder.setView(inflater.inflate(R.layout.dialog_receipt, null));
-
         builder.setTitle(response? "Sucesso" : "Ocorreu um erro")
                 .setMessage(response? "Voucher resgatado com sucesso! \nVerifique seu voucher no extrato" : "Ocorreu um erro ao resgatar o seu voucher!")
                 .setPositiveButton(R.string.finish_dialog, (dialog, which) -> {

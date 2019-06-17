@@ -1,6 +1,8 @@
 package br.com.monitoratec.loysci_android.presentation.ui.activities;
 
 import android.Manifest;
+import android.content.ContentResolver;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -8,25 +10,35 @@ import android.database.Cursor;
 import android.databinding.DataBindingUtil;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.constraint.ConstraintLayout;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.util.LruCache;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.util.Base64;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewStub;
+import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import java.io.ByteArrayOutputStream;
+import java.io.FileInputStream;
 import java.util.List;
 
 import br.com.monitoratec.loysci_android.R;
@@ -36,9 +48,12 @@ import br.com.monitoratec.loysci_android.model.ChallengeUploadContent;
 import br.com.monitoratec.loysci_android.model.Mission;
 import br.com.monitoratec.loysci_android.networkUtils.LoyaltyApi;
 import br.com.monitoratec.loysci_android.presentation.ui.listeners.SimpleItemClickListener;
+import br.com.monitoratec.loysci_android.util.CustomPhotoPickerDialog;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 
 import static br.com.monitoratec.loysci_android.util.Constants.MISSION_PARCELABLE;
 
@@ -46,35 +61,48 @@ import static br.com.monitoratec.loysci_android.util.Constants.MISSION_PARCELABL
 public class SubirConteudoActivity extends AppCompatActivity implements SimpleItemClickListener {
 
     String content = "code";
-    //private Button btnSend;
-    //private TextView subencabezado;
-    //private TextView puntos;
+    private CardView btnSend;
+    private TextView subencabezado;
+    private TextView puntos;
     private ImageView imageView;
+    private TextView toolbarText;
+    private TextView txtCompleteToWin;
+    private TextView txtTopicTitle;
+    private TextView txtMissionTitle;
+    private TextView txtActivitiesCount;
+    private ImageView imgPhoto;
     public static Challenge challenge;
+
+    private CustomPhotoPickerDialog photoDialog;
 
     Bitmap thumbnail;
     private String image = "";
     private static final int CAMERA_REQUEST = 1888;
+    private static final int GALLERY_REQUEST = 2888;
     private static final int CAMERA_PERMISSION_REQUEST_CODE = 1;
     private static final int REQUEST_VIDEO_CAPTURE = 4;
+    private LruCache<String, Bitmap> memoryCache;
+
 
     ActivitySubirconteudoBinding binding;
     Mission mission;
 
     int missionIndex;
     String idMember;
+    int completedCounter = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_subirconteudo);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_subirconteudo);
 
         mission = getIntent().getParcelableExtra(MISSION_PARCELABLE);
 
         List<Challenge> challenges = mission.getChallenges();
         challenge = challenges.get(0);
 
-        setSupportActionBar(binding.includeToolbar.toolbar);
+        Toolbar includeToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(includeToolbar);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayShowTitleEnabled(true);
@@ -82,52 +110,46 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
-        binding.includeToolbar.toolbar.getNavigationIcon().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
+        includeToolbar.getNavigationIcon().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
 
-        setTitle(challenge.getEncabezadoArte());
-
+        toolbarText = (TextView) this.findViewById(R.id.toolbarTitle);
         imageView = (ImageView) this.findViewById(R.id.ivImage);
+        imgPhoto = (ImageView) this.findViewById(R.id.img_mission2);
+        btnSend = (CardView) this.findViewById(R.id.btnChallenge);
+        subencabezado = (TextView) this.findViewById(R.id.tvDescription);
+        puntos = (TextView) this.findViewById(R.id.puntosPromo);
+        txtCompleteToWin = (TextView) findViewById(R.id.txt_complete_to_win);
+        txtTopicTitle = (TextView) findViewById(R.id.txt_topic_title);
+        txtMissionTitle = (TextView) findViewById(R.id.txt_mission_title);
+        txtActivitiesCount = (TextView) findViewById(R.id.txt_activities_count);
 
-        //btnSend = (Button) this.findViewById(R.id.btnChallenge);
-        //subencabezado = (TextView) this.findViewById(R.id.tvDescription);
-        //puntos = (TextView) this.findViewById(R.id.puntosPromo);
-        //subencabezado.setText(challenge.getDescripcion());
+        subencabezado.setText(challenge.getDescripcion());
+        puntos.setText(String.valueOf(challenge.getValor())+" "+challenge.getMetrica().getNombre());
 
-        binding.puntosPromo.setText(String.valueOf(challenge.getValor()) + " " + challenge.getMetrica().getNombre());
-        binding.includeToolbar.toolbarTitle.setText(challenge.getEncabezadoArte());
-        binding.tvDescription.setText(challenge.getDescripcion());
-
-        //if(mission.getChallenges().size() > 0)
-            //Glide.with(this).load(mission.getChallenges().get(0).getImagen()).diskCacheStrategy(DiskCacheStrategy.NONE).into(binding.imgMission);
+        toolbarText.setText(R.string.mission_activities);
+        txtCompleteToWin.setText(R.string.complete_to_win_this);
+        txtMissionTitle.setText(mission.getTitulo());
+        txtTopicTitle.setText(mission.getTitulo());
 
         Glide.with(this)
-                .load(mission.getImagem())
+                .load(challenge.getImagen())
                 .crossFade()
                 .into(imageView);
 
-
-        binding.ivImage.setVisibility(View.VISIBLE);
-
-        if(mission.getImagem()!=null)
-            Glide.with(this)
-                    .load(mission.getImagem())
-                    .diskCacheStrategy(DiskCacheStrategy.NONE)
-                    .into(binding.ivImage);
-
         if (challenge.getIndTipoMision() != null) {
             if (challenge.getIndTipoMision().equals(Challenge.TYPE_UPLOAD_CONTENT) && challenge.getMisionSubirContenido().getIndTipo().equals(ChallengeUploadContent.TYPE_IMAGE)) {
-                binding.btnChallenge.setText("Carregar Imagem");
+                //btnSend.setText("Carregar Imagem");
 
-                binding.btnChallenge.setOnClickListener(new View.OnClickListener() {
+                btnSend.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         selectImage();
                     }
                 });
             } else if (challenge.getIndTipoMision().equals(Challenge.TYPE_UPLOAD_CONTENT) && challenge.getMisionSubirContenido().getIndTipo().equals(ChallengeUploadContent.TYPE_VIDEO)) {
-                binding.btnChallenge.setText("Carregar Vídeo");
+                //btnSend.setText("Carregar Vídeo");
 
-                binding.btnChallenge.setOnClickListener(new View.OnClickListener() {
+                btnSend.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         selectVideo();
@@ -142,23 +164,43 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
             }
         }
 
-        super.onCreate(savedInstanceState);
+        //setTitle(challenge.getEncabezadoArte());
+
+        updateCompletedCounter();
+    }
+
+    public void addBitmapToMemoryCache(String key, Bitmap bitmap) {
+        if (getBitmapFromMemCache(key) == null) {
+            memoryCache.put(key, bitmap);
+        }
+    }
+
+    public Bitmap getBitmapFromMemCache(String key) {
+        return memoryCache.get(key);
+    }
+
+    private void updateCompletedCounter() {
+
+        completedCounter = 0;
+        for (Challenge challenge : mission.getChallenges()) {
+            if (challenge.getValor() != 0 && challenge.isCompleted()) completedCounter++;
+        }
+        txtActivitiesCount.setText(completedCounter + "/" + mission.getChallenges().size());
     }
 
     private void onCaptureImageResult(Intent data) {
         thumbnail = (Bitmap) data.getExtras().get("data");
         getBase64(thumbnail);
     }
-
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == 2) {
             finish();
-        } else if (requestCode == 3) {
+        } else if (requestCode == GALLERY_REQUEST) {
             if (resultCode == RESULT_OK) {
                 Uri selectedImage = data.getData();
-                String[] filePathColumn = {MediaStore.Images.Media.DATA};
+                String[] filePathColumn = {MediaStore.Images.Thumbnails.DATA};
 
                 Cursor cursor = getContentResolver().query(
                         selectedImage, filePathColumn, null, null, null);
@@ -168,10 +210,12 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
                 String filePath = cursor.getString(columnIndex);
                 cursor.close();
 
-                Bitmap yourSelectedImage = BitmapFactory.decodeFile(filePath);
+
+               Bitmap yourSelectedImage = BitmapFactory.decodeFile(filePath);
 
                 if (yourSelectedImage != null) {
                     //thumbnail = yourSelectedImage;
+
                     getBase64(yourSelectedImage);
 
                     uploadContentType();
@@ -193,12 +237,11 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
             }
         }
     }
-
-
     private void selectImage() {
-        final CharSequence[] options = {"Tirar Foto", "Cancelar"};
+        final CharSequence[] options = {"Tirar Foto", "Escolher da Galeria", "Cancelar"};
+
         AlertDialog.Builder builder = new AlertDialog.Builder(SubirConteudoActivity.this);
-        builder.setTitle("CAPTURAR FOTO");
+        builder.setTitle("ESCOLHER FOTO");
         builder.setItems(options, new DialogInterface.OnClickListener() {
 
             @Override
@@ -207,10 +250,9 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
                 if (options[item].equals("Tirar Foto")) {
                     Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                     startActivityForResult(intent, CAMERA_REQUEST);
-                } else if (options[item].equals("Galeria de Fotos")) {
-                    Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-
-                    startActivityForResult(intent, 3);
+                } else if (options[item].equals("Escolher da Galeria")) {
+                    Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI);
+                    startActivityForResult(intent, GALLERY_REQUEST);
                 } else if (options[item].equals("Cancelar")) {
 
                     dialog.dismiss();
@@ -222,7 +264,7 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
         builder.show();
     }
     private void selectVideo() {
-        final CharSequence[] options = { "Gravar Vídeo","Cancelar" };
+        final CharSequence[] options = { "Gravar Vídeo", "Galeria", "Cancelar" };
         AlertDialog.Builder builder = new AlertDialog.Builder(SubirConteudoActivity.this);
         builder.setTitle("GRAVAR VÍDEO");
         builder.setItems(options, new DialogInterface.OnClickListener() {
@@ -274,9 +316,8 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
                 UploadDataActivity.challenge = challenge;
 
                 intent.putExtra("Image", image);
-                if (thumbnail != null) {
-                    intent.putExtra("Thumbnail", thumbnail);
-                }
+                intent.putExtra("Thumbnail", thumbnail);
+
                 setRegistrarVistaMision();
                 break;
             case ChallengeUploadContent.TYPE_VIDEO:
@@ -291,14 +332,13 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
         }
     }
 
-
     //Se registra como vista la mision actual.
     private void setRegistrarVistaMision() {
         LoyaltyApi.setRegistrarVistaMision(challenge.getIdMision(), new Callback<Void>() {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
                 if (response.isSuccessful()) {
-                    // Toast.makeText(ChallengeDetailActivity.this, response.message(), Toast.LENGTH_LONG).show();
+                    //Toast.makeText(SubirConteudoActivity.this, response.message(), Toast.LENGTH_LONG).show();
                 }
             }
 
@@ -327,11 +367,12 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
 
     private void getBase64(Bitmap image) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        image.compress(Bitmap.CompressFormat.PNG, 100, baos);
+        image.compress(Bitmap.CompressFormat.JPEG, 10, baos);
         byte[] imageBytes = baos.toByteArray();
-        String imageBase64 = Base64.encodeToString(imageBytes, Base64.DEFAULT);
+        String imageBase64 = Base64.encodeToString(imageBytes, Base64.NO_WRAP);
         imageBase64 = imageBase64.replaceAll("\n", "");
         this.image = imageBase64;
+        Log.e("base64", imageBase64);
     }
 
     @Override

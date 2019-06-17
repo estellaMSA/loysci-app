@@ -77,6 +77,9 @@
 
     <string name="cancel">CANCELAR</string>
     <string name="save">SALVAR</string>
+    <string name="choose_photo">Escolher Foto</string>
+    <string name="upload_photo">Enviar Foto</string>
+
 
     <string name="press_to_exit">Pressione novamente para sair</string>
 
@@ -223,7 +226,8 @@
     <string name="rewards">Recompensas</string>
     <string name="back">VOLTAR</string>
     <string name="unable_to_start_quiz">Não foi possível exibir o quiz!</string>
-    <string name="complete_to_win">Complete todas as missões e ganhe</string>
+    <string name="complete_to_win">Complete todas as missões e ganhe!</string>
+    <string name="complete_to_win_this">Complete esta missão e ganhe pontos!</string>
     <string name="mission_points">PONTOS</string>
     <string name="topics_points">PONTOS</string>
     <string name="super_prize">SUPER-PRÊMIO</string>
@@ -235,7 +239,7 @@
     <string name="rewarded_points">+%d Pontos</string>
     <string name="topic_points">+%d PONTOS</string>
     <string name="finish_dialog">CONCLUIR</string>
-    <string name="mission_activities">Atividades da missão</string>
+    <string name="mission_activities">Atividades da Missão</string>
     <string name="mission_index">Missão %d</string>
     <string name="activitie_done">Você concluiu a atividade</string>
     <string name="activitiy_score">Você acertou %d de %d </string>
@@ -316,4 +320,19 @@
     <string name="answered_right">Você acertou!</string>
     <string name="answered_wrong">Você errou!</string>
     <string name="terms_and_conditions_about">Termos e condições / Sobre o programa</string>
+    <string name="moves_title">Movimentos</string>
+    <string name="feedback_title">Retroalimentação</string>
+    <string name="game_feedback_text">Retroalimentação do Jogo</string>
+    <string name="tryagain">Tente Novamente!</string>
+    <string name="challenge_submitted_successfully">Enviado com Sucesso!</string>
+    <string name="thanks">Obrigado!</string>
+    <string name="title">Titulo</string>
+    <string name="submit">Enviar</string>
+    <string name="share">Compartilhar</string>
+    <string name="share_cancel">Compartilhamento Cancelado</string>
+    <string name="share_success">Compartilhado com Sucesso!</string>
+    <string name="facebook_app_id">156777181858456</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">DTrVQVY7FS9TuysfdWK4dHGPy</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">M080TSPobsbYmhHinYI1yCfSRDxVLJnnXAozrIxQSwSTAcAJsv</string>
+
 </resources>

@@ -36,6 +36,10 @@
     <color name="dialog_title">#de000000</color>
     <color name="challenge_done">#98000000</color>
     <color name="dialog_labels">#99000000</color>
+    <color name="transparent_white_1">#11ffffff</color>
+
+    <!-- GREY -->
+    <color name="grey_900">#6c212121</color>
 
     <!--RED-->
     <color name="md_red_600">#e6007e</color>
@@ -57,4 +61,7 @@
     <color name="color_b">#E9AF6F</color>
     <color name="color_c">#BE6053</color>
     <color name="color_d">#986F4D</color>
+
+
+    <color name="bcr_dark_blue">#0C3693</color>
 </resources>

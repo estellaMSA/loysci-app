@@ -37,6 +37,7 @@ public class Challenge implements Parcelable {
             TYPE_SEE_CONTENT,
             TYPE_UPLOAD_CONTENT,
             TYPE_SOCIAL_NETWORK,
+            TYPE_GAMES,
             TYPE_PREFERENCES_USER
     })
     public @interface ChallengeType {

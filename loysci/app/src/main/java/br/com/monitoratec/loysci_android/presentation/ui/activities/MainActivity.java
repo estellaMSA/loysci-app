@@ -1,7 +1,9 @@
 package br.com.monitoratec.loysci_android.presentation.ui.activities;
 
+import android.app.Activity;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,6 +12,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -28,12 +31,16 @@ import br.com.monitoratec.loysci_android.model.Notification;
 import br.com.monitoratec.loysci_android.model.Points;
 import br.com.monitoratec.loysci_android.model.Profile;
 import br.com.monitoratec.loysci_android.model.Progress;
+import br.com.monitoratec.loysci_android.networkUtils.LoyaltyApi;
 import br.com.monitoratec.loysci_android.presentation.ui.fragments.HomeFragment;
 import br.com.monitoratec.loysci_android.presentation.ui.listeners.ViewModelSimpleCallback;
 import br.com.monitoratec.loysci_android.presentation.ui.presenters.MainActivityPresenter;
 import br.com.monitoratec.loysci_android.presentation.ui.viewModels.MainViewModel;
 import br.com.monitoratec.loysci_android.util.Prefs;
 import br.com.monitoratec.loysci_android.util.WelcomeMessageDialog;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 import static br.com.monitoratec.loysci_android.util.Constants.*;
 
@@ -52,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Home
     String telefonoMovil;
 
     public static Profile profile;
+    private static final int CAMERA_PERMISSION_REQUEST_CODE = 1;
 
     //Slider
     private FragmentManager fragmentManager;

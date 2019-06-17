@@ -13,6 +13,7 @@ import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -27,6 +28,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,7 +37,11 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.lang.ref.WeakReference;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -89,7 +95,8 @@ public class ProfileActivity extends AppCompatActivity {
     private DatePickerDialog.OnDateSetListener dateStart;
 
     private String profileBase64 = "";
-    private Bitmap profileBitmap;
+    Bitmap profileBitmap;
+
     //private Realm realm;
 
 
@@ -155,7 +162,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                requestPermissions(new String[] {Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+                requestPermissions(new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
             }
         }
     }
@@ -270,7 +277,6 @@ public class ProfileActivity extends AppCompatActivity {
         }
     }
 
-
     //Fim Endereço
     private void onClick() {
         binding.fabEditPhoto.setOnClickListener(view -> showOptionsPhoto());
@@ -307,13 +313,13 @@ public class ProfileActivity extends AppCompatActivity {
             binding.tietPhone.setText(profile.getTelefonoMovil());
         }
 
-        //profile = MainActivity.profile;
-/*
         Glide.with(ProfileActivity.this)
                 .load(profile.getAvatar())
                 .crossFade()
-                .diskCacheStrategy(DiskCacheStrategy.RESULT)
-                .into(binding.imgProfile);*/
+                .diskCacheStrategy(DiskCacheStrategy.NONE)
+                .skipMemoryCache(true)
+                .into(binding.imgProfile);
+        profileBase64 = profile.getAvatar();
 
         myCalendar = Calendar.getInstance();
         String myFormat = "dd/MM/yyyy";
@@ -341,7 +347,6 @@ public class ProfileActivity extends AppCompatActivity {
         profile.setTelefonoMovil(binding.tietPhone.getText().toString().replace("(", "").replace(")", "").replace("-", "").trim());
 
         //profile = MainActivity.profile;
-
         Glide.with(this)
                 .load(profile.getAvatar())
                 .crossFade()
@@ -349,7 +354,6 @@ public class ProfileActivity extends AppCompatActivity {
                 .skipMemoryCache(true)
                 .into(binding.imgProfile);
         profileBase64 = profile.getAvatar();
-
 
         //Endereço
         this.populateUserProfileWithInputs(profile);
@@ -363,6 +367,7 @@ public class ProfileActivity extends AppCompatActivity {
         String state = AddressUtil.convertFullStateNameToInitials(binding.state.getSelectedItem().toString(), this);
         profile.setEstadoResidencia(state);*/
 
+        if (profileBase64 != null) profile.setAvatar(profileBase64);
 
         if (binding.spinnerGender.getSelectedItemPosition() == Constants.SPINNER_GENDER_MALE) {
             profile.setIndGenero("M");
@@ -387,12 +392,6 @@ public class ProfileActivity extends AppCompatActivity {
         birthdayCalendar.set(Calendar.MILLISECOND, birthdayCalendar.getMinimum(Calendar.MILLISECOND));
 
         profile.setFechaNacimiento(birthdayCalendar.getTimeInMillis());
-
-        if (profileBase64 != null) {
-
-            //profile.setAvatar(profileBase64);
-            getImageFromImageProfile();
-        }
     }
 
     public Bitmap getImageFromImageProfile() {
@@ -423,7 +422,9 @@ public class ProfileActivity extends AppCompatActivity {
 
             @Override
             public void onCamera() {
-                ProfileActivityPermissionsDispatcher.openCameraForImageWithPermissionCheck(ProfileActivity.this);
+                //ProfileActivityPermissionsDispatcher.openCameraForImageWithPermissionCheck(ProfileActivity.this);
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(intent, CAMERA_REQUEST);
                 photoDialog.dismiss();
             }
 
@@ -459,14 +460,15 @@ public class ProfileActivity extends AppCompatActivity {
         //binding.imgProfile.setVisibility(View.VISIBLE);
         profileBitmap = thumbnail;
         binding.imgProfile.setImageBitmap(thumbnail);
-        uploadFileToServer(data);
+        uploadFileToServer();
     }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == RESULT_OK ) {
 
+        if (resultCode == RESULT_OK) {
             EasyImage.handleActivityResult(requestCode, resultCode, data, this, new DefaultCallback() {
 
                 @Override
@@ -498,22 +500,17 @@ public class ProfileActivity extends AppCompatActivity {
                             presenter.setBitmapPhoto(presenter.setGalleryRequest(data));
                             profileBitmap = bitmap;
 
+                            //base64
                             ByteArrayOutputStream baos = new ByteArrayOutputStream();
                             bitmap.compress(Bitmap.CompressFormat.JPEG, 30, baos);
-
-
                             byte[] imageBytes = baos.toByteArray();
                             presenter.setAvatar(Base64.encodeToString(imageBytes, Base64.NO_WRAP));
                             Log.e("base64", profileBase64);
-
-                            //uploadFileToServer();
-
                             Toast.makeText(ProfileActivity.this, "Salvo!", Toast.LENGTH_LONG).show();
                         } else {
                             Toast.makeText(ProfileActivity.this, "Por favor, tente outra imagem.", Toast.LENGTH_LONG).show();
                         }
                     }
-
                     presenter.setNewImgFile(imagesFiles.get(0));
 
                     Glide.with(getApplicationContext())
@@ -529,34 +526,18 @@ public class ProfileActivity extends AppCompatActivity {
                 }
             });
 
-
             if (requestCode == CAMERA_REQUEST) {
-
-                Bitmap bitmap = presenter.setCameraRequest(data);
-
-                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.JPEG, 30, baos);
-
-
-                byte[] imageBytes = baos.toByteArray();
-                presenter.setAvatar(Base64.encodeToString(imageBytes, Base64.NO_WRAP));
-                Log.e("base64", profileBase64);
-
-
                 onCaptureImageResult(data);
-                //uploadFileToServer(data);
             }
-
 
             if (requestCode == AVATAR_REQUEST) {
                 Bitmap bitmap = presenter.setAvatarRequest(data);
                 if (bitmap != null) {
                     ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                    bitmap.compress(Bitmap.CompressFormat.PNG, 80, baos);
-
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 80, baos);
                     byte[] imageBytes = baos.toByteArray();
                     presenter.setAvatar(Base64.encodeToString(imageBytes, Base64.NO_WRAP));
-                    //uploadFileToServer();
+                    Log.e("base64", profileBase64);
                     Toast.makeText(ProfileActivity.this, "Salvo!", Toast.LENGTH_LONG).show();
                 } else {
                     Toast.makeText(ProfileActivity.this, "Por favor, tente outra imagem.", Toast.LENGTH_LONG).show();
@@ -588,7 +569,6 @@ public class ProfileActivity extends AppCompatActivity {
 
                 }
 
-
                 Glide.with(this)
                         .load(stream.toByteArray())
                         .asBitmap()
@@ -598,28 +578,25 @@ public class ProfileActivity extends AppCompatActivity {
                         .into(binding.imgProfile);
                 presenter.setBitmapPhoto(presenter.setAvatarRequest(data));
                 profileBase64 = profile.getAvatar();
-/*
-                Glide.with(ProfileActivity.this)
-                        .load(profile.getAvatar())
-                        .asBitmap()
-                        .fitCenter()
-                        .centerCrop()
-                        .diskCacheStrategy(DiskCacheStrategy.RESULT)
-                        .skipMemoryCache(true)
-                        .into(binding.imgProfile);
-                profileBase64 = profile.getAvatar();*/
             }
         }
     }
 
-
-    private void uploadFileToServer(Intent data) {
+    private void uploadFileToServer() {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        profileBitmap.compress(Bitmap.CompressFormat.PNG, 50, baos);
+        profileBitmap.compress(Bitmap.CompressFormat.JPEG, 80, baos);
+
+        byte[] imageBytes = baos.toByteArray();
+        presenter.setAvatar(Base64.encodeToString(imageBytes, Base64.NO_WRAP));
+        Log.e("base64", profileBase64);
+        Toast.makeText(ProfileActivity.this, "Salvo!", Toast.LENGTH_LONG).show();
+
+        /*ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        profileBitmap.compress(Bitmap.CompressFormat.JPEG, 50, baos);
         byte[] imageBytes = baos.toByteArray();
         profileBase64 = Base64.encodeToString(imageBytes, Base64.NO_WRAP);
-        profileBase64 = profileBase64.replaceAll("\n","");
-        Log.e("base64", profileBase64);
+        profileBase64 = profileBase64.replaceAll("\n", "");
+        Log.e("base64", profileBase64);*/
     }
 
     private boolean validateFields() {
@@ -648,9 +625,8 @@ public class ProfileActivity extends AppCompatActivity {
         return true;
     }
 
-    private void getProfile(){
+    private void getProfile() {
         //profile = MainActivity.profile;
-
         Glide.with(ProfileActivity.this)
                 .load(profile.getAvatar())
                 .crossFade()

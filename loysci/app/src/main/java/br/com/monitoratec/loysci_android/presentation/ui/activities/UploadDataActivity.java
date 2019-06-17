@@ -5,14 +5,22 @@ import android.app.ProgressDialog;
 import android.content.pm.PackageManager;
 import android.databinding.DataBindingUtil;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.PorterDuff;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.UploadDataActivityBinding;
@@ -42,19 +50,30 @@ public class UploadDataActivity extends AppCompatActivity {
     private String image = "";
     int rewardTotal;
 
+    private ImageView imageView4;
+    private TextView toolbarText;
+    private CardView btnUpload;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this, R.layout.upload_data_activity);
+        setContentView(R.layout.upload_data_activity);
+
+        btnUpload = (CardView) this.findViewById(R.id.button7);
+        imageView4 = (ImageView) this.findViewById(R.id.imageView4);
+
+        toolbarText = (TextView) this.findViewById(R.id.toolbarTitle);
 
         this.image = getIntent().getStringExtra("Image");
 
         Bitmap thumbnail = getIntent().getParcelableExtra("Thumbnail");
 
         if (thumbnail != null) {
-            binding.imageView4.setImageBitmap(thumbnail);
+            imageView4.setImageBitmap(thumbnail);
         }
-        setSupportActionBar(binding.includeToolbar.toolbar);
+
+        Toolbar includeToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(includeToolbar);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayShowTitleEnabled(true);
@@ -62,19 +81,19 @@ public class UploadDataActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
+        toolbarText.setText(R.string.mission_activities);
+
         rewardTotal = challenge.getValor();
 
-        binding.includeToolbar.toolbarTitle.setText(challenge.getEncabezadoArte());
-
-        binding.includeToolbar.toolbar.getNavigationIcon().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
+        includeToolbar.getNavigationIcon().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                requestPermissions(new String[] {Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+                requestPermissions(new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
             }
         }
 
-        binding.button7.setOnClickListener(new View.OnClickListener() {
+        btnUpload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 sendWinner();
@@ -95,7 +114,7 @@ public class UploadDataActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void sendWinner(){
+    private void sendWinner() {
         final ProgressDialog dialog = ProgressDialog.show(UploadDataActivity.this, "",
                 "Por favor, aguarde", true);
 

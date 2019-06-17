@@ -74,8 +74,6 @@ public class MissionActivity extends AppCompatActivity implements SimpleItemClic
         Collections.sort(mission.getChallenges(), new Utilities.challengesSorter());
 
 
-
-
         adapter = new MissionActivitiesAdapter(mission.getChallenges(), this, this);
         binding.recyclerMisions.setAdapter(adapter);
 
@@ -88,11 +86,11 @@ public class MissionActivity extends AppCompatActivity implements SimpleItemClic
         }
 
         binding.txtTopicPoints.setText(getString(R.string.topic_points, pontos));
-        binding.txtCompleteToWin.setText(mission.getTitulo());
+        binding.txtCompleteToWin.setText(R.string.complete_to_win);
         binding.txtMissionTitle.setText(mission.getTitulo());
         binding.txtTopicTitle.setText(mission.getTitulo());
 
-        if(mission.getChallenges().size() > 0)
+        if (mission.getChallenges().size() > 0)
             Glide.with(this).load(mission.getChallenges().get(0).getImagen()).diskCacheStrategy(DiskCacheStrategy.NONE).into(binding.imgMission);
 
         Glide.with(this).load(mission.getImagem()).diskCacheStrategy(DiskCacheStrategy.NONE).into(binding.imgTopic);

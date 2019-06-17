@@ -9,12 +9,18 @@ import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Base64;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -38,7 +44,7 @@ public class ProfileActivityPresenter {
 
     private static final int CAMERA_REQUEST = 1888;
     private static final int GALLERY_REQUEST = 2888;
-    private static final String BASE_STORAGE_URL = " https://movida.s3.amazonaws.com/images/client";
+    private static final String BASE_STORAGE_URL = "https://movida.s3.amazonaws.com/images/client";
     private ProfileActivity view;
     private ActivityProfileBinding binding;
     private Profile profile;
@@ -47,6 +53,7 @@ public class ProfileActivityPresenter {
     private String newAvatar;
     private File newImgFile;
     private String profileBase64 = "";
+    Bitmap profileBitmap;
 
     public void setNewImgFile(File newImgFile) {
         this.newImgFile = newImgFile;
@@ -66,14 +73,26 @@ public class ProfileActivityPresenter {
         binding.profileLayout.setAlpha(0.2f);
         binding.loadingLayout.loadingText.setText(view.getString(R.string.updating_data));
         binding.loadingLayout.loadingLayout.setVisibility(View.VISIBLE);
-        profile.setAvatar(profileBase64);
 
         if(newImgFile!=null){
             updateProfile(); // UpdateProfile will be called when this is finished
         }else{
             updateProfile();
         }
+/*
+        if (profileBitmap == null) {
+            profileBitmap = view.getImageFromImageProfile();
 
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            profileBitmap.compress(Bitmap.CompressFormat.JPEG, 30, baos);
+
+
+            byte[] imageBytes = baos.toByteArray();
+            profile.setAvatar(Base64.encodeToString(imageBytes, Base64.NO_WRAP));
+            profile.getAvatar().replaceAll("\n", "");
+            Log.e("base64", profileBase64);
+        }
+*/
 //        if(profilePhoto == null)
 //            profilePhoto = view.getImageFromImageProfile();
 //
@@ -151,8 +170,6 @@ public class ProfileActivityPresenter {
                             intent.putExtra(PROFILE_PARCELABLE, profile);
                             view.setResult(Activity.RESULT_OK, intent);
                             view.finish();
-                            profile.setAvatar(profileBase64);
-
                             Toast.makeText(view, "Perfil atualizado com sucesso!", Toast.LENGTH_LONG).show();
                         } else {
                             Toast.makeText(view, "Algum erro ocorreu", Toast.LENGTH_SHORT).show();

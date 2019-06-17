@@ -51,7 +51,9 @@ public class MissionActivitiesAdapter extends RecyclerView.Adapter<MissionActivi
     @Override
     public void onBindViewHolder(@NonNull ActivityViewHolder holder, int position) {
         final Challenge challenge = challenges.get(position);
-        holder.binding.txtActivityTitle.setText(challenge.getDescripcion());
+        //holder.binding.txtActivityTitle.setText(challenge.getDescripcion());
+        holder.binding.txtActivityTitle.setText(challenge.getMisionEncuestaPreguntas().get(0).getPregunta());
+
 
         if(challenge.isCompleted()){
             holder.binding.imgActivityDone.setVisibility(View.VISIBLE);

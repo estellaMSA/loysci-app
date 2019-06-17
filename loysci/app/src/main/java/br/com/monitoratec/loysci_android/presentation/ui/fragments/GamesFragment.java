@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -22,9 +23,16 @@ import java.util.List;
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.FragmentGamesBinding;
 import br.com.monitoratec.loysci_android.model.Challenge;
+import br.com.monitoratec.loysci_android.model.ChallengeGame;
+import br.com.monitoratec.loysci_android.model.ChallengeSeeContent;
+import br.com.monitoratec.loysci_android.model.Game;
 import br.com.monitoratec.loysci_android.model.Mission;
 import br.com.monitoratec.loysci_android.model.Topic;
+import br.com.monitoratec.loysci_android.networkUtils.LoyaltyApi;
+import br.com.monitoratec.loysci_android.presentation.ui.activities.ChallengeNetworkActivity;
+import br.com.monitoratec.loysci_android.presentation.ui.activities.ChallengeSeeContentActivity;
 import br.com.monitoratec.loysci_android.presentation.ui.activities.MissionActivity;
+import br.com.monitoratec.loysci_android.presentation.ui.activities.PuzzleActivity;
 import br.com.monitoratec.loysci_android.presentation.ui.activities.SubirConteudoActivity;
 import br.com.monitoratec.loysci_android.presentation.ui.adapters.MissionAdapter;
 import br.com.monitoratec.loysci_android.presentation.ui.adapters.TopicsAdapter;
@@ -33,6 +41,9 @@ import br.com.monitoratec.loysci_android.presentation.ui.listeners.TopicMissionC
 import br.com.monitoratec.loysci_android.presentation.ui.listeners.ViewModelSimpleCallback;
 import br.com.monitoratec.loysci_android.presentation.ui.viewModels.MainViewModel;
 import br.com.monitoratec.loysci_android.util.RequestPrizeDialog;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 import static br.com.monitoratec.loysci_android.util.Constants.ID_MEMBER;
 import static br.com.monitoratec.loysci_android.util.Constants.MISSION_INDEX;
@@ -52,6 +63,9 @@ public class GamesFragment extends Fragment implements TopicMissionCickListener,
     int totalNumberOfMissions = 0;
 
     List<Challenge> challenges = new ArrayList<>();
+    public static Challenge challenge;
+
+    private TextView subencabezado;
 
     public static final String TAG = GamesFragment.class.getSimpleName();
     private MissionAdapter misionAdapter;
@@ -62,8 +76,37 @@ public class GamesFragment extends Fragment implements TopicMissionCickListener,
         binding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_games, container, false);
         binding.loadingGames.setVisibility(View.VISIBLE);
+/*
+        if (challenge.getIndTipoMision().equals(Challenge.TYPE_GAMES) && challenge.getJuego().getTipo().equals(Game.TYPE_RULETA)) {
+            String prizes = "";
 
+            List<ChallengeGame> list = challenge.getJuego().getMisionJuego();
 
+            for (ChallengeGame challengeGame : list) {
+                switch (challengeGame.getIndTipoPremio()) {
+                    case "M": {
+                        prizes += "- " + challengeGame.getCantMetrica() + " " + challengeGame.getMetrica().getNombre();
+
+                        break;
+                    }
+                    case "P": {
+                        prizes += "- " + challengeGame.getPremio().getEncabezadoArte();
+
+                        break;
+                    }
+                    default: {
+                        continue;
+                    }
+                }
+
+                if (list.indexOf(challengeGame) < list.size() - 1) {
+                    prizes += "\n";
+                }
+            }
+
+            subencabezado.setText(subencabezado.getText().toString() + "\n\nPremios:\n\n" + prizes);
+        }
+*/
         return binding.getRoot();
     }
 
@@ -337,19 +380,60 @@ public class GamesFragment extends Fragment implements TopicMissionCickListener,
         if (tipo.equals("E")) {
             Intent intent = new Intent(getContext(), MissionActivity.class);
             intent.putExtra("mission_parcelable", mission);
-
             intent.putExtra(MISSION_INDEX, 0);
             intent.putExtra(ID_MEMBER, model.profile.getIdMiembro());
             startActivityForResult(intent, 0);
         } else if (tipo.equals("S")) {
             Intent intent = new Intent(getContext(), SubirConteudoActivity.class);
             intent.putExtra("mission_parcelable", mission);
-
             intent.putExtra(MISSION_INDEX, 0);
             intent.putExtra(ID_MEMBER, model.profile.getIdMiembro());
             intent.putExtra("imagem", mission.getImagem());
             startActivityForResult(intent, 0);
-        }
+        } else if (tipo.equals("J")) {
+            Intent intent = new Intent(getContext(), PuzzleActivity.class);
+            //intent.putExtra("mission_parcelable", mission);
+            //intent.putExtra(ID_MEMBER, model.profile.getIdMiembro());
+            PuzzleActivity.challenge = desafio;
+            //setRegistrarVistaMision();
+            intent.putExtra("challenge-id", desafio.getIdMision());
+            startActivityForResult(intent, 2);
+        } else if (tipo.equals("V")) {
+            Intent intent = new Intent(getContext(), ChallengeSeeContentActivity.class);
+            //setRegistrarVistaMision();
+            intent.putExtra("mission_parcelable", mission);
+            intent.putExtra(ID_MEMBER, model.profile.getIdMiembro());
+            startActivityForResult(intent, 2);
+        } else if (tipo.equals("R")) {
+            Intent intent = new Intent(getContext(), ChallengeNetworkActivity.class);
+            intent.putExtra("mission_parcelable", mission);
+            intent.putExtra(ID_MEMBER, model.profile.getIdMiembro());
+            intent.putExtra("image", desafio.getMisionRedSocial().getUrlImagen());
+            intent.putExtra("message", desafio.getMisionRedSocial().getMensaje());
+            intent.putExtra("title", desafio.getMisionRedSocial().getTituloUrl());
+            intent.putExtra("urlGeneral", desafio.getMisionRedSocial().getUrlObjectivo());
+            ChallengeNetworkActivity.challenge = desafio;
+            //setRegistrarVistaMision();
 
+            startActivityForResult(intent, 2);
+        }
+    }
+
+
+    //Se registra como vista la mision actual.
+    private void setRegistrarVistaMision() {
+        LoyaltyApi.setRegistrarVistaMision(challenge.getIdMision(), new Callback<Void>() {
+            @Override
+            public void onResponse(Call<Void> call, Response<Void> response) {
+                if (response.isSuccessful()) {
+                    // Toast.makeText(ChallengeDetailActivity.this, response.message(), Toast.LENGTH_LONG).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Void> call, Throwable t) {
+                Log.println(Log.ERROR, "RegistrarVistaMision", t.getMessage());
+            }
+        });
     }
 }

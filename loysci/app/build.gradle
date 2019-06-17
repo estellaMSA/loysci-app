@@ -101,4 +101,12 @@ dependencies {
     implementation 'com.ramotion.paperonboarding:paper-onboarding:1.1.1'
     implementation 'com.github.rtoshiro.fullscreenvideoview:fullscreenvideoview:1.1.2'
 
+    //facebook
+    implementation 'com.facebook.android:facebook-share:[4,5)'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+
+    //twitter
+    implementation 'com.twitter.sdk.android:twitter:3.1.1'
+
+
 }

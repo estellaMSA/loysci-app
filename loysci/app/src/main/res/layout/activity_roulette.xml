@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imgRoulette"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/roulette"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/btnSpin"/>
+
+        <ImageView
+            android:id="@+id/imgRouletteBall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/roulette_ball"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/btnSpin"/>
+
+        <Button
+            android:id="@+id/btnSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Girar a Roleta"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            style="@style/CardView.Light"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutPrize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/imgPrize"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/logo"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/lblPrize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prize"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imgLogo"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
