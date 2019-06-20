@@ -238,6 +238,38 @@
                         android:textSize="16sp" />
                 </android.support.design.widget.TextInputLayout>
 
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:gravity="center"
+                    android:text="Tem um código de indicação,\ndigite abaixo"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_codigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tiet_codigo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:hint="Código de Indicação"
+                        android:inputType="text"
+                        android:nextFocusForward="@id/btn_save"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

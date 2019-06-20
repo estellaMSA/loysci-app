@@ -19,10 +19,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".presentation.ui.activities.BadgesActivity"
+        <activity android:name=".mvp.share.ShareWithFriendsActivity"></activity>
+        <activity
+            android:name=".presentation.ui.activities.BadgesActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="io.fabric.ApiKey"
@@ -125,9 +126,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".presentation.ui.activities.UploadDataVideoActivity"
+            android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|screenSize"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".DoneAvatarActivity"
             android:screenOrientation="portrait" />

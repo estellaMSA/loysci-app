@@ -22,6 +22,40 @@ public class RegisterMemberPresenter {
 
     public void registerMember(Register register) {
 
+
+        if(register.getCodigoIndicacao() == null) {
+
+            callRegister(register);
+        }
+        else{
+
+            LoyaltyApi.setReferralsCode(register.getCodigoIndicacao(), new Callback<Void>() {
+                @Override
+                public void onResponse(Call<Void> call, Response<Void> response) {
+
+                    if(response.code() <=250 && response.code() > 200){
+
+                        register.setCodigoIndicacao(null);
+                        callRegister(register);
+                    }
+                    else{
+                        activity.showFailedMessage(activity.getString(R.string.register_error));
+                    }
+
+                }
+
+                @Override
+                public void onFailure(Call<Void> call, Throwable t) {
+
+
+                    activity.showFailedMessage(activity.getString(R.string.register_error));
+                }
+            });
+        }
+
+    }
+
+    private void callRegister(Register register) {
         LoyaltyApi.setRegister(register, new Callback<Void>() {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
@@ -29,7 +63,7 @@ public class RegisterMemberPresenter {
                 if (response.code() == 204) {
                     executeLogin(register);
                 } else {
-                    if(response.code() == 104 || (response.errorBody() != null && response.errorBody().source() != null && response.errorBody().source().toString().contains("104")))
+                    if (response.code() == 104 || (response.errorBody() != null && response.errorBody().source() != null && response.errorBody().source().toString().contains("104")))
                         activity.showFailedMessage(activity.getString(R.string.profile_exist));
                     else
                         activity.showFailedMessage(activity.getString(R.string.register_error));
@@ -38,10 +72,9 @@ public class RegisterMemberPresenter {
 
             @Override
             public void onFailure(Call<Void> call, Throwable t) {
-                activity.showFailedMessage(activity.getString(R.string.register_error)); 
+                activity.showFailedMessage(activity.getString(R.string.register_error));
             }
         });
-
     }
 
     private void executeLogin(Register register) {
