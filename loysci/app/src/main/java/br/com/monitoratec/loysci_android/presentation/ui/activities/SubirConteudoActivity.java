@@ -80,7 +80,7 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
     private static final int CAMERA_REQUEST = 1888;
     private static final int GALLERY_REQUEST = 2888;
     private static final int CAMERA_PERMISSION_REQUEST_CODE = 1;
-    private static final int REQUEST_VIDEO_CAPTURE = 4;
+    private static final int REQUEST_VIDEO_CAPTURE = 444;
     private LruCache<String, Bitmap> memoryCache;
 
 
@@ -136,6 +136,12 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
                 .crossFade()
                 .into(imageView);
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+            }
+        }
+
         if (challenge.getIndTipoMision() != null) {
             if (challenge.getIndTipoMision().equals(Challenge.TYPE_UPLOAD_CONTENT) && challenge.getMisionSubirContenido().getIndTipo().equals(ChallengeUploadContent.TYPE_IMAGE)) {
                 //btnSend.setText("Carregar Imagem");
@@ -152,15 +158,19 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
                 btnSend.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        selectVideo();
+                        Intent intent = new Intent(SubirConteudoActivity.this, UploadDataVideoActivity.class);
+
+                        UploadDataVideoActivity.challenge = challenge;
+
+                        intent.putExtra("Image", image);
+                        intent.putExtra("Thumbnail", thumbnail);
+
+                        setRegistrarVistaMision();
+                        startActivityForResult(intent, 2);
+
+                        //selectVideo();
                     }
                 });
-            }
-        }
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                requestPermissions(new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
             }
         }
 
@@ -264,16 +274,16 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
         builder.show();
     }
     private void selectVideo() {
-        final CharSequence[] options = { "Gravar Vídeo", "Galeria", "Cancelar" };
+        final CharSequence[] options = { "Gravar Video", "Galeria", "Cancelar" };
         AlertDialog.Builder builder = new AlertDialog.Builder(SubirConteudoActivity.this);
-        builder.setTitle("GRAVAR VÍDEO");
+        builder.setTitle("GRAVAR VIDEO");
         builder.setItems(options, new DialogInterface.OnClickListener() {
 
             @Override
 
             public void onClick(DialogInterface dialog, int item) {
 
-                if (options[item].equals("Gravar Vídeo"))
+                if (options[item].equals("Gravar Video"))
 
                 {
                     Intent takeVideoIntent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
@@ -284,8 +294,8 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
                 } else if (options[item].equals("Galeria"))
 
                 {
-                    Intent intent = new Intent(Intent.ACTION_GET_CONTENT, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                    startActivityForResult(intent, 4);
+                    Intent intent = new Intent(Intent.ACTION_GET_CONTENT, android.provider.MediaStore.Video.Media.EXTERNAL_CONTENT_URI);
+                    startActivityForResult(intent, 444);
 
 
                 } else if (options[item].equals("Cancelar")) {
@@ -322,7 +332,12 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
                 break;
             case ChallengeUploadContent.TYPE_VIDEO:
                 intent = new Intent(SubirConteudoActivity.this, UploadDataVideoActivity.class);
+
                 UploadDataVideoActivity.challenge = challenge;
+
+                intent.putExtra("Image", image);
+                intent.putExtra("Thumbnail", thumbnail);
+
                 setRegistrarVistaMision();
                 break;
         }
@@ -367,7 +382,7 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
 
     private void getBase64(Bitmap image) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        image.compress(Bitmap.CompressFormat.JPEG, 10, baos);
+        image.compress(Bitmap.CompressFormat.JPEG, 80, baos);
         byte[] imageBytes = baos.toByteArray();
         String imageBase64 = Base64.encodeToString(imageBytes, Base64.NO_WRAP);
         imageBase64 = imageBase64.replaceAll("\n", "");

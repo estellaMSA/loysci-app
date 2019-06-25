@@ -502,7 +502,7 @@ public class ProfileActivity extends AppCompatActivity {
 
                             //base64
                             ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                            bitmap.compress(Bitmap.CompressFormat.JPEG, 30, baos);
+                            bitmap.compress(Bitmap.CompressFormat.JPEG, 80, baos);
                             byte[] imageBytes = baos.toByteArray();
                             presenter.setAvatar(Base64.encodeToString(imageBytes, Base64.NO_WRAP));
                             Log.e("base64", profileBase64);

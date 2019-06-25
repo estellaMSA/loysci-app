@@ -1,29 +1,47 @@
 package br.com.monitoratec.loysci_android.presentation.ui.activities;
 
+
 import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.databinding.DataBindingUtil;
+import android.graphics.Bitmap;
 import android.graphics.PorterDuff;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Base64;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.MediaController;
 import android.widget.Toast;
+import android.widget.VideoView;
+
+import com.github.rtoshiro.view.video.FullscreenVideoLayout;
+import com.github.rtoshiro.view.video.FullscreenVideoView;
+import com.iceteck.silicompressorr.SiliCompressor;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URISyntaxException;
 
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.UploadDataVideoActivityBinding;
@@ -37,24 +55,42 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_VIDEO;
+
 public class UploadDataVideoActivity extends AppCompatActivity {
     public static Challenge challenge;
-    static final int REQUEST_VIDEO_CAPTURE = 1;
+    static final int REQUEST_VIDEO_CAPTURE = 444;
     private UploadDataVideoActivityBinding binding;
     private static final int CAMERA_PERMISSION_REQUEST_CODE = 1;
     private String image = "";
     //private File file;
+
+    Button button3;
+    VideoView videoview;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this, R.layout.upload_data_video_activity);
-        binding.button3.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.upload_data_video_activity);
+
+        Button button3 = (Button) findViewById(R.id.button3);
+        videoview = (VideoView) findViewById(R.id.videoview);
+
+        this.image = getIntent().getStringExtra("Image");
+
+        Bitmap thumbnail = getIntent().getParcelableExtra("Thumbnail");
+
+        button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sendWinner();
+                selectImage();
             }
         });
-        setSupportActionBar(binding.includeToolbar.toolbar);
+
+        //ActionBar actionBar = getSupportActionBar();
+        //assert actionBar != null;
+        //actionBar.setDisplayHomeAsUpEnabled(true);
+        //actionBar.setDisplayShowHomeEnabled(true);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayShowTitleEnabled(true);
@@ -62,23 +98,27 @@ public class UploadDataVideoActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
-        binding.includeToolbar.toolbar.getNavigationIcon().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
+        Toolbar includeToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(includeToolbar);
 
+        //includeToolbar.getNavigationIcon().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
+
+        // actionBar.setIcon(getResources().getDrawable(R.drawable.com_facebook_button_send_icon_blue));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
                 requestPermissions(new String[] {Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
             }
         }
-        binding.videoview.setActivity(this);
+        //videoview.setActivity(this);
 
-        Uri videoUri = Uri.parse("https://www.youtube.com/watch?v=8Lq3HyBCuAA");
-        try {
-            binding.videoview.setVideoURI(videoUri);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        VideoView videoView = new VideoView(this);
 
-        setTitle("Carregar Imagem");
+        MediaController mediaController = new MediaController(this);
+        mediaController.setAnchorView(videoView);
+        videoView.setMediaController(mediaController);
+    }
+    public void onPrepared(MediaPlayer player) {
+        player.start();
     }
 
     @Override
@@ -134,7 +174,7 @@ public class UploadDataVideoActivity extends AppCompatActivity {
             base(videoUri);
             // } catch (URISyntaxException e) {
             //   e.printStackTrace();
-            //}
+            // }
 
         }
     }
@@ -172,24 +212,29 @@ public class UploadDataVideoActivity extends AppCompatActivity {
         long fileSizeInMB = fileSizeInKB / 1024;
 
         if (fileSizeInMB <= 25) {
-            try {
+            //try {
                 //Converting bytes into base64
-                image = Base64.encodeToString(byteBuffer.toByteArray(), Base64.DEFAULT);
+                image = Base64.encodeToString(byteBuffer.toByteArray(), Base64.NO_WRAP);
                 image = image.replaceAll("\n","");
-                binding.videoview.setVideoURI(selectedVideoUri);
-                binding.videoview.start();
-                Toast.makeText(UploadDataVideoActivity.this,"Pronto para enviar",Toast.LENGTH_SHORT).show();
-                Log.e("video--> ", image);
-                binding.button3.setVisibility(View.GONE);
-            } catch (IOException e) {
-                e.printStackTrace();
-                Toast.makeText(UploadDataVideoActivity.this,"Por favor, grave outro vídeo",Toast.LENGTH_SHORT).show();
-            }
+                videoview.setVideoURI(selectedVideoUri);
 
+                MediaController mediaController = new MediaController(this);
+                mediaController.setAnchorView(videoview);
+                videoview.setMediaController(mediaController);
+
+                videoview.start();
+
+                Toast.makeText(UploadDataVideoActivity.this,"Pronto para enviar!",Toast.LENGTH_SHORT).show();
+                Log.e("video--> ", image);
+                //button3.setVisibility(View.GONE);
+            //} catch (IOException e) {
+            //    e.printStackTrace();
+            //    Toast.makeText(UploadDataVideoActivity.this,"Favor ingrese otro video",Toast.LENGTH_SHORT).show();
+            //}
         }
         else
         {
-            Toast.makeText(UploadDataVideoActivity.this,"Este vídeo está muito longo.",Toast.LENGTH_SHORT).show();
+            Toast.makeText(UploadDataVideoActivity.this,"O vídeo excedeu o limite de tamanho.",Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -199,14 +244,52 @@ public class UploadDataVideoActivity extends AppCompatActivity {
     }
 
     private void showVideoFullScreen(String link){
-        try {
+        //try {
             Uri video = Uri.parse(link);
-            binding.videoview.setVideoURI(video);
+            videoview.setVideoURI(video);
             //binding.videoview.start();
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        //} catch (IOException e) {
+        //   e.printStackTrace();
+        //}
+    }
+    private void selectImage() {
+        final CharSequence[] options = { "Gravar Vídeo", "Escolher da Galeria","Cancelar" };
+        AlertDialog.Builder builder = new AlertDialog.Builder(UploadDataVideoActivity.this);
+        builder.setTitle("Vídeo");
+        builder.setItems(options, new DialogInterface.OnClickListener() {
+
+            @Override
+
+            public void onClick(DialogInterface dialog, int item) {
+
+                if (options[item].equals("Gravar Vídeo"))
+
+                {
+                    Intent takeVideoIntent = new Intent(android.provider.MediaStore.ACTION_VIDEO_CAPTURE);
+                    if (takeVideoIntent.resolveActivity(getPackageManager()) != null) {
+                        startActivityForResult(takeVideoIntent, REQUEST_VIDEO_CAPTURE);
+                    }
+
+                } else if (options[item].equals("Escolher da Galeria"))
+
+                {
+                    Intent intent = new Intent(Intent.ACTION_GET_CONTENT, android.provider.MediaStore.Video.Media.EXTERNAL_CONTENT_URI);
+                    startActivityForResult(intent, 444);
+
+
+                } else if (options[item].equals("Cancelar")) {
+
+                    dialog.dismiss();
+
+                }
+
+            }
+
+        });
+
+        builder.show();
+
     }
 
     private void sendWinner() {
@@ -236,7 +319,9 @@ public class UploadDataVideoActivity extends AppCompatActivity {
         }
         else
         {
-            Toast.makeText(UploadDataVideoActivity.this, "Não foi possível guardar este vídeo", Toast.LENGTH_SHORT).show();
+            Toast.makeText(UploadDataVideoActivity.this, "Não foi possível enviar o vídeo.", Toast.LENGTH_SHORT).show();
         }
+
     }
 }
+
