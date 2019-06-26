@@ -14,9 +14,19 @@ public class Register implements Parcelable {
     private String correo;
     private String nombreUsuario;
     private String telefonoMovil;
+    private String codigoIndicacao;
     private boolean indContactoEmail;
     private boolean indContactoSms;
     private boolean indContactoNotificacion;
+
+
+    public String getCodigoIndicacao() {
+        return codigoIndicacao;
+    }
+
+    public void setCodigoIndicacao(String codigoIndicacao) {
+        this.codigoIndicacao = codigoIndicacao;
+    }
 
     public boolean isIndContactoEmail() {
         return indContactoEmail;
@@ -133,9 +143,11 @@ public class Register implements Parcelable {
         dest.writeString(this.correo);
         dest.writeString(this.nombreUsuario);
         dest.writeString(this.telefonoMovil);
+        dest.writeString(this.codigoIndicacao);
         dest.writeByte(this.indContactoEmail ? (byte) 1 : (byte) 0);
         dest.writeByte(this.indContactoSms ? (byte) 1 : (byte) 0);
         dest.writeByte(this.indContactoNotificacion ? (byte) 1 : (byte) 0);
+
     }
 
     protected Register(Parcel in) {
@@ -148,6 +160,7 @@ public class Register implements Parcelable {
         this.correo = in.readString();
         this.nombreUsuario = in.readString();
         this.telefonoMovil = in.readString();
+        this.codigoIndicacao = in.readString();
         this.indContactoEmail = in.readByte() != 0;
         this.indContactoSms = in.readByte() != 0;
         this.indContactoNotificacion = in.readByte() != 0;

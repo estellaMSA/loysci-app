@@ -32,6 +32,7 @@ import br.com.monitoratec.loysci_android.model.Points;
 import br.com.monitoratec.loysci_android.model.Profile;
 import br.com.monitoratec.loysci_android.model.Progress;
 import br.com.monitoratec.loysci_android.networkUtils.LoyaltyApi;
+import br.com.monitoratec.loysci_android.mvp.share.ShareWithFriendsActivity;
 import br.com.monitoratec.loysci_android.presentation.ui.fragments.HomeFragment;
 import br.com.monitoratec.loysci_android.presentation.ui.listeners.ViewModelSimpleCallback;
 import br.com.monitoratec.loysci_android.presentation.ui.presenters.MainActivityPresenter;
@@ -45,11 +46,11 @@ import retrofit2.Response;
 import static br.com.monitoratec.loysci_android.util.Constants.*;
 
 public class MainActivity extends AppCompatActivity implements HomeFragment.HomeOptionsListener, View.OnClickListener {
-    boolean slider = false;
-    private ActivityMainBinding binding;
-    private final String TAG = this.getClass().getName();
-    boolean isClicked = false;
     public static ArrayList<Notification> notifications;
+    public static Profile profile;
+    private final String TAG = this.getClass().getName();
+    boolean slider = false;
+    boolean isClicked = false;
     MainViewModel model;
     MainActivityPresenter presenter;
     boolean doubleBackToExitPressedOnce = false;
@@ -61,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Home
     public static Profile profile;
     private static final int CAMERA_PERMISSION_REQUEST_CODE = 1;
 
+    private ActivityMainBinding binding;
     //Slider
     private FragmentManager fragmentManager;
 
@@ -83,10 +85,10 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Home
                 }
             }
         });
-        if(getIntent().getExtras() != null) {
-            isNewMember =   getIntent().getExtras().getBoolean(IS_NEW_MEMBER);
-            cardType =  getIntent().getExtras().getString(CARD_TYPE);
-            communicationAuthorized =  getIntent().getExtras().getBoolean(AUTHORIZE_COMMUNICATION);
+        if (getIntent().getExtras() != null) {
+            isNewMember = getIntent().getExtras().getBoolean(IS_NEW_MEMBER);
+            cardType = getIntent().getExtras().getString(CARD_TYPE);
+            communicationAuthorized = getIntent().getExtras().getBoolean(AUTHORIZE_COMMUNICATION);
             telefonoMovil = getIntent().getExtras().getString(TELEFONO_MOVIL);
         }
         binding.notificationLayout.setOnClickListener(this);
@@ -155,7 +157,7 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Home
                 Prefs.saveProfile(model.profile);
                 setProfileImage();
                 setNameLastname();
-                if(isNewMember && cardType!=null){
+                if (isNewMember && cardType != null) {
                     presenter.setPoints(model.profile.getIdMiembro(), REGISTER_VALUE, cardType, "B1", "Bonus Cadastro");
                     model.profile.defineCardType(cardType);
                     model.profile.defineAcceptContract(true);
@@ -181,13 +183,13 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Home
                 }
             }
         }, true);
-        if(isNewMember){
+        if (isNewMember) {
             WelcomeMessageDialog dialog = new WelcomeMessageDialog(this);
             dialog.show();
         }
     }
 
-    private void setNameLastname(){
+    private void setNameLastname() {
         String jsonProfile = Prefs.getProfile();
         String nomeSobrenome;
         if (jsonProfile != null) {
@@ -277,8 +279,7 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Home
 
                 if (i == levels.size() - 1) {
                     result = 100;
-                }
-                else {
+                } else {
                     result = multiple / Math.round(model.progress.getNiveles().get(i + 1).getMetricaInicial());
                 }
 
@@ -356,7 +357,7 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Home
                 break;
 
             case HOME_REGULAMENTO:
-                startActivity(new Intent(this, RegulationsActivity.class));
+                startActivity(new Intent(this, ShareWithFriendsActivity.class));
                 break;
 
 

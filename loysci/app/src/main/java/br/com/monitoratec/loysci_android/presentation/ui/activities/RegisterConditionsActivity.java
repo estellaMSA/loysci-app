@@ -99,7 +99,7 @@ public class RegisterConditionsActivity extends AppCompatActivity {
         dialog.show();
     }
 
-    private void completeRegistration() {
+    private void  completeRegistration() {
         if(binding.checkConditions.isChecked()){
             register.setIndContactoEmail(binding.checkEmail.isChecked());
             register.setIndContactoNotificacion(binding.checkEmail.isChecked());

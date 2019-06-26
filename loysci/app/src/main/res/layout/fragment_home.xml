@@ -285,7 +285,7 @@
                                 android:layout_width="36dp"
                                 android:layout_height="36dp"
                                 android:scaleType="fitCenter"
-                                android:src="@drawable/regulamento"
+                                android:src="@drawable/icn_share"
                                 android:tint="@color/colorPrimary" />
 
                             <TextView
@@ -295,7 +295,7 @@
                                 android:fontFamily="sans-serif"
                                 android:gravity="center"
                                 android:lineSpacingExtra="4sp"
-                                android:text="@string/home_regulamento"
+                                android:text="@string/indique"
                                 android:textColor="@color/light_grey2"
                                 android:textSize="12sp" />
                         </LinearLayout>

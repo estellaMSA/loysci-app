@@ -67,6 +67,7 @@ public class RegisterProfileActivity extends AppCompatActivity {
             register.setNombreUsuario(binding.tietCpf.getText().toString().replaceAll("\\D+",""));
             register.setCorreo(binding.tietEmail.getText().toString());
             register.setTelefonoMovil(binding.tietCellphone.getText().toString().replaceAll("\\D+",""));
+            register.setCodigoIndicacao(binding.tietCodigo.getText().toString());
             Intent intent = new Intent(this, RegisterPasswordActivity.class);
             intent.putExtra(REGISTER_PARCELABLE,register);
             startActivityForResult(intent,0);
