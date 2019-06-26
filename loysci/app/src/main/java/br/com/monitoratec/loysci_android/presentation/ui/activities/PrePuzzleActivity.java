@@ -1,11 +1,8 @@
 package br.com.monitoratec.loysci_android.presentation.ui.activities;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.PorterDuff;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -23,7 +20,6 @@ import java.util.List;
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.ActivitySubirconteudoBinding;
 import br.com.monitoratec.loysci_android.model.Challenge;
-import br.com.monitoratec.loysci_android.model.ChallengeUploadContent;
 import br.com.monitoratec.loysci_android.model.Mission;
 import br.com.monitoratec.loysci_android.presentation.ui.listeners.SimpleItemClickListener;
 import br.com.monitoratec.loysci_android.util.CustomPhotoPickerDialog;

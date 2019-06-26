@@ -2,17 +2,14 @@ package br.com.monitoratec.loysci_android.presentation.presenter;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.widget.Toast;
 
 import br.com.monitoratec.loysci_android.R;
-import br.com.monitoratec.loysci_android.databinding.ActivityEditAddressBinding;
 
 import br.com.monitoratec.loysci_android.databinding.ActivityProfileBinding;
 import br.com.monitoratec.loysci_android.model.Profile;
 import br.com.monitoratec.loysci_android.networkUtils.LoyaltyApi;
-import br.com.monitoratec.loysci_android.presentation.ui.activities.EditAddressActivity;
 import br.com.monitoratec.loysci_android.presentation.ui.activities.ProfileActivity;
 
 import retrofit2.Call;

@@ -1,7 +1,6 @@
 package br.com.monitoratec.loysci_android.util;
 
 import android.app.Dialog;
-import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,7 +10,6 @@ import android.view.View;
 import android.view.Window;
 
 import br.com.monitoratec.loysci_android.R;
-import br.com.monitoratec.loysci_android.databinding.DialogFinishedMissionBinding;
 import br.com.monitoratec.loysci_android.databinding.DialogFinishedQuizBinding;
 import br.com.monitoratec.loysci_android.model.Challenge;
 import br.com.monitoratec.loysci_android.presentation.ui.activities.QuizActivity;

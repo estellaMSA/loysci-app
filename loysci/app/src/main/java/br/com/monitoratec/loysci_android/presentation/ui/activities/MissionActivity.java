@@ -37,7 +37,6 @@ import static br.com.monitoratec.loysci_android.util.Constants.QUIZ_COMPLETED_RI
 import static br.com.monitoratec.loysci_android.util.Constants.QUIZ_COMPLETED_WRONG;
 import static br.com.monitoratec.loysci_android.util.Constants.REMAINING_ACTIVITIES;
 import static br.com.monitoratec.loysci_android.util.Constants.REWARD_TOTAL;
-import static br.com.monitoratec.loysci_android.util.Constants.TOPIC_PARCELABLE;
 
 public class MissionActivity extends AppCompatActivity implements SimpleItemClickListener {
 

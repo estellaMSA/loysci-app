@@ -11,11 +11,9 @@ import android.view.ViewGroup;
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.FragmentHomeBinding;
 
-import static br.com.monitoratec.loysci_android.util.Constants.HOME_ADDRESS_OPTION;
 import static br.com.monitoratec.loysci_android.util.Constants.HOME_BADGES;
 import static br.com.monitoratec.loysci_android.util.Constants.HOME_CARTAO_VIRTUAL;
 import static br.com.monitoratec.loysci_android.util.Constants.HOME_CHANGE_PASS_OPTION;
-import static br.com.monitoratec.loysci_android.util.Constants.HOME_DRIVER_LICENSE_OPTION;
 import static br.com.monitoratec.loysci_android.util.Constants.HOME_GET_PRIZE;
 import static br.com.monitoratec.loysci_android.util.Constants.HOME_PARTICIPATE_WIN;
 import static br.com.monitoratec.loysci_android.util.Constants.HOME_PERSONAL_DATA_OPTION;

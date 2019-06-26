@@ -1,7 +1,6 @@
 package br.com.monitoratec.loysci_android.util;
 
 import android.app.Dialog;
-import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.databinding.DataBindingUtil;
@@ -20,9 +19,6 @@ import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.DialogReceiptBinding;
 import br.com.monitoratec.loysci_android.model.Reward;
 import br.com.monitoratec.loysci_android.presentation.ui.adapters.VoucherReceiptAdapter;
-
-
-import static android.content.ClipData.*;
 
 public class ReceiptDialog extends Dialog {
     private Context context;

@@ -23,22 +23,17 @@ import com.bumptech.glide.request.target.Target;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.ActivityVoucherBinding;
 import br.com.monitoratec.loysci_android.model.Badge;
 import br.com.monitoratec.loysci_android.model.Reward;
-import br.com.monitoratec.loysci_android.model.VoucherBackendResponse.CouponRSCore;
 import br.com.monitoratec.loysci_android.presentation.presenter.VoucherActivityPresenter;
 import br.com.monitoratec.loysci_android.presentation.ui.listeners.SimpleCallback;
 import br.com.monitoratec.loysci_android.util.AddVoucherDialog;
 import br.com.monitoratec.loysci_android.util.ConfirmationDialog;
-import br.com.monitoratec.loysci_android.util.MissionEndDialog;
 import br.com.monitoratec.loysci_android.util.Prefs;
 import br.com.monitoratec.loysci_android.util.ReceiptDialog;
 import br.com.monitoratec.loysci_android.util.VoucherAlertDialog;

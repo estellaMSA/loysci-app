@@ -13,7 +13,6 @@ import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -28,7 +27,6 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,11 +35,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.lang.ref.WeakReference;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -72,7 +66,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import static pl.aprilapps.easyphotopicker.Constants.RequestCodes.PICK_PICTURE_FROM_GALLERY;
-import static pl.aprilapps.easyphotopicker.Constants.RequestCodes.TAKE_PICTURE;
 
 @RuntimePermissions
 public class ProfileActivity extends AppCompatActivity {

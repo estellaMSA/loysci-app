@@ -1,36 +1,17 @@
 package br.com.monitoratec.loysci_android.presentation.ui.activities;
 
 
-import android.app.ProgressDialog;
 import android.databinding.DataBindingUtil;
-import android.graphics.Bitmap;
 import android.graphics.PorterDuff;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Base64;
-import android.util.Log;
 import android.view.MenuItem;
-import android.view.ViewTreeObserver;
-import android.webkit.WebView;
 
 
 import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.RandomAccessFile;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
-import android.databinding.DataBindingUtil;
-import android.graphics.PorterDuff;
-import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
 
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.ActivityRegulationsBinding;
