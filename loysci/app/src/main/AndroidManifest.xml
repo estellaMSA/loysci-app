@@ -19,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mvp.share.ShareWithFriendsActivity"></activity>
+        <activity android:name=".mvp.conteudo.VerConteudoActivity"></activity>
+        <activity android:name=".mvp.share.ShareWithFriendsActivity" />
         <activity
             android:name=".presentation.ui.activities.BadgesActivity"
             android:launchMode="singleTop"

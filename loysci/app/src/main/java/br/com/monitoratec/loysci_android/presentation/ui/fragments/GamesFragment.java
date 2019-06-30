@@ -24,6 +24,7 @@ import br.com.monitoratec.loysci_android.databinding.FragmentGamesBinding;
 import br.com.monitoratec.loysci_android.model.Challenge;
 import br.com.monitoratec.loysci_android.model.Mission;
 import br.com.monitoratec.loysci_android.model.Topic;
+import br.com.monitoratec.loysci_android.mvp.conteudo.VerConteudoActivity;
 import br.com.monitoratec.loysci_android.presentation.ui.activities.MissionActivity;
 import br.com.monitoratec.loysci_android.presentation.ui.activities.SubirConteudoActivity;
 import br.com.monitoratec.loysci_android.presentation.ui.adapters.MissionAdapter;
@@ -349,6 +350,18 @@ public class GamesFragment extends Fragment implements TopicMissionCickListener,
             intent.putExtra(ID_MEMBER, model.profile.getIdMiembro());
             intent.putExtra("imagem", mission.getImagem());
             startActivityForResult(intent, 0);
+        }
+        else if(tipo.equals("V")){
+
+            Intent intent = new Intent(getContext(), VerConteudoActivity.class);
+            intent.putExtra("mission_parcelable", mission);
+
+            intent.putExtra(MISSION_INDEX, 0);
+            intent.putExtra(ID_MEMBER, model.profile.getIdMiembro());
+            intent.putExtra("imagem", mission.getImagem());
+            startActivityForResult(intent, 0);
+
+
         }
 
     }

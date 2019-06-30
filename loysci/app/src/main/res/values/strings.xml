@@ -18,6 +18,7 @@
     <string name="failed_load_profile">Não foi possível carregar seu perfil!</string>
     <string name="success_change_pass">A senha foi alterada com sucesso</string>
     <string name="success_subir_conteudo">Sua imagem foi enviada com sucesso!</string>
+    <string name="success_see_conteudo">Pontos Resgatados com sucesso!</string>
     <string name="failed_change_pass">Não foi possível alterar sua senha!</string>
     <string name="wrong_pass">Senha atual incorreta!</string>
     <string name="failed_load_promotions">Não foi possível carregar suas promoções!</string>

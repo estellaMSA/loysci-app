@@ -15,6 +15,7 @@ import retrofit2.Response;
 public class RegisterMemberPresenter {
 
     RegisterConditionsActivity activity;
+    private String codigo;
 
     public RegisterMemberPresenter(RegisterConditionsActivity activity) {
         this.activity = activity;
@@ -22,36 +23,13 @@ public class RegisterMemberPresenter {
 
     public void registerMember(Register register) {
 
+        codigo = register.getCodigoIndicacao();
 
-        if(register.getCodigoIndicacao() == null) {
+        register.setCodigoIndicacao(null);
 
             callRegister(register);
-        }
-        else{
-
-            LoyaltyApi.setReferralsCode(register.getCodigoIndicacao(), new Callback<Void>() {
-                @Override
-                public void onResponse(Call<Void> call, Response<Void> response) {
-
-                    if(response.code() <=250 && response.code() > 200){
-
-                        register.setCodigoIndicacao(null);
-                        callRegister(register);
-                    }
-                    else{
-                        activity.showFailedMessage(activity.getString(R.string.register_error));
-                    }
-
-                }
-
-                @Override
-                public void onFailure(Call<Void> call, Throwable t) {
 
 
-                    activity.showFailedMessage(activity.getString(R.string.register_error));
-                }
-            });
-        }
 
     }
 
@@ -83,7 +61,16 @@ public class RegisterMemberPresenter {
             public void onResponse(Call<AccessToken> call, Response<AccessToken> response) {
                 if (response.isSuccessful()) {
                     Prefs.saveAccessToken(response.body());
-                    activity.registerSuccess();
+
+
+
+                    if(codigo != null)
+                        referUser(register);
+                    else
+                        activity.registerSuccess();
+
+
+
                 } else {
                     activity.showFailedLogin(activity.getString(R.string.auto_login_failed));
                 }
@@ -106,5 +93,35 @@ public class RegisterMemberPresenter {
 
             }
         });
+    }
+
+    private void referUser(Register register) {
+
+
+
+
+        LoyaltyApi.setReferralsCode(codigo, new Callback<Void>() {
+            @Override
+            public void onResponse(Call<Void> call, Response<Void> response) {
+
+                if(response.code() <=250 && response.code() > 200){
+
+                    activity.registerSuccess();
+                    register.setCodigoIndicacao(null);
+                }
+                else{
+                    activity.showFailedMessage(activity.getString(R.string.register_error));
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<Void> call, Throwable t) {
+
+
+                activity.showFailedMessage(activity.getString(R.string.register_error));
+            }
+        });
+
     }
 }
