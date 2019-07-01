@@ -26,6 +26,12 @@ android {
         versionCode 13
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+        ndk {
+            // config you want to support device
+            abiFilters 'arm64-v8a', 'armeabi', 'armeabi-v7a', 'x86','x86_64'
+        }
     }
 
     sourceSets {
@@ -107,5 +113,6 @@ dependencies {
 
     //twitter
     implementation 'com.twitter.sdk.android:twitter:3.1.1'
+    implementation 'com.henryblue.mxvideoplayer:xvideoplayer:1.1.6'
 
 }
