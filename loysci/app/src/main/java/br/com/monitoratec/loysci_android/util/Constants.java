@@ -105,4 +105,7 @@ public class Constants {
 
     public static final int EXIT_TOOLBAR_TRIGGERED = 1;
     public static final int EXIT_BUTTON_TRIGGERED = 2;
+
+
+    public enum ChalengeSeeContentTypeEnum {VIDEO, LINK,IMAGE}
 }
