@@ -414,9 +414,7 @@ public class GamesFragment extends Fragment implements TopicMissionCickListener,
             //setRegistrarVistaMision();
 
             startActivityForResult(intent, 2);
-        }
-    }
-        else if(tipo.equals("V")){
+        } else if (tipo.equals("V")) {
 
             Intent intent = new Intent(getContext(), VerConteudoActivity.class);
             intent.putExtra("mission_parcelable", mission);
@@ -428,6 +426,8 @@ public class GamesFragment extends Fragment implements TopicMissionCickListener,
 
 
         }
+    }
+
     //Se registra como vista la mision actual.
     private void setRegistrarVistaMision() {
         LoyaltyApi.setRegistrarVistaMision(challenge.getIdMision(), new Callback<Void>() {
