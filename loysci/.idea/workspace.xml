@@ -5,35 +5,17 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="28ee1d87-3319-42c9-be7c-69e0efc96a89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/EditAddressPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/EditAddressPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/BadgesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/BadgesActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeSeeContentActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeSeeContentActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/MissionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/MissionActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/PrePuzzleActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/PrePuzzleActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/QuizActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/QuizActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/RegulationsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/RegulationsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/SubirConteudoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/SubirConteudoActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/UploadDataActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/UploadDataActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/UploadDataVideoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/UploadDataVideoActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/VoucherActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/VoucherActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/BadgesAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/BadgesAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/MissionAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/adapters/MissionAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/GamesFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/GamesFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/HomeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/RegulationFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/RegulationFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/SalesFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/SalesFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/BadgeDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/BadgeDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/MissionEndDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/MissionEndDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/ReceiptDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/ReceiptDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/upload_data_video_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/upload_data_video_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,22 +26,119 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="loysci" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeSeeContentActivity.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/SubirConteudoActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="135" column="47" lean-forward="true" selection-start-line="135" selection-start-column="47" selection-end-line="135" selection-end-column="47" />
+            <state relative-caret-position="1853">
+              <caret line="155" selection-start-line="155" selection-end-line="155" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/UploadDataVideoActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1224">
+              <caret line="121" column="49" selection-start-line="121" selection-start-column="49" selection-end-line="121" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/GamesFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6001">
+              <caret line="404" column="72" selection-start-line="404" selection-start-column="72" selection-end-line="404" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="443" selection-start-line="443" selection-end-line="443" />
+              <folding>
+                <element signature="e#5775#5776#0" expanded="true" />
+                <element signature="e#5859#5860#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_challenge_network.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="81" column="27" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1287">
+              <caret line="148" column="17" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>1024</find>
+      <find>profileac</find>
+      <find>base64</find>
+      <find>manifest</find>
+      <find>sili</find>
+      <find>Escolher</find>
+      <find>choose_photo</find>
+      <find>não foi possível</find>
+      <find>onOptionsItemSelected</find>
+      <find>instagram</find>
+      <find>uri</find>
+      <find>'</find>
+      <find>imgShare</find>
+      <find>type</find>
+      <find>imgS</find>
+      <find>shareima</find>
+      <find>thumb</find>
+      <find>thumbnai</find>
+      <find>thumbnail</find>
+      <find>listo</find>
+      <find>bitmap</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -93,15 +172,22 @@
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/RequestPrizeDialog.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/PurchaseVoucherMissingCarAlertDialog.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/MissionActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/SubirConteudoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/PromotionDetailsDialog.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/ProgramFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/ReceiptDialog.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/SubirConteudoActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/upload_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/UploadDataVideoActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/upload_data_video_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_challenge_network.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -111,6 +197,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
@@ -158,16 +246,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="8XV7N16602001882" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../demos-android" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1561572628311" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1561985354341" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -256,34 +342,161 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" visible="true" weight="0.32980332" />
-      <window_info id="Structure" side_tool="true" />
-      <window_info id="Build Variants" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Resources Explorer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Run" />
-      <window_info anchor="bottom" id="Logcat" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="TODO" />
-      <window_info anchor="bottom" id="Android Profiler" />
-      <window_info anchor="bottom" id="Debug" weight="0.7446808" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.3289689" />
-      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25037822" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Run" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.63502455" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4222586" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.33387887" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.32980332" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Preview" order="5" weight="0.32980332" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/UploadDataVideoActivity.java</url>
+          <line>278</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java</url>
+          <line>273</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java</url>
+          <line>306</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java</url>
+          <line>247</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java</url>
+          <line>219</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java</url>
+          <line>231</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java</url>
+          <line>369</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java</url>
+          <line>368</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java</url>
+          <line>268</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java</url>
+          <line>328</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java</url>
+          <line>327</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java</url>
+          <line>199</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java</url>
+          <line>393</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java</url>
+          <line>443</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java</url>
+          <line>457</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java</url>
+          <line>214</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="((ChallengeNetworkActivity)this).imgShare" language="JAVA" custom="br.com.monitoratec.loysci_android.presentation.ui.activities.ChallengeNetworkActivity" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>((ChallengeNetworkActivity)this).imgShare</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>br.com.monitoratec.loysci_android.presentation.ui.activities.ChallengeNetworkActivity</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/CustomPhotoPickerDialog.java">
@@ -353,13 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/UploadDataActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -440,13 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/SubirConteudoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="75" column="26" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/util/PromotionDetailsDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -482,13 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/GamesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/QuizActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -498,8 +690,156 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeSeeContentActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="135" column="47" lean-forward="true" selection-start-line="135" selection-start-column="47" selection-end-line="135" selection-end-column="47" />
+        <state relative-caret-position="621">
+          <caret line="146" column="37" selection-start-line="146" selection-start-column="37" selection-end-line="146" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/java/io/ByteArrayOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="141" column="17" lean-forward="true" selection-start-line="141" selection-start-column="17" selection-end-line="141" selection-end-column="17" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="79" column="30" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/upload_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          <folding>
+            <element signature="e#265#279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-common/4.42.0/530f5efa4a36dbe8c7b41563278085ffc59b5b26/facebook-common-4.42.0-sources.jar!/com/facebook/share/model/SharePhotoContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1449">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/upload_data_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/UploadDataActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/upload_data_video_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" column="58" selection-start-line="69" selection-start-column="58" selection-end-line="69" selection-end-column="58" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-core/4.42.0/fb5e3c3090fd0619477fa01ed53fc0f1bcf42188/facebook-core-4.42.0-sources.jar!/com/facebook/CallbackManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-common/4.42.0/530f5efa4a36dbe8c7b41563278085ffc59b5b26/facebook-common-4.42.0-sources.jar!/com/facebook/share/widget/ShareDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/SubirConteudoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/UploadDataVideoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="121" column="49" selection-start-line="121" selection-start-column="49" selection-end-line="121" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/fragments/GamesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6001">
+          <caret line="404" column="72" selection-start-line="404" selection-start-column="72" selection-end-line="404" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_challenge_network.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="6294" selection-start-line="6294" selection-end-line="6294" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/appcompat-v7/27.1.1/21d073509c5f8d25a1bf274067fa729a1fba8d75/appcompat-v7-27.1.1-sources.jar!/android/support/v7/app/AlertDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="1004" selection-start-line="1004" selection-end-line="1004" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ProfileActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="81" column="27" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/presenter/ProfileActivityPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1287">
+          <caret line="148" column="17" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/monitoratec/loysci_android/presentation/ui/activities/ChallengeNetworkActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="443" selection-start-line="443" selection-end-line="443" />
+          <folding>
+            <element signature="e#5775#5776#0" expanded="true" />
+            <element signature="e#5859#5860#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

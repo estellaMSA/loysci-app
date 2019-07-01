@@ -1,7 +1,9 @@
 package br.com.monitoratec.loysci_android.presentation.ui.activities;
 
+import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -9,6 +11,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.ActionBar;
@@ -98,13 +101,13 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
                 LikeView.ObjectType.PAGE);
 
         shareButton = (Button) this.findViewById(R.id.button2);
-        /*shareButton.setOnClickListener(new View.OnClickListener() {
+        shareButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //selectOptionsShare();
                 share();
             }
-        });*/
+        });
 
         imgShare = findViewById(R.id.imgShare);
 
@@ -116,6 +119,13 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
         //setUpTwitterButton();
 
         new DownloadImageTask().execute(url);
+
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[] {Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+            }
+        }
     }
 
     private void setUpTwitterButton() {
@@ -279,7 +289,7 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
         builder.show();
     }
     private void selectImage() {
-        final CharSequence[] options = { "Tirar uma foto", "Escolher foto da galeria","Cancelar" };
+        final CharSequence[] options = { "Tirar uma foto", "Escolher da Galeria","Cancelar" };
         AlertDialog.Builder builder = new AlertDialog.Builder(ChallengeNetworkActivity.this);
         builder.setTitle("Add Photo!");
         builder.setItems(options, new DialogInterface.OnClickListener() {
@@ -294,10 +304,10 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
                     Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                     startActivityForResult(intent, 3);
 
-                } else if (options[item].equals("Escolher foto da galeria"))
+                } else if (options[item].equals("Escolher da Galeria"))
 
                 {
-                    Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                    Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI);
                     startActivityForResult(intent, 2);
 
                 } else if (options[item].equals("Cancelar")) {
