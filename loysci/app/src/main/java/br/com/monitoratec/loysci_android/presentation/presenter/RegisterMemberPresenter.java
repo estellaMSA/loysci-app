@@ -64,7 +64,7 @@ public class RegisterMemberPresenter {
 
 
 
-                    if(codigo != null)
+                    if(codigo != null && !codigo.isEmpty())
                         referUser(register);
                     else
                         activity.registerSuccess();
