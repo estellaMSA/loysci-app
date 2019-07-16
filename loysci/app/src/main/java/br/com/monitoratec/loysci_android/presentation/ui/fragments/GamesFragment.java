@@ -423,8 +423,6 @@ public class GamesFragment extends Fragment implements TopicMissionCickListener,
             intent.putExtra(ID_MEMBER, model.profile.getIdMiembro());
             intent.putExtra("imagem", mission.getImagem());
             startActivityForResult(intent, 0);
-
-
         }
     }
 

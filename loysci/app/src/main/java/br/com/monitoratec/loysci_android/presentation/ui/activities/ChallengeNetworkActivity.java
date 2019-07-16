@@ -145,6 +145,12 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
 
         //setUpTwitterButton();
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+            }
+        }
+
         new DownloadImageTask().execute(url);
 
 

@@ -25,12 +25,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.bumptech.glide.Glide;
 import com.iceteck.silicompressorr.SiliCompressor;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.ByteArrayOutputStream;
 import java.util.List;
 
 import br.com.monitoratec.loysci_android.R;
