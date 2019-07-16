@@ -3,6 +3,8 @@ package br.com.monitoratec.loysci_android.mvp.conteudo;
 import android.content.DialogInterface;
 import android.databinding.DataBindingUtil;
 import android.graphics.PorterDuff;
+import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -28,7 +30,8 @@ public class VerConteudoActivity extends AppCompatActivity implements  VerConteu
     ActivityVerConteudoBinding binding;
 
     VerConteudoPresenter presenter;
-
+    private String urlToSee;
+    private boolean openUrl;
 
 
     @Override
@@ -48,7 +51,15 @@ public class VerConteudoActivity extends AppCompatActivity implements  VerConteu
         presenter.init();
 
 
-        binding.btResgatar.setOnClickListener(new View.OnClickListener() {
+        binding.btResgatar.setOnClickListener(onclick());
+        binding.btResgatarFake.setOnClickListener(onclick());
+
+
+
+    }
+
+    private View.OnClickListener onclick() {
+        return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -56,10 +67,7 @@ public class VerConteudoActivity extends AppCompatActivity implements  VerConteu
                 showConfirmSeeContent();
 
             }
-        });
-
-
-
+        };
     }
 
     private void showConfirmSeeContent() {
@@ -130,8 +138,10 @@ public class VerConteudoActivity extends AppCompatActivity implements  VerConteu
     @Override
     public void setWebUrl(String url) {
         binding.ivPlayer.setVisibility(View.GONE);
-        binding.mpwVideoPlayer.setVisibility(View.VISIBLE);
-        loadWebview(url);
+        binding.mpwVideoPlayer.setVisibility(View.GONE);
+        binding.btResgatarFake.setVisibility(View.VISIBLE);
+        binding.btResgatar.setVisibility(View.GONE);
+        urlToSee = url;
     }
 
     @Override
@@ -155,8 +165,18 @@ public class VerConteudoActivity extends AppCompatActivity implements  VerConteu
 
         UIUtil.AlertSucesso(this, string, () -> {
 
-            setResult(MISSION_FINISHED);
-            finish();
+            if(urlToSee != null){
+                openUrl = true;
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlToSee));
+                startActivity(browserIntent);
+
+            }else{
+
+                setResult(MISSION_FINISHED);
+                finish();
+            }
+
+
         });
 
     }
@@ -194,4 +214,15 @@ public class VerConteudoActivity extends AppCompatActivity implements  VerConteu
     }
 
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if(urlToSee != null &&  openUrl){
+
+            setResult(MISSION_FINISHED);
+            finish();
+        }
+
+    }
 }

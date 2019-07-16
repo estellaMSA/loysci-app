@@ -38,7 +38,7 @@ public class ShareWithFriendsActivity extends AppCompatActivity implements Share
 
 
 
-        binding.relativeCodigo.setOnClickListener(new View.OnClickListener() {
+        binding.relativeFake.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 

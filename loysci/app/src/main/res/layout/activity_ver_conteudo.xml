@@ -178,6 +178,19 @@
                 </android.support.constraint.ConstraintLayout>
 
 
+                <Button
+                    android:id="@+id/bt_resgatar_fake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mission_info_layout"
+                    android:layout_margin="16dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:text="Resgatar Pontos"
+                    android:visibility="gone"/>
+
+
+
                 <RelativeLayout
                     android:id="@+id/relative_conteudo"
                     android:layout_width="match_parent"
