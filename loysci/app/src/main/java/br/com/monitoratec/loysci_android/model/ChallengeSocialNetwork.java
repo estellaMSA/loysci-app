@@ -14,7 +14,8 @@ public class ChallengeSocialNetwork implements Parcelable {
             TYPE_LIKE,
             TYPE_SHARE,
             TYPE_MESSAGE,
-            TYPE_IMAGE
+            TYPE_IMAGE,
+            TYPE_INSTAGRAM_LIKE
     })
     public @interface ChallengeType {
     }

@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.PorterDuff;
 import android.os.Build;
 import android.os.Bundle;
@@ -53,7 +54,10 @@ public class UploadDataActivity extends AppCompatActivity {
 
         this.image = getIntent().getStringExtra("Image");
 
-        Bitmap thumbnail = getIntent().getParcelableExtra("Thumbnail");
+        //Bitmap thumbnail = getIntent().getParcelableExtra("Thumbnail");
+
+        byte[] imageBytes = getIntent().getByteArrayExtra("Thumbnail");
+        Bitmap thumbnail = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);
 
         if (thumbnail != null) {
             imageView4.setImageBitmap(thumbnail);

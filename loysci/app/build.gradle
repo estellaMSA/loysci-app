@@ -30,7 +30,7 @@ android {
 
         ndk {
             // config you want to support device
-            abiFilters 'arm64-v8a', 'armeabi', 'armeabi-v7a', 'x86','x86_64'
+            abiFilters 'arm64-v8a', 'armeabi', 'armeabi-v7a', 'x86', 'x86_64'
         }
     }
 
@@ -68,8 +68,6 @@ ext {
     playServices = '17.3.2'
     lifecycle_version = "2.0.0"
 }
-
-
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:27.1.1'
@@ -118,5 +116,4 @@ dependencies {
     //twitter
     implementation 'com.twitter.sdk.android:twitter:3.1.1'
     implementation 'com.henryblue.mxvideoplayer:xvideoplayer:1.1.6'
-
 }

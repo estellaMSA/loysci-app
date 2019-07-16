@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.henryblue.ijkplayerlibrary:ijkplayer-java:1.0.3@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ijkplayer-java-1.0.3.aar/21be129fe20784475a3de06eae63e20c/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ijkplayer-java-1.0.3.aar/21be129fe20784475a3de06eae63e20c/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ijkplayer-java-1.0.3.aar/9a45e67317717193814f3c4a17c590b6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ijkplayer-java-1.0.3.aar/9a45e67317717193814f3c4a17c590b6/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -84,7 +84,7 @@ public class ChallengeSeeContentActivity extends AppCompatActivity {
         tvTitle = (TextView) this.findViewById(R.id.tvTitle);
         tvURL = (TextView) this.findViewById(R.id.tvURL);
         bSubmit = (CardView) this.findViewById(R.id.bSubmit);
-        ivImage = (ImageView) this.findViewById(R.id.ivImage);
+        ivImage = (ImageView) this.findViewById(R.id.ivImage2);
         ivImageMission = (ImageView) this.findViewById(R.id.ivImageMission);
         txtCompleteToWin = (TextView) this.findViewById(R.id.txt_complete_to_win);
         txtTopicTitle = (TextView) this.findViewById(R.id.txt_topic_title);

@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -14,14 +15,18 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.CallbackManager;
@@ -51,6 +56,7 @@ import java.net.URL;
 
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.model.Challenge;
+import br.com.monitoratec.loysci_android.model.ChallengeSeeContent;
 import br.com.monitoratec.loysci_android.model.ChallengeSocialNetwork;
 import br.com.monitoratec.loysci_android.model.ChallengeSocialNetworkAnswer;
 import br.com.monitoratec.loysci_android.model.ChallengeSubmitAnswers;
@@ -66,6 +72,7 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
     private CallbackManager fb_callbackManager;
     private ShareDialog fb_shareDialog;
     private TwitterLoginButton loginButton;
+    private TextView toolbarText;
     private Intent intent;
     private String url;
     private String header;
@@ -75,6 +82,7 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
     private static String token = "";
     private static String secret ="";
     //INSTAGRAM
+    private LinearLayout buttonInsta;
 
     private ImageView imgShare;
 
@@ -92,6 +100,10 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
         header = extras.getString("title");
         description = extras.getString("message");
         general = extras.getString("urlGeneral");
+
+        Bitmap thumbnail = getIntent().getParcelableExtra("Thumbnail");
+
+        buttonInsta = (LinearLayout) this.findViewById(R.id.buttonInsta);
 
         loginButton = (TwitterLoginButton) this.findViewById(R.id.login_button);
         likeView = (LikeView) this.findViewById(R.id.like_view);
@@ -115,7 +127,22 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
         //assert actionBar != null;
         //actionBar.setDisplayHomeAsUpEnabled(true);
         //actionBar.setDisplayShowHomeEnabled(true);
+
+        toolbarText = (TextView) this.findViewById(R.id.toolbarTitle);
+        toolbarText.setText(R.string.mission_activities);
+
+        Toolbar includeToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(includeToolbar);
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayShowTitleEnabled(true);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
+        includeToolbar.getNavigationIcon().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
+
         validateType();
+
         //setUpTwitterButton();
 
         new DownloadImageTask().execute(url);
@@ -181,9 +208,19 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
 
 
     private void validateType(){
+        final ChallengeSocialNetwork content = challenge.getMisionRedSocial();
         switch (challenge.getMisionRedSocial().getIndTipo()) {
             case ChallengeSocialNetwork.TYPE_LIKE:
                 likeView.setVisibility(View.VISIBLE);
+                likeView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse(content.getUrlObjectivo()));
+                        startActivity(intent);
+                        sendWinner();
+                    }
+                });
                 break;
             case ChallengeSocialNetwork.TYPE_MESSAGE:
                 shareButton.setVisibility(View.VISIBLE);
@@ -207,6 +244,18 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
                 });
             case ChallengeSocialNetwork.TYPE_TWITER_SHARE:
                 setUpTwitterButton();
+                break;
+            case ChallengeSocialNetwork.TYPE_INSTAGRAM_LIKE:
+                buttonInsta.setVisibility(View.VISIBLE);
+                buttonInsta.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse(content.getUrlObjectivo()));
+                        startActivity(intent);
+                        sendWinner();
+                    }
+                });
                 break;
         }
     }
@@ -257,7 +306,7 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
     }
 
     private void selectOptionsShare(){
-        final CharSequence[] options = {"Compartilhar conteúdo", "Compartilhar conteúdo com uma imagem", "Cancelar"};
+        final CharSequence[] options = {"Compartilhar conteúdo", "Cancelar"};
         AlertDialog.Builder builder = new AlertDialog.Builder(ChallengeNetworkActivity.this);
         builder.setTitle("Share options!");
         builder.setItems(options, new DialogInterface.OnClickListener() {

@@ -26,9 +26,9 @@
         <activity android:name=".mvp.conteudo.VerConteudoActivity"></activity>
         <activity android:name=".mvp.share.ShareWithFriendsActivity" />
         <activity
-            android:name=".presentation.ui.activities.BadgesActivity"
-            android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+        android:name=".presentation.ui.activities.BadgesActivity"
+        android:launchMode="singleTop"
+        android:screenOrientation="portrait" />
 
         <meta-data
             android:name="io.fabric.ApiKey"

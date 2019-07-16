@@ -11,6 +11,7 @@ import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.util.LruCache;
@@ -26,8 +27,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.iceteck.silicompressorr.SiliCompressor;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.util.List;
 
 import br.com.monitoratec.loysci_android.R;
@@ -196,10 +199,10 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
 
         if (requestCode == 2) {
             finish();
-        } else if (requestCode == GALLERY_REQUEST) {
+        } else if (requestCode == 3) {
             if (resultCode == RESULT_OK) {
                 Uri selectedImage = data.getData();
-                String[] filePathColumn = {MediaStore.Images.Thumbnails.DATA};
+                String[] filePathColumn = {MediaStore.Images.Media.DATA};
 
                 Cursor cursor = getContentResolver().query(
                         selectedImage, filePathColumn, null, null, null);
@@ -209,8 +212,7 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
                 String filePath = cursor.getString(columnIndex);
                 cursor.close();
 
-
-               Bitmap yourSelectedImage = BitmapFactory.decodeFile(filePath);
+                Bitmap yourSelectedImage = BitmapFactory.decodeFile(filePath);
 
                 if (yourSelectedImage != null) {
                     //thumbnail = yourSelectedImage;
@@ -250,8 +252,8 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
                     Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                     startActivityForResult(intent, CAMERA_REQUEST);
                 } else if (options[item].equals("Escolher da Galeria")) {
-                    Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI);
-                    startActivityForResult(intent, GALLERY_REQUEST);
+                    Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                    startActivityForResult(intent, 3);
                 } else if (options[item].equals("Cancelar")) {
 
                     dialog.dismiss();
@@ -342,7 +344,7 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
                 if (response.isSuccessful()) {
-                    //Toast.makeText(SubirConteudoActivity.this, response.message(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(SubirConteudoActivity.this, response.message(), Toast.LENGTH_LONG).show();
                 }
             }
 
@@ -371,7 +373,7 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
 
     private void getBase64(Bitmap image) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        image.compress(Bitmap.CompressFormat.JPEG, 80, baos);
+        image.compress(Bitmap.CompressFormat.JPEG, 10, baos);
         byte[] imageBytes = baos.toByteArray();
         String imageBase64 = Base64.encodeToString(imageBytes, Base64.NO_WRAP);
         imageBase64 = imageBase64.replaceAll("\n", "");
