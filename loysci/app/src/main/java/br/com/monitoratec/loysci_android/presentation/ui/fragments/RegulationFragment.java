@@ -7,10 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.FragmentRegulationBinding;
 

@@ -1,13 +1,11 @@
 package br.com.monitoratec.loysci_android.presentation.ui.activities;
 
 import android.content.Intent;
-import android.databinding.DataBindingUtil;
 import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
@@ -36,8 +34,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-import static br.com.monitoratec.loysci_android.util.Constants.CHALLENGE_PARCELABLE;
-import static br.com.monitoratec.loysci_android.util.Constants.ID_MISSION;
 import static br.com.monitoratec.loysci_android.util.Constants.MISSION_PARCELABLE;
 
 public class ChallengeSeeContentActivity extends AppCompatActivity {

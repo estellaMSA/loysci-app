@@ -1,10 +1,8 @@
 package br.com.monitoratec.loysci_android.mvp.conteudo;
 
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.graphics.PorterDuff;
-import android.provider.MediaStore;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +18,6 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.ActivityVerConteudoBinding;
 import br.com.monitoratec.loysci_android.model.Mission;
-import br.com.monitoratec.loysci_android.presentation.ui.activities.SubirConteudoActivity;
 import br.com.monitoratec.loysci_android.util.UIUtil;
 
 import static br.com.monitoratec.loysci_android.util.Constants.MISSION_FINISHED;

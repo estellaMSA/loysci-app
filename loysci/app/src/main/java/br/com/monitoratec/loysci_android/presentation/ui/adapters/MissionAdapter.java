@@ -18,8 +18,6 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import java.util.List;
 
 import br.com.monitoratec.loysci_android.R;
-import br.com.monitoratec.loysci_android.databinding.ItemChallengeBinding;
-import br.com.monitoratec.loysci_android.databinding.ItemMissionActivityBinding;
 import br.com.monitoratec.loysci_android.databinding.ItemMissionBinding;
 import br.com.monitoratec.loysci_android.model.Challenge;
 import br.com.monitoratec.loysci_android.model.Mission;

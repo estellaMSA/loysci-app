@@ -13,9 +13,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.DialogBadgeBinding;
-import br.com.monitoratec.loysci_android.databinding.DialogConfirmationBinding;
 import br.com.monitoratec.loysci_android.model.Badge;
-import br.com.monitoratec.loysci_android.model.Reward;
 
 public class BadgeDialog extends Dialog {
     private Context context;

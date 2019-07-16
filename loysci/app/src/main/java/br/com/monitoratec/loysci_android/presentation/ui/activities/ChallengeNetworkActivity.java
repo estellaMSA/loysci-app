@@ -1,7 +1,9 @@
 package br.com.monitoratec.loysci_android.presentation.ui.activities;
 
+import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -9,6 +11,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.ActionBar;
@@ -98,13 +101,13 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
                 LikeView.ObjectType.PAGE);
 
         shareButton = (Button) this.findViewById(R.id.button2);
-        /*shareButton.setOnClickListener(new View.OnClickListener() {
+        shareButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //selectOptionsShare();
                 share();
             }
-        });*/
+        });
 
         imgShare = findViewById(R.id.imgShare);
 
@@ -114,6 +117,12 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
         //actionBar.setDisplayShowHomeEnabled(true);
         validateType();
         //setUpTwitterButton();
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+            }
+        }
 
         new DownloadImageTask().execute(url);
     }

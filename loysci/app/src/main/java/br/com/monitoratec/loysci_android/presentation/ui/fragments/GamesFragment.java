@@ -23,9 +23,6 @@ import java.util.List;
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.FragmentGamesBinding;
 import br.com.monitoratec.loysci_android.model.Challenge;
-import br.com.monitoratec.loysci_android.model.ChallengeGame;
-import br.com.monitoratec.loysci_android.model.ChallengeSeeContent;
-import br.com.monitoratec.loysci_android.model.Game;
 import br.com.monitoratec.loysci_android.model.Mission;
 import br.com.monitoratec.loysci_android.model.Topic;
 import br.com.monitoratec.loysci_android.networkUtils.LoyaltyApi;
@@ -417,9 +414,7 @@ public class GamesFragment extends Fragment implements TopicMissionCickListener,
             //setRegistrarVistaMision();
 
             startActivityForResult(intent, 2);
-        }
-    }
-        else if(tipo.equals("V")){
+        } else if (tipo.equals("V")) {
 
             Intent intent = new Intent(getContext(), VerConteudoActivity.class);
             intent.putExtra("mission_parcelable", mission);
@@ -428,9 +423,9 @@ public class GamesFragment extends Fragment implements TopicMissionCickListener,
             intent.putExtra(ID_MEMBER, model.profile.getIdMiembro());
             intent.putExtra("imagem", mission.getImagem());
             startActivityForResult(intent, 0);
-
-
         }
+    }
+
     //Se registra como vista la mision actual.
     private void setRegistrarVistaMision() {
         LoyaltyApi.setRegistrarVistaMision(challenge.getIdMision(), new Callback<Void>() {

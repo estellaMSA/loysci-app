@@ -3,9 +3,7 @@ package br.com.monitoratec.loysci_android.presentation.ui.activities;
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.pm.PackageManager;
-import android.databinding.DataBindingUtil;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.PorterDuff;
 import android.os.Build;
 import android.os.Bundle;
@@ -19,9 +17,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.UploadDataActivityBinding;
 import br.com.monitoratec.loysci_android.model.Challenge;
@@ -29,18 +24,10 @@ import br.com.monitoratec.loysci_android.model.ChallengeSubmitAnswers;
 import br.com.monitoratec.loysci_android.model.ChallengeSubmitResponse;
 import br.com.monitoratec.loysci_android.model.ChallengeUploadAnswer;
 import br.com.monitoratec.loysci_android.networkUtils.LoyaltyApi;
-import br.com.monitoratec.loysci_android.presentation.ui.listeners.ViewModelSimpleCallback;
-import br.com.monitoratec.loysci_android.presentation.ui.viewModels.QuizViewModel;
 import br.com.monitoratec.loysci_android.util.ApiUtils;
-import br.com.monitoratec.loysci_android.util.MissionEndDialog;
-import br.com.monitoratec.loysci_android.util.QuizEndDialog;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
-import static br.com.monitoratec.loysci_android.util.Constants.MISSION_FINISHED;
-import static br.com.monitoratec.loysci_android.util.Constants.QUIZ_COMPLETED_RIGHT;
-import static br.com.monitoratec.loysci_android.util.Constants.QUIZ_COMPLETED_WRONG;
 
 public class UploadDataActivity extends AppCompatActivity {
     public static Challenge challenge;

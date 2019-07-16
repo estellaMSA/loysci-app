@@ -15,12 +15,10 @@ import android.widget.LinearLayout;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.ItemBadgeBinding;
-import br.com.monitoratec.loysci_android.databinding.ItemChallengeBinding;
 import br.com.monitoratec.loysci_android.model.Badge;
 import br.com.monitoratec.loysci_android.util.BadgeDialog;
 

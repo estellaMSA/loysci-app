@@ -1,25 +1,19 @@
 package br.com.monitoratec.loysci_android.presentation.ui.activities;
 
 import android.Manifest;
-import android.content.ContentResolver;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
-import android.databinding.DataBindingUtil;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Matrix;
 import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.constraint.ConstraintLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.util.LruCache;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
@@ -27,18 +21,13 @@ import android.util.Base64;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewStub;
-import android.view.Window;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import java.io.ByteArrayOutputStream;
-import java.io.FileInputStream;
 import java.util.List;
 
 import br.com.monitoratec.loysci_android.R;
@@ -52,7 +41,7 @@ import br.com.monitoratec.loysci_android.util.CustomPhotoPickerDialog;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import android.support.v7.app.AppCompatActivity;
+
 import android.support.v7.widget.Toolbar;
 
 import static br.com.monitoratec.loysci_android.util.Constants.MISSION_PARCELABLE;
