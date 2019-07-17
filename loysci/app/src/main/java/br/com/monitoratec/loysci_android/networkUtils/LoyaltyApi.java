@@ -1,5 +1,6 @@
 package br.com.monitoratec.loysci_android.networkUtils;
 
+import android.util.Base64;
 import android.util.Log;
 import android.util.Pair;
 
@@ -46,6 +47,9 @@ import br.com.monitoratec.loysci_android.model.SubmitAnswerChallenge;
 import br.com.monitoratec.loysci_android.model.TopicsMissionsResponse;
 import br.com.monitoratec.loysci_android.model.TopicsResponse;
 import br.com.monitoratec.loysci_android.model.Tournament;
+import br.com.monitoratec.loysci_android.model.Vimeo.GetTokenRequest;
+import br.com.monitoratec.loysci_android.model.Vimeo.GetTokenResponse;
+import br.com.monitoratec.loysci_android.model.Vimeo.GetVideoResponse;
 import br.com.monitoratec.loysci_android.model.VoucherBackendRequest.VoucherBackend;
 import br.com.monitoratec.loysci_android.model.VoucherBackendResponse.VoucherRequestEnvelope;
 import br.com.monitoratec.loysci_android.model.VoucherTransaction.VoucherTransactionRequest;
@@ -73,6 +77,7 @@ public final class LoyaltyApi {
     private static final String LOYALTY_API_BASE_URL_MISSIONS = "https://movida-gameficacao-api.now.sh/";
     private static final String LOYALTY_API_BASE_URL_SUBMIT = "https://movida-gameficacao-api.now.sh/";
     private static final String CLOUD_STORAGE_URL = "https://brcom-central-1.storage.oraclecloud.com/";
+    private static final String VIMEO_URL = "https://api.vimeo.com/";
 
     private static final String LOYALTY_CEP = "http://cep.republicavirtual.com.br/";
 
@@ -83,6 +88,7 @@ public final class LoyaltyApi {
     private static final LoyaltyExternal loyaltyExternal;
     private static final LoyaltyMissions loyaltyMissions;
     private static final LoyaltySubmit loyaltySubmit;
+    private static final VimeoService vimeoService;
 
     private static final LoyaltyCarregaCep loyaltyCep;
 
@@ -156,7 +162,21 @@ public final class LoyaltyApi {
                 .client(httpClient.build())
                 .build();
         loyaltyCep = retrofit.create(LoyaltyCarregaCep.class);
+
+
+        retrofit = new Retrofit.Builder()
+                .baseUrl(VIMEO_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .client(httpClient.build())
+                .build();
+        vimeoService = retrofit.create(VimeoService.class);
+
+
+
     }
+
+
+
 
     private static void getExternalAuthorizationToken(SimpleCallback<String> callback) {
         String accessToken = Prefs.getExternalAccessToken();
@@ -1195,4 +1215,63 @@ public final class LoyaltyApi {
             String teste= "";
         }
     }
+
+
+    public static void getVimeoVideo(String videoCode, Callback<GetVideoResponse> callback){
+        try {
+
+
+            getVimeoToken(new Callback<GetTokenResponse>() {
+                @Override
+                public void onResponse(Call<GetTokenResponse> call, Response<GetTokenResponse> response) {
+
+                    String accessToke = response.body().getAccessToke();
+
+
+                    Map<String, String> map = new HashMap<>();
+                    map.put("Authorization", "bearer "+ accessToke);
+                    Call<GetVideoResponse> newCall = vimeoService.getVideoVimeo(videoCode,map);
+                    newCall.enqueue(callback);
+
+
+                }
+
+                @Override
+                public void onFailure(Call<GetTokenResponse> call, Throwable t) {
+
+                    callback.onFailure(vimeoService.getVideoVimeo(videoCode,null),t);
+                }
+            });
+
+
+
+
+        }
+        catch (Exception ex){
+            String teste= "";
+        }
+
+    }
+
+
+    private static void getVimeoToken(Callback<GetTokenResponse>callback){
+
+
+        Map<String, String> map = new HashMap<>();
+        map.put("Authorization", "Basic " + getTokenBase64());
+
+        Call<GetTokenResponse> call = vimeoService.getTokenVimeo(new GetTokenRequest(),map);
+        call.enqueue(callback);
+
+    }
+
+    private static String getTokenBase64() {
+
+
+        String clientIdentifier = "93b6963fa55ef92f91ce32622039d8c761c183e1";
+        String apiSecret = "le0KmbIUZ03ZfKbiHfetrYJMPqiiV4+ZXtqQcpDBInPZJIqcXKXgvVq0k2myHSXDJSXnhXNhiLp+R41Ou7Hh5O6nejmsxpHacXicDx931+6k0m93+botsEwxVmTfNGCI";
+        String base64 = Base64.encodeToString((clientIdentifier + ":" + apiSecret).getBytes(), Base64.NO_WRAP | Base64.URL_SAFE);
+        return base64;
+    }
+
 }
