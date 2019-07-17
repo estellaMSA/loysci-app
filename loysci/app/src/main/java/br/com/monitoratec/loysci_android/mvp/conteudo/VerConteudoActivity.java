@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.graphics.PorterDuff;
 import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
@@ -125,6 +127,9 @@ public class VerConteudoActivity extends AppCompatActivity implements  VerConteu
         binding.ivPlayer.setVisibility(View.GONE);
         binding.mpwVideoPlayer.setVisibility(View.VISIBLE);
         loadWebviewVIdeo(videoStr);
+        binding.btResgatar.setEnabled(false);
+        binding.btResgatar.setAlpha(0.5f);
+
 
 
     }
@@ -189,6 +194,23 @@ public class VerConteudoActivity extends AppCompatActivity implements  VerConteu
         UIUtil.AlertErro(this, message, () -> {
 
         });
+    }
+
+    @Override
+    public void setTime(int duration) {
+
+        Handler handler = new Handler();
+
+        Runnable r = () -> {
+
+            VerConteudoActivity.this.runOnUiThread(() -> {
+
+                binding.btResgatar.setEnabled(true);
+                binding.btResgatar.setAlpha(1.0f);
+            });
+        };
+
+        handler.postDelayed(r,(duration * 1000));
     }
 
     private void loadWebviewVIdeo(String url) {
