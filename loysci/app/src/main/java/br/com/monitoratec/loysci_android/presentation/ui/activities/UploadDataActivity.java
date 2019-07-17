@@ -2,8 +2,11 @@ package br.com.monitoratec.loysci_android.presentation.ui.activities;
 
 import android.Manifest;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.graphics.PorterDuff;
 import android.os.Build;
 import android.os.Bundle;
@@ -16,6 +19,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 import br.com.monitoratec.loysci_android.R;
 import br.com.monitoratec.loysci_android.databinding.UploadDataActivityBinding;
@@ -36,7 +41,6 @@ public class UploadDataActivity extends AppCompatActivity {
     private static final int CAMERA_PERMISSION_REQUEST_CODE = 1;
     private String image = "";
     int rewardTotal;
-
     private ImageView imageView4;
     private TextView toolbarText;
     private CardView btnUpload;
@@ -53,13 +57,14 @@ public class UploadDataActivity extends AppCompatActivity {
 
         this.image = getIntent().getStringExtra("Image");
 
-        //Bitmap thumbnail = getIntent().getParcelableExtra("Thumbnail");
-
-        byte[] imageBytes = getIntent().getByteArrayExtra("Thumbnail");
-        Bitmap thumbnail = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);
+        Bitmap thumbnail = getIntent().getParcelableExtra("Thumbnail");
+        Bitmap yourSelectedImage = getIntent().getParcelableExtra("yourSelectedImage");
 
         if (thumbnail != null) {
-            imageView4.setImageBitmap(thumbnail);
+            //imageView4.setImageBitmap(thumbnail);
+            imageView4.setImageBitmap(resizeImage(this, thumbnail, 500, 500));
+        } else {
+            imageView4.setImageBitmap(yourSelectedImage);
         }
 
         Toolbar includeToolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -91,6 +96,33 @@ public class UploadDataActivity extends AppCompatActivity {
         });
 
         setTitle("Carregar Imagem");
+    }
+
+    private static Bitmap resizeImage(Context context, Bitmap bmpOriginal,
+                                      float newWidth, float newHeight) {
+        Bitmap novoBmp = null;
+
+        int w = bmpOriginal.getWidth();
+        int h = bmpOriginal.getHeight();
+
+        float densityFactor = context.getResources().getDisplayMetrics().density;
+        float novoW = newWidth * densityFactor;
+        float novoH = newHeight * densityFactor;
+
+        //Calcula escala em percentagem do tamanho original para o novo tamanho
+        float scalaW = novoW / w;
+        float scalaH = novoH / h;
+
+        // Criando uma matrix para manipulação da imagem BitMap
+        Matrix matrix = new Matrix();
+
+        // Definindo a proporção da escala para o matrix
+        matrix.postScale(scalaW, scalaH);
+
+        //criando o novo BitMap com o novo tamanho
+        novoBmp = Bitmap.createBitmap(bmpOriginal, 0, 0, w, h, matrix, true);
+
+        return novoBmp;
     }
 
     @Override

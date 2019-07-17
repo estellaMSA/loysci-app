@@ -1,12 +1,14 @@
 package br.com.monitoratec.loysci_android.presentation.ui.activities;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Build;
@@ -68,6 +70,7 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
 
     Bitmap thumbnail;
     private String image = "";
+
     private static final int CAMERA_REQUEST = 1888;
     private static final int GALLERY_REQUEST = 2888;
     private static final int CAMERA_PERMISSION_REQUEST_CODE = 1;
@@ -212,10 +215,11 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
                 cursor.close();
 
                 Bitmap yourSelectedImage = BitmapFactory.decodeFile(filePath);
+                yourSelectedImage = Bitmap.createScaledBitmap(yourSelectedImage, 500, 400, true);
+
 
                 if (yourSelectedImage != null) {
                     //thumbnail = yourSelectedImage;
-
                     getBase64(yourSelectedImage);
 
                     uploadContentType();
@@ -237,6 +241,7 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
             }
         }
     }
+
     private void selectImage() {
         final CharSequence[] options = {"Tirar Foto", "Escolher da Galeria", "Cancelar"};
 
@@ -372,7 +377,7 @@ public class SubirConteudoActivity extends AppCompatActivity implements SimpleIt
 
     private void getBase64(Bitmap image) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        image.compress(Bitmap.CompressFormat.JPEG, 10, baos);
+        image.compress(Bitmap.CompressFormat.JPEG, 80, baos);
         byte[] imageBytes = baos.toByteArray();
         String imageBase64 = Base64.encodeToString(imageBytes, Base64.NO_WRAP);
         imageBase64 = imageBase64.replaceAll("\n", "");

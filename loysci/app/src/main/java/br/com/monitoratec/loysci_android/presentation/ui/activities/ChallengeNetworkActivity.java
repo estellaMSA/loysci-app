@@ -86,6 +86,14 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
 
     private ImageView imgShare;
 
+    private TextView msg_url;
+    private TextView urlObjetivo;
+    private TextView tituloUrl;
+    private TextView msglinkFaceb;
+    private TextView msgFaceb;
+    private TextView msglikeFaceb;
+    private TextView msglikeInsta;
+
     LikeView likeView;
     public static Challenge challenge;
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,6 +130,17 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
         });
 
         imgShare = findViewById(R.id.imgShare);
+        msg_url = findViewById(R.id.mensagem_url);
+        urlObjetivo = findViewById(R.id.url_objetivo);
+        tituloUrl = findViewById(R.id.titulo_url);
+        msglinkFaceb = findViewById(R.id.msg_linkFaceb);
+        msgFaceb = findViewById(R.id.msg_msgFaceb);
+        msglikeFaceb = findViewById(R.id.msg_likeFaceb);
+        msglikeInsta = findViewById(R.id.msg_likeInsta);
+
+        urlObjetivo.setText(challenge.getMisionRedSocial().getUrlObjectivo());
+        msg_url.setText(challenge.getMisionRedSocial().getMensaje());
+        tituloUrl.setText(challenge.getMisionRedSocial().getTituloUrl());
 
         //ActionBar actionBar = getSupportActionBar();
         //assert actionBar != null;
@@ -217,6 +236,7 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
         final ChallengeSocialNetwork content = challenge.getMisionRedSocial();
         switch (challenge.getMisionRedSocial().getIndTipo()) {
             case ChallengeSocialNetwork.TYPE_LIKE:
+                msglikeFaceb.setVisibility(View.VISIBLE);
                 likeView.setVisibility(View.VISIBLE);
                 likeView.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -229,9 +249,11 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
                 });
                 break;
             case ChallengeSocialNetwork.TYPE_MESSAGE:
+                msgFaceb.setVisibility(View.VISIBLE);
                 shareButton.setVisibility(View.VISIBLE);
                 break;
             case ChallengeSocialNetwork.TYPE_SHARE:
+                msglinkFaceb.setVisibility(View.VISIBLE);
                 shareButton.setVisibility(View.VISIBLE);
                 shareButton.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -252,6 +274,7 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
                 setUpTwitterButton();
                 break;
             case ChallengeSocialNetwork.TYPE_INSTAGRAM_LIKE:
+                msglikeInsta.setVisibility(View.VISIBLE);
                 buttonInsta.setVisibility(View.VISIBLE);
                 buttonInsta.setOnClickListener(new View.OnClickListener() {
                     @Override

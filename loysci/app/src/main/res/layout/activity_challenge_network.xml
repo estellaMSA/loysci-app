@@ -43,19 +43,81 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="center_horizontal"
         android:padding="20dp">
 
         <ImageView
             android:id="@+id/imgShare"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
             android:layout_gravity="center_horizontal"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/msg_linkFaceb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clique no botão para compartilhar o link na sua timeline do Facebook e ganhar pontos!"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="40dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/msg_msgFaceb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clique no botão para postar a mensagem abaixo na sua timeline do Facebook."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/msg_likeFaceb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clique no botão para curtir a página no Facebook."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/msg_likeInsta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clique no botão para curtir o perfil do Instagram"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/mensagem_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compartilhe esta mensagem e ganhe pontos!"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/url_objetivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://loysci.com"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/titulo_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganhando Pontos"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
 
         <Button
             android:id="@+id/button2"
