@@ -39,134 +39,303 @@
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
-    <LinearLayout
+    <ScrollView
+        android:id="@+id/scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:padding="20dp">
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
 
-        <ImageView
-            android:id="@+id/imgShare"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="40dp"
-            android:layout_gravity="center_horizontal"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/logo" />
-
-        <TextView
-            android:id="@+id/msg_linkFaceb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Clique no botão para compartilhar o link na sua timeline do Facebook e ganhar pontos!"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:layout_marginBottom="40dp"
-            android:visibility="gone"/>
-
-        <TextView
-            android:id="@+id/msg_msgFaceb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Clique no botão para postar a mensagem abaixo na sua timeline do Facebook."
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:visibility="gone"/>
-
-        <TextView
-            android:id="@+id/msg_likeFaceb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Clique no botão para curtir a página no Facebook."
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:visibility="gone"/>
-
-        <TextView
-            android:id="@+id/msg_likeInsta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Clique no botão para curtir o perfil do Instagram"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:visibility="gone"/>
-
-        <TextView
-            android:id="@+id/mensagem_url"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Compartilhe esta mensagem e ganhe pontos!"
-            android:textColor="@color/black"
-            android:textSize="18sp"/>
-        <TextView
-            android:id="@+id/url_objetivo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="https://loysci.com"
-            android:textColor="@color/black"
-            android:textSize="18sp"/>
-        <TextView
-            android:id="@+id/titulo_url"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ganhando Pontos"
-            android:textColor="@color/black"
-            android:textSize="18sp"/>
-
-
-        <Button
-            android:id="@+id/button2"
-            style="@style/com_facebook_button"
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/share"
-            android:visibility="gone" />
-
-        <LinearLayout
-            android:id="@+id/buttonInsta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="horizontal"
-            android:visibility="gone">
+            android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/insta" />
+                android:id="@+id/ivImage"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:scaleType="centerCrop"
+                tools:src="@color/light_grey" />
 
-            <TextView
-                android:layout_width="wrap_content"
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:background="@drawable/bottom_shaddow"
+                app:layout_constraintBottom_toBottomOf="@id/ivImage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="152dp">
+
+                <TextView
+                    android:id="@+id/puntosPromo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_button"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    tools:text="+ 100 PONTOS" />
+
+                <TextView
+                    android:id="@+id/txt_topic_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_toLeftOf="@id/puntosPromo"
+                    android:text="@string/super_prize"
+                    android:textColor="@color/light_text"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/txt_complete_to_win"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/txt_topic_title"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/complete_to_win"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@id/txt_topic_title"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </RelativeLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/mission_info_layout"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginStart="6dp"
+                android:orientation="horizontal"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                app:layout_constraintBottom_toTopOf="@id/svDetail"
+                app:layout_constraintTop_toBottomOf="@id/ivImage">
+
+                <ImageView
+                    android:id="@+id/img_mission2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/ic_camera" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toRightOf="@id/img_mission2"
+                    app:layout_constraintRight_toLeftOf="@id/img_check"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/txt_mission_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        app:layout_constraintLeft_toRightOf="@id/img_mission"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="Missão 2" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_check"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/background_circle_selected"
+                    app:layout_constraintRight_toLeftOf="@id/txt_activities_count"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_activities_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/md_red_900"
+                    android:textSize="12sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="8/10" />
+            </android.support.constraint.ConstraintLayout>
+
+            <ScrollView
+                android:id="@+id/svDetail"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="8dp"
-                android:clickable="true"
-                android:text="Curtir"
-                android:textSize="24dp"
-                android:visibility="visible" />
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/botoes_sociais"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mission_info_layout">
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="20dp">
 
-        <com.twitter.sdk.android.core.identity.TwitterLoginButton
-            android:id="@+id/login_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:visibility="gone" />
+                    <ImageView
+                        android:id="@+id/imgShare"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="40dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/logo" />
 
-        <com.facebook.share.widget.LikeView
-            android:id="@+id/like_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:visibility="gone" />
-    </LinearLayout>
+                    <TextView
+                        android:id="@+id/msg_linkFaceb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:text="Clique no botão para compartilhar o link na sua timeline do Facebook e ganhar pontos!"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/msg_msgFaceb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clique no botão para postar a mensagem abaixo na sua timeline do Facebook."
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/msg_likeFaceb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clique no botão para curtir a página no Facebook."
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/msg_likeInsta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clique no botão para curtir o perfil do Instagram"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/mensagem_url"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Compartilhe esta mensagem e ganhe pontos!"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/url_objetivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="https://loysci.com"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/titulo_url"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ganhando Pontos"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout
+                android:id="@+id/botoes_sociais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="30dp"
+                android:gravity="center_horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/svDetail">
+
+                <Button
+                    android:id="@+id/button2"
+                    style="@style/com_facebook_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/share"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/buttonInsta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/insta" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:clickable="true"
+                        android:text="Curtir"
+                        android:textSize="24dp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                    android:id="@+id/login_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone" />
+
+                <com.facebook.share.widget.LikeView
+                    android:id="@+id/like_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
 </LinearLayout>

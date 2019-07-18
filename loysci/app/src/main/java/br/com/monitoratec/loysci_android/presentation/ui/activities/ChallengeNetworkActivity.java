@@ -19,6 +19,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
@@ -29,6 +30,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
@@ -61,6 +63,7 @@ import br.com.monitoratec.loysci_android.model.ChallengeSocialNetwork;
 import br.com.monitoratec.loysci_android.model.ChallengeSocialNetworkAnswer;
 import br.com.monitoratec.loysci_android.model.ChallengeSubmitAnswers;
 import br.com.monitoratec.loysci_android.model.ChallengeSubmitResponse;
+import br.com.monitoratec.loysci_android.model.Mission;
 import br.com.monitoratec.loysci_android.networkUtils.LoyaltyApi;
 import br.com.monitoratec.loysci_android.util.ApiUtils;
 import retrofit2.Call;
@@ -93,6 +96,15 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
     private TextView msgFaceb;
     private TextView msglikeFaceb;
     private TextView msglikeInsta;
+
+    private TextView puntos;
+    private ImageView imageView;
+    private TextView txtCompleteToWin;
+    private TextView txtTopicTitle;
+    private TextView txtMissionTitle;
+    private ImageView imgPhoto;
+
+    Mission mission;
 
     LikeView likeView;
     public static Challenge challenge;
@@ -138,9 +150,27 @@ public class ChallengeNetworkActivity extends AppCompatActivity {
         msglikeFaceb = findViewById(R.id.msg_likeFaceb);
         msglikeInsta = findViewById(R.id.msg_likeInsta);
 
+        imageView = findViewById(R.id.ivImage);
+        imgPhoto = findViewById(R.id.img_mission2);
+        puntos = findViewById(R.id.puntosPromo);
+        txtCompleteToWin = findViewById(R.id.txt_complete_to_win);
+        txtTopicTitle = findViewById(R.id.txt_topic_title);
+        txtMissionTitle = findViewById(R.id.txt_mission_title);
+
         urlObjetivo.setText(challenge.getMisionRedSocial().getUrlObjectivo());
         msg_url.setText(challenge.getMisionRedSocial().getMensaje());
         tituloUrl.setText(challenge.getMisionRedSocial().getTituloUrl());
+
+        puntos.setText(String.valueOf(challenge.getValor())+" "+challenge.getMetrica().getNombre());
+
+        txtCompleteToWin.setText(R.string.complete_to_win_this);
+        //txtMissionTitle.setText(mission.getTitulo());
+        //txtTopicTitle.setText(mission.getTitulo());
+
+        Glide.with(this)
+                .load(challenge.getImagen())
+                .crossFade()
+                .into(imageView);
 
         //ActionBar actionBar = getSupportActionBar();
         //assert actionBar != null;
