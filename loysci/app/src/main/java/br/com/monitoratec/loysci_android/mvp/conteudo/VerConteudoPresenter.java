@@ -85,9 +85,7 @@ public class VerConteudoPresenter {
 
         String videoCode = desafio.getMisionVerContenido().getUrl().replace("https://vimeo.com/","");
 
-        String videoStr = String.format("<html><body><br> <center>" +
-                "<iframe src=\"https://player.vimeo.com/video/%s?autoplay=1\" width=\"300\" height=\"300\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>" +
-                " </center></body></html>",videoCode);
+
 
 
         view.showProgress(true);
@@ -97,8 +95,12 @@ public class VerConteudoPresenter {
             public void onResponse(Call<GetVideoResponse> call, Response<GetVideoResponse> response) {
 
 
+                String videoStr = String.format("<html><body>" +
+                        "%s" +
+                        " </body></html>",response.body().getEmbed().getHtml());
+
                 view.setTime(response.body().getDuration());
-                view.setVideoURL(videoStr);
+                view.setVideoURL(desafio.getMisionVerContenido().getUrl());
 
                 view.showProgress(false);
 
