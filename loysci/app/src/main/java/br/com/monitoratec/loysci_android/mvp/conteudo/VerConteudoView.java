@@ -17,4 +17,7 @@ public interface VerConteudoView {
     void successSendAnswer(String string);
 
     void errorSendAnswer(String message);
+
+    void setTime(int duration);
+
 }

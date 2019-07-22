@@ -16,7 +16,9 @@ import br.com.monitoratec.loysci_android.model.ChallengeSubmitAnswers;
 import br.com.monitoratec.loysci_android.model.ChallengeSubmitResponse;
 import br.com.monitoratec.loysci_android.model.ChallengeUploadAnswer;
 import br.com.monitoratec.loysci_android.model.Mission;
+import br.com.monitoratec.loysci_android.model.Vimeo.GetVideoResponse;
 import br.com.monitoratec.loysci_android.networkUtils.LoyaltyApi;
+import br.com.monitoratec.loysci_android.networkUtils.VimeoService;
 import br.com.monitoratec.loysci_android.presentation.ui.activities.UploadDataActivity;
 import br.com.monitoratec.loysci_android.util.ApiUtils;
 import br.com.monitoratec.loysci_android.util.Constants;
@@ -81,10 +83,44 @@ public class VerConteudoPresenter {
 
     private void mountVideoUrl() {
 
+        String videoCode = desafio.getMisionVerContenido().getUrl().replace("https://vimeo.com/","");
 
-        String videoStr = String.format("<html><body><br> <center><iframe width=\"300\" height=\"400\" src=\"https://www.youtube.com/embed/%s\" frameborder=\"0\" allowfullscreen></iframe> </center></body></html>",desafio.getMisionVerContenido().getUrl());
 
-        view.setVideoURL(videoStr);
+
+
+        view.showProgress(true);
+
+        LoyaltyApi.getVimeoVideo(videoCode, new Callback<GetVideoResponse>() {
+            @Override
+            public void onResponse(Call<GetVideoResponse> call, Response<GetVideoResponse> response) {
+
+
+                String videoStr = String.format("<html><body>" +
+                        "%s" +
+                        " </body></html>",response.body().getEmbed().getHtml());
+
+                view.setTime(response.body().getDuration());
+                view.setVideoURL(desafio.getMisionVerContenido().getUrl());
+
+                view.showProgress(false);
+
+            }
+
+            @Override
+            public void onFailure(Call<GetVideoResponse> call, Throwable t) {
+
+                view.showProgress(false);
+                view.errorSendAnswer(t.getMessage());
+                view.showProgress(false);
+            }
+        });
+
+
+
+
+
+
+
 
 
     }
