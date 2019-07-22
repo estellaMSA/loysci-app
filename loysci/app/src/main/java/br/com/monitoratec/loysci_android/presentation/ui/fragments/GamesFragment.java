@@ -396,12 +396,6 @@ public class GamesFragment extends Fragment implements TopicMissionCickListener,
             //setRegistrarVistaMision();
             intent.putExtra("challenge-id", desafio.getIdMision());
             startActivityForResult(intent, 2);
-        } else if (tipo.equals("V")) {
-            Intent intent = new Intent(getContext(), ChallengeSeeContentActivity.class);
-            //setRegistrarVistaMision();
-            intent.putExtra("mission_parcelable", mission);
-            intent.putExtra(ID_MEMBER, model.profile.getIdMiembro());
-            startActivityForResult(intent, 2);
         } else if (tipo.equals("R")) {
             Intent intent = new Intent(getContext(), ChallengeNetworkActivity.class);
             intent.putExtra("mission_parcelable", mission);
@@ -424,6 +418,13 @@ public class GamesFragment extends Fragment implements TopicMissionCickListener,
             intent.putExtra("imagem", mission.getImagem());
             startActivityForResult(intent, 0);
         }
+
+        //} else if (tipo.equals("V")) {
+        //Intent intent = new Intent(getContext(), ChallengeSeeContentActivity.class);
+        //setRegistrarVistaMision();
+        //intent.putExtra("mission_parcelable", mission);
+        //intent.putExtra(ID_MEMBER, model.profile.getIdMiembro());
+        //startActivityForResult(intent, 2);
     }
 
     //Se registra como vista la mision actual.
