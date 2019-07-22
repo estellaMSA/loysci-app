@@ -7,4 +7,11 @@ public class GetVideoResponse {
     public int getDuration() {
         return duration;
     }
+
+
+    public Embed getEmbed() {
+        return embed;
+    }
+
+    private Embed embed;
 }
