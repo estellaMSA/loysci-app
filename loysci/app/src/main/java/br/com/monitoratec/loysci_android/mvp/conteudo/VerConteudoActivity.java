@@ -1,6 +1,7 @@
 package br.com.monitoratec.loysci_android.mvp.conteudo;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.graphics.Bitmap;
 import android.graphics.PorterDuff;

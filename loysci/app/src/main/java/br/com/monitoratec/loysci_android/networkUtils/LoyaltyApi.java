@@ -70,9 +70,9 @@ import retrofit2.converter.simplexml.SimpleXmlConverterFactory;
 public final class LoyaltyApi {
     //private static final String LOYALTY_SIGN_IN_API_BASE_URL = "https://idp.flecharoja.com/";
     //private static final String LOYALTY_API_BASE_URL = "https://api-loyalty.flecharoja.com/loyalty-api-client-test-movida/webresources/";
-    private static final String LOYALTY_SIGN_IN_API_BASE_URL = "https://idp-brasil.loyaltysci.com";
-    private static final String LOYALTY_API_BASE_URL = "https://api-brasil.loyaltysci.com/loyalty-api-client/webresources/";
-    private static final String LOYALTY_API_EXTERNAL_BASE_URL = "https://api-brasil.loyaltysci.com/loyalty-api-external/webresources/";
+    private static final String LOYALTY_SIGN_IN_API_BASE_URL = "https://idp-demo.loysci.com";
+    private static final String LOYALTY_API_BASE_URL = "https://api-demo.loysci.com/loyalty-api-client/webresources/";
+    private static final String LOYALTY_API_EXTERNAL_BASE_URL = "https://api-demo.loysci.com/loyalty-api-external/webresources/";
     private static final String LOYALTY_API_BASE_URL_VOUCHER = "https://xml.movida.com.br/movida/";
     private static final String LOYALTY_API_BASE_URL_MISSIONS = "https://movida-gameficacao-api.now.sh/";
     private static final String LOYALTY_API_BASE_URL_SUBMIT = "https://movida-gameficacao-api.now.sh/";
