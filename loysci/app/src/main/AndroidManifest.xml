@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="br.com.monitoratec.loysci_android">
+    package="br.com.loysciapp.loysci_android">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -14,7 +14,7 @@
     <uses-feature android:name="android.hardware.camera" />
 
     <application
-        android:name=".MyApplication"
+        android:name="br.com.loysciapp.loysci_android.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -22,11 +22,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".mvp.share.ShareWithFriendsActivity"></activity>
-        <activity android:name=".mvp.conteudo.VerConteudoActivity"></activity>
-        <activity android:name=".mvp.share.ShareWithFriendsActivity" />
+        <activity android:name="br.com.loysciapp.loysci_android.mvp.share.ShareWithFriendsActivity"></activity>
+        <activity android:name="br.com.loysciapp.loysci_android.mvp.conteudo.VerConteudoActivity"></activity>
+        <activity android:name="br.com.loysciapp.loysci_android.mvp.share.ShareWithFriendsActivity" />
         <activity
-        android:name=".presentation.ui.activities.BadgesActivity"
+        android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.BadgesActivity"
         android:launchMode="singleTop"
         android:screenOrientation="portrait" />
 
@@ -42,7 +42,7 @@
             android:value="@string/facebook_app_id" />
 
         <activity
-            android:name=".presentation.ui.activities.SplashActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.SplashActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait">
@@ -53,117 +53,117 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".presentation.ui.activities.LoginActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.LoginActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.MainActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.NotificationsActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.NotificationsActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.EditAddressActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.EditAddressActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.ProfileActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.ProfileActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.ChangePasswordActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.ChangePasswordActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.PromotionDetailActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.PromotionDetailActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.UpdateDriversLicenseActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.UpdateDriversLicenseActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.QuizActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.QuizActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.ActivitiesActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.ActivitiesActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.MissionActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.MissionActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.RegulationsActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.RegulationsActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.CartaoActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.CartaoActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.VoucherActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.VoucherActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.CartActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.CartActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.RegisterProfileActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.RegisterProfileActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.RegisterPasswordActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.RegisterPasswordActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.RegisterConditionsActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.RegisterConditionsActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.AvatarActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.AvatarActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.SubirConteudoActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.SubirConteudoActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.UploadDataActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.UploadDataActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.UploadDataVideoActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.UploadDataVideoActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.PuzzleActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.PuzzleActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.PrePuzzleActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.PrePuzzleActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.ChallengeSeeContentActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.ChallengeSeeContentActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.ui.activities.ChallengeNetworkActivity"
+            android:name="br.com.loysciapp.loysci_android.presentation.ui.activities.ChallengeNetworkActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".DoneAvatarActivity"
+            android:name="br.com.loysciapp.loysci_android.DoneAvatarActivity"
             android:screenOrientation="portrait" />
         <provider
             android:name="com.facebook.FacebookContentProvider"

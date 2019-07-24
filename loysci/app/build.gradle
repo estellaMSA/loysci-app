@@ -20,7 +20,7 @@ repositories {
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "br.com.monitoratec.loysci_android"
+        applicationId "br.com.loysciapp.loysci_android"
         minSdkVersion 25
         targetSdkVersion 27
         versionCode 13
